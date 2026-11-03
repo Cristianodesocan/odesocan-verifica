@@ -106,7 +106,8 @@ odesocan-verifica/
 │   └── secciones/
 │       ├── inicio/             hero de la mira y ruido
 │       ├── que-es/             definición, mapa del Código, «Dos caminos»
-│       ├── metodologia/        recorrido de las nueve fases, casos frontera
+│       ├── metodologia/        recorrido de las nueve fases, casos frontera y
+│       │                       metodología completa (versión pública, imprimible)
 │       ├── envia/              triaje, clasificación, formulario de demostración
 │       ├── portal/             indicadores (D3), explorador, ficha, correcciones
 │       └── transparencia/
@@ -126,6 +127,7 @@ El enrutado es por hash para que funcione en GitHub Pages sin configurar el serv
 | `#/` | Inicio |
 | `#/que-es-verificar` y `#/que-es-verificar/:apartado` | Qué es verificar (`definicion`, `que-es`, `codigo`, `aplica`, `encaje`, `dos-caminos`, `no-partidismo`) |
 | `#/metodologia` y `#/metodologia/:apartado` | Metodología (`recorrido`, `escala`, `preguntas`, `prueba`, `emergencia`, `independencia`, `plazos`, `descarga`) |
+| `#/metodologia/completa` y `#/metodologia/completa/:apartado` | Metodología completa, versión pública del documento de metodología, preparada para guardarse en PDF (`presentacion`, `fase-1` a `fase-9`, `equipo`, `flujo`) |
 | `#/envia` y `#/envia/:apartado` | Envía un contenido (`triaje`, `se-puede`, `despues`, `formulario`, `correccion`) |
 | `#/portal?periodo=…&cal=…&tema=…&q=…` | Portal; los filtros viven en la URL |
 | `#/portal/OV-2026-0014` | Ficha de verificación |

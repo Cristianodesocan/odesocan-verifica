@@ -6,7 +6,7 @@
 
 /** Documentos del servicio que desarrollan el Código, con su destino en la web. */
 export const DOCUMENTOS = {
-  metodologia: { nombre: 'Metodología', ruta: '/metodologia' },
+  metodologia: { nombre: 'Metodología', ruta: '/metodologia/completa' },
   escala: { nombre: 'Escala de calificación', ruta: '/metodologia/escala' },
   criterios: { nombre: 'Criterios de lenguaje', ruta: null, pendiente: 'Documento pendiente de publicar' },
   captura: { nombre: 'Protocolo de captura y archivo', ruta: '/metodologia/recorrido' },

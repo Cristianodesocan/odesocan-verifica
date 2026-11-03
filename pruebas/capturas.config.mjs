@@ -3,6 +3,7 @@ export const RUTAS = {
   inicio: '#/',
   'que-es': '#/que-es-verificar',
   metodologia: '#/metodologia',
+  'metodologia-completa': '#/metodologia/completa',
   envia: '#/envia',
   portal: '#/portal',
   ficha: '#/portal/OV-2026-0014',
