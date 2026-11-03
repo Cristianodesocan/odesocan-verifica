@@ -1,0 +1,2133 @@
+{
+  "aviso": "Datos de ejemplo ficticios. El servicio aún no ha publicado verificaciones.",
+  "generado": "2026-11-03",
+  "verificaciones": [
+    {
+      "id": "OV-2025-0001",
+      "ejemplo": true,
+      "titular": "La lista de espera quirúrgica en Canarias bajó un 16,6 % en un año, hasta 28.460 personas a 30 de junio de 2025, y solo se redujeron a la mitad las esperas de más de seis meses",
+      "resumen": "Según el Servicio Canario de la Salud, 28.460 personas esperaban una intervención quirúrgica a 30 de junio de 2025, frente a 34.120 un año antes, un descenso del 16,6 %. Lo que se redujo a la mitad fue el número de personas con más de seis meses de espera, que pasó de 9.830 a 4.870.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "Hemos reducido la lista de espera quirúrgica a la mitad en un año.",
+        "tipo_emisora": "Cargo público autonómico",
+        "fecha": "2025-10-03",
+        "canal": "Pleno del Parlamento de Canarias",
+        "enlace_archivado": "https://example.org/archivo/OV-2025-0001"
+      },
+      "materia": "Sanidad",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2025-10-08",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público con responsabilidad en la materia hizo la afirmación en sede parlamentaria (vía de influenciabilidad), y se refiere a un servicio del que dependen decenas de miles de personas. La parte verificable es la evolución de la lista de espera quirúrgica, que el Servicio Canario de la Salud publica cada semestre.",
+      "evidencia": {
+        "a_favor": [
+          "Las personas con más de seis meses de espera quirúrgica pasaron de 9.830 a 4.870 entre junio de 2024 y junio de 2025, un descenso del 50,5 %.",
+          "La lista total también bajó en ese periodo, de 34.120 a 28.460 personas."
+        ],
+        "en_contra": [
+          "La lista de espera quirúrgica total se redujo un 16,6 % entre junio de 2024 y junio de 2025, no a la mitad.",
+          "La demora media bajó de 162 a 131 días en el mismo periodo, un 19,1 %."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Servicio Canario de la Salud",
+          "titulo": "Lista de espera quirúrgica estructural, corte semestral",
+          "url": "https://example.org/fuentes/servicio-canario-de-la-salud-lista-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2025-10-06"
+        },
+        {
+          "organismo": "Servicio Canario de la Salud",
+          "titulo": "Demora media en lista de espera quirúrgica por especialidad",
+          "url": "https://example.org/fuentes/servicio-canario-de-la-salud-demora-media",
+          "tipo": "primaria",
+          "fecha_consulta": "2025-10-06"
+        },
+        {
+          "organismo": "Parlamento de Canarias",
+          "titulo": "Diario de sesiones del Pleno",
+          "url": "https://example.org/fuentes/parlamento-de-canarias-diario-de-sesiones-del",
+          "tipo": "secundaria",
+          "fecha_consulta": "2025-10-04"
+        }
+      ],
+      "metodo": {
+        "indicador": "Personas en lista de espera quirúrgica estructural",
+        "definicion": "Pacientes pendientes de una intervención programada no urgente en los hospitales del Servicio Canario de la Salud en la fecha de corte, sin contar a quienes rechazaron un centro alternativo ni las esperas por decisión propia. El tramo de más de seis meses se calcula sobre la fecha de inclusión en la lista.",
+        "serie": "Serie semestral, junio de 2019 a junio de 2025",
+        "codigo_url": "https://example.org/codigo/OV-2025-0001"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2025-10-04",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2025-0002",
+      "ejemplo": true,
+      "titular": "Las inscripciones de demanda de vivienda protegida en Gran Canaria bajaron un 9,0 % entre diciembre de 2024 y septiembre de 2025 por la baja de 2.940 solicitudes caducadas, sin la cual habrían subido un 3,4 %",
+      "resumen": "Según el registro público de demandantes de vivienda protegida del Gobierno de Canarias, las inscripciones en Gran Canaria pasaron de 23.610 a 31 de diciembre de 2024 a 21.480 a 30 de septiembre de 2025. El descenso se debe a la baja de oficio de 2.940 solicitudes caducadas en marzo de 2025.",
+      "calificacion": {
+        "valor": 3,
+        "etiqueta": "Contexto"
+      },
+      "afirmacion": {
+        "texto": "Las personas inscritas como demandantes de vivienda protegida en Gran Canaria han bajado un 9 % este año.",
+        "tipo_emisora": "Cargo público insular",
+        "fecha": "2025-10-17",
+        "canal": "Rueda de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2025-0002"
+      },
+      "materia": "Vivienda",
+      "isla": "Gran Canaria",
+      "ambito": "Insular",
+      "fecha_publicacion": "2025-10-22",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público insular dio la cifra en rueda de prensa como indicador de la mejora del acceso a la vivienda (vía de influenciabilidad). Son verificables tanto el dato del registro como la depuración administrativa que explica su evolución.",
+      "evidencia": {
+        "a_favor": [
+          "Las inscripciones bajaron de 23.610 a 21.480 entre diciembre de 2024 y septiembre de 2025, un 9,0 %, como sostuvo la persona emisora."
+        ],
+        "en_contra": [
+          "En marzo de 2025 se dieron de baja de oficio 2.940 inscripciones que no se habían renovado en el plazo establecido.",
+          "Sin esa depuración, las inscripciones habrían llegado a 24.420 a 30 de septiembre de 2025, un 3,4 % más que a finales de 2024."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Registro público de demandantes de vivienda protegida, explotación trimestral por isla",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-registro-publico-de-demandantes",
+          "tipo": "primaria",
+          "fecha_consulta": "2025-10-20"
+        },
+        {
+          "organismo": "Boletín Oficial de Canarias",
+          "titulo": "Resolución de baja de oficio de inscripciones caducadas en el registro de demandantes",
+          "url": "https://example.org/fuentes/boletin-oficial-de-canarias-resolucion-de-baja",
+          "tipo": "primaria",
+          "fecha_consulta": "2025-10-20"
+        },
+        {
+          "organismo": "Cabildo insular",
+          "titulo": "Nota de prensa sobre la demanda de vivienda protegida en la isla",
+          "url": "https://example.org/fuentes/cabildo-insular-nota-de-prensa-sobre-la",
+          "tipo": "secundaria",
+          "fecha_consulta": "2025-10-17"
+        }
+      ],
+      "metodo": {
+        "indicador": "Inscripciones vigentes en el registro de demandantes de vivienda protegida",
+        "definicion": "Unidades de convivencia inscritas y no dadas de baja en la fecha de corte, con Gran Canaria como isla de preferencia. La variación sin depuración suma a la cifra de cada fecha las bajas de oficio por caducidad acordadas después de diciembre de 2024.",
+        "serie": "Serie trimestral, diciembre de 2019 a septiembre de 2025",
+        "codigo_url": "https://example.org/codigo/OV-2025-0002"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2025-10-18",
+        "respuesta": "La persona emisora respondió el 20 de octubre de 2025 que la cifra procedía del registro oficial y que la depuración formaba parte de la gestión ordinaria del servicio."
+      },
+      "correcciones": [
+        {
+          "fecha": "2026-02-10",
+          "tipo": "actualizacion",
+          "nota": "Se actualizó la verificación con el dato a 31 de diciembre de 2025, publicado el 5 de febrero de 2026: 21.730 inscripciones, un 8,0 % menos que un año antes. Sin la baja de las 2.940 solicitudes caducadas, el aumento habría sido del 4,5 %. La calificación no cambia.",
+          "cambia_calificacion": false,
+          "version_original_pdf": "https://example.org/versiones/OV-2025-0002-v1.pdf"
+        }
+      ],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0001",
+      "ejemplo": true,
+      "titular": "El paro registrado en Canarias bajó en 13.222 personas en 2025, un 8,5 %, hasta 142.318 en diciembre, la cifra más baja en ese mes desde 2007",
+      "resumen": "Según el Servicio Público de Empleo Estatal, el paro registrado en Canarias fue de 142.318 personas en diciembre de 2025, 13.222 menos que en diciembre de 2024, un 8,5 % menos. Es el dato de diciembre más bajo desde 2007, cuando se registraron 136.870 personas.",
+      "calificacion": {
+        "valor": 4,
+        "etiqueta": "Verdadero"
+      },
+      "afirmacion": {
+        "texto": "El paro registrado cerró 2025 con 142.300 personas en Canarias, 13.200 menos que hace un año y la cifra de diciembre más baja desde 2007.",
+        "tipo_emisora": "Cargo público autonómico",
+        "fecha": "2026-01-09",
+        "canal": "Nota de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0001"
+      },
+      "materia": "Empleo",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-01-14",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "La nota de prensa de un cargo público autonómico difundió un dato de empleo de referencia para todo el archipiélago (vía de influenciabilidad). La cifra, la variación anual y la comparación histórica pueden comprobarse con la serie mensual de paro registrado.",
+      "evidencia": {
+        "a_favor": [
+          "El paro registrado fue de 142.318 personas en diciembre de 2025 y de 155.540 en diciembre de 2024, una diferencia de 13.222.",
+          "Ningún mes de diciembre entre 2008 y 2024 registró una cifra inferior a 142.318 personas."
+        ],
+        "en_contra": []
+      },
+      "fuentes": [
+        {
+          "organismo": "SEPE",
+          "titulo": "Paro registrado por comunidad autónoma, serie mensual",
+          "url": "https://example.org/fuentes/sepe-paro-registrado-por-comunidad-autonoma-serie",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-01-12"
+        },
+        {
+          "organismo": "ISTAC",
+          "titulo": "Estadística de paro registrado en Canarias por sexo, edad e isla",
+          "url": "https://example.org/fuentes/istac-estadistica-de-paro-registrado-en-canarias",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-01-12"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Nota de prensa sobre el paro registrado de diciembre",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-nota-de-prensa-sobre",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-01-09"
+        }
+      ],
+      "metodo": {
+        "indicador": "Paro registrado",
+        "definicion": "Demandas de empleo pendientes de satisfacer el último día del mes, excluidas las de personas ocupadas, las de quienes solo buscan un empleo específico y las de estudiantes, según los criterios del SEPE.",
+        "serie": "Serie mensual, enero de 2007 a diciembre de 2025",
+        "codigo_url": "https://example.org/codigo/OV-2026-0001"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-01-10",
+        "respuesta": "La persona emisora respondió el 12 de enero de 2026 que la cifra procedía de la estadística mensual del Servicio Público de Empleo Estatal."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0002",
+      "ejemplo": true,
+      "titular": "Las personas de Tenerife con derecho reconocido a una prestación de dependencia que aún no la recibían eran 4.870 a 31 de diciembre de 2025",
+      "resumen": "Según los datos del sistema de dependencia que publica el IMSERSO, desglosados por isla por el Gobierno de Canarias, 4.870 personas de Tenerife tenían el derecho reconocido y esperaban la prestación o el servicio a 31 de diciembre de 2025.",
+      "calificacion": {
+        "valor": 1,
+        "etiqueta": "Falso"
+      },
+      "afirmacion": {
+        "texto": "En Tenerife hay más de 12.000 personas que ya tienen reconocida la dependencia y siguen esperando la ayuda.",
+        "tipo_emisora": "Cuenta en redes con gran alcance",
+        "fecha": "2026-02-07",
+        "canal": "Facebook",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0002"
+      },
+      "materia": "Dependencia",
+      "isla": "Tenerife",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-02-11",
+      "via_entrada": [
+        "viralidad"
+      ],
+      "por_que": "La publicación se compartió más de 6.000 veces en dos días (vía de viralidad) y se refiere a un derecho cuyo retraso afecta a las personas en situación de dependencia y a sus familias. La parte verificable es el número de personas con derecho reconocido pendientes de prestación en la isla.",
+      "evidencia": {
+        "a_favor": [],
+        "en_contra": [
+          "A 31 de diciembre de 2025, 4.870 personas de Tenerife tenían reconocido el derecho y esperaban la prestación, menos de la mitad de la cifra publicada.",
+          "En toda Canarias, las personas en esa situación eran 11.940 en la misma fecha, de modo que la cifra publicada se aproxima al total autonómico y no al insular."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "IMSERSO",
+          "titulo": "Estadística mensual del sistema para la autonomía y atención a la dependencia",
+          "url": "https://example.org/fuentes/imserso-estadistica-mensual-del-sistema-para-la",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-02-09"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Personas beneficiarias y pendientes de prestación por isla, datos de cierre de año",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-personas-beneficiarias-y-pendientes",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-02-09"
+        },
+        {
+          "organismo": "Cabildo insular",
+          "titulo": "Memoria de los servicios de atención a la dependencia en la isla",
+          "url": "https://example.org/fuentes/cabildo-insular-memoria-de-los-servicios-de",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-02-10"
+        }
+      ],
+      "metodo": {
+        "indicador": "Personas con derecho reconocido pendientes de prestación o servicio",
+        "definicion": "Personas residentes en Tenerife con resolución de grado que da derecho a prestación y sin programa individual de atención aprobado o sin prestación efectiva en la fecha de corte.",
+        "serie": "Serie mensual, enero de 2020 a diciembre de 2025",
+        "codigo_url": "https://example.org/codigo/OV-2026-0002"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-02-08",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0003",
+      "ejemplo": true,
+      "titular": "La ratio media en el segundo ciclo de infantil en Lanzarote es de 19,2 escolares por grupo en el curso 2025-2026, pero 14 de los 412 grupos superan los 25",
+      "resumen": "Según la estadística de la Consejería de Educación del Gobierno de Canarias, la ratio media del segundo ciclo de educación infantil en los centros públicos de Lanzarote es de 19,2 escolares por grupo en el curso 2025-2026. Ese mismo curso, 14 de los 412 grupos, el 3,4 %, tienen más de 25 escolares.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "La ratio en las aulas de infantil de Lanzarote ha bajado a 19 escolares y ya no queda ninguna por encima de 25.",
+        "tipo_emisora": "Cargo público insular",
+        "fecha": "2026-02-27",
+        "canal": "Entrevista en radio",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0003"
+      },
+      "materia": "Educación",
+      "isla": "Lanzarote",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-03-04",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público insular hizo la afirmación en una entrevista de radio de gran audiencia en la isla (vía de influenciabilidad), y se refiere a las condiciones de escolarización del alumnado de 3 a 6 años. Son verificables la ratio media y el número de grupos por tamaño con los datos de matrícula del curso.",
+      "evidencia": {
+        "a_favor": [
+          "La ratio media del segundo ciclo de infantil en los centros públicos de Lanzarote bajó de 21,0 escolares por grupo en el curso 2023-2024 a 19,2 en el curso 2025-2026."
+        ],
+        "en_contra": [
+          "En el curso 2025-2026 hay 14 grupos de infantil con más de 25 escolares en centros públicos de Lanzarote, el 3,4 % de los 412 grupos.",
+          "Esos 14 grupos se concentran en 6 centros cuya matrícula supera la capacidad prevista en la planificación del curso."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Estadística de matrícula y grupos por centro, curso 2025-2026",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-estadistica-de-matricula-y",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-03-02"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Datos de planificación escolar por isla y etapa",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-datos-de-planificacion-escolar",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-03-02"
+        },
+        {
+          "organismo": "Ministerio de Educación, Formación Profesional y Deportes",
+          "titulo": "Estadística de las enseñanzas no universitarias, datos de avance",
+          "url": "https://example.org/fuentes/ministerio-de-educacion-formacion-profesional-y-deportes",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-03-03"
+        }
+      ],
+      "metodo": {
+        "indicador": "Escolares por grupo en el segundo ciclo de educación infantil",
+        "definicion": "Matrícula del segundo ciclo de infantil en centros públicos de Lanzarote dividida entre el número de grupos autorizados, y recuento de grupos con más de 25 escolares a la fecha de cierre de matrícula.",
+        "serie": "Serie anual por curso, 2019-2020 a 2025-2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0003"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-02-28",
+        "respuesta": "La persona emisora respondió el 2 de marzo de 2026 que se refería a los grupos de nueva creación del curso y no al conjunto de grupos de la isla."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0004",
+      "ejemplo": true,
+      "titular": "Las mujeres atendidas por la red insular contra la violencia de género en Tenerife subieron un 32,0 % en 2025, hasta 2.946, pero en los centros que ya existían en 2024 el aumento fue del 6,1 %",
+      "resumen": "Según la memoria anual del Cabildo insular, la red de atención a víctimas de violencia de género atendió a 2.946 mujeres en 2025, frente a 2.232 en 2024. De ellas, 578 fueron atendidas en los 4 puntos abiertos a lo largo de 2025, y en los centros que ya funcionaban el aumento fue del 6,1 %.",
+      "calificacion": {
+        "valor": 3,
+        "etiqueta": "Contexto"
+      },
+      "afirmacion": {
+        "texto": "Las mujeres atendidas por la red insular contra la violencia de género en Tenerife han aumentado un 32 % en 2025.",
+        "tipo_emisora": "Organización social",
+        "fecha": "2026-03-20",
+        "canal": "Nota de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0004"
+      },
+      "materia": "Igualdad",
+      "isla": "Tenerife",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-03-25",
+      "via_entrada": [
+        "influenciabilidad",
+        "viralidad"
+      ],
+      "por_que": "La nota de una organización social fue reproducida por varios medios insulares y se compartió ampliamente en redes (vías de influenciabilidad y viralidad). Los datos de atención de la red insular son públicos y permiten separar el efecto de la apertura de nuevos puntos de atención.",
+      "evidencia": {
+        "a_favor": [
+          "La red insular atendió a 2.946 mujeres en 2025 y a 2.232 en 2024, un aumento del 32,0 %."
+        ],
+        "en_contra": [
+          "En 2025 se abrieron 4 puntos de atención nuevos, que atendieron a 578 mujeres ese año.",
+          "En los centros que ya funcionaban en 2024, las mujeres atendidas pasaron de 2.232 a 2.368, un 6,1 % más."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Cabildo insular",
+          "titulo": "Memoria anual de la red insular de atención a víctimas de violencia de género",
+          "url": "https://example.org/fuentes/cabildo-insular-memoria-anual-de-la-red",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-03-23"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Datos del sistema canario de atención a víctimas de violencia de género por isla",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-datos-del-sistema-canario",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-03-23"
+        },
+        {
+          "organismo": "Instituto Canario de Igualdad",
+          "titulo": "Informe anual del sistema de atención a mujeres víctimas de violencia de género",
+          "url": "https://example.org/fuentes/instituto-canario-de-igualdad-informe-anual-del",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-03-24"
+        }
+      ],
+      "metodo": {
+        "indicador": "Mujeres atendidas por la red insular de atención a víctimas de violencia de género",
+        "definicion": "Mujeres distintas con al menos una atención presencial o telefónica registrada en el año, contadas una sola vez aunque acudan a varios centros, con separación entre los centros que ya existían en 2024 y los puntos abiertos en 2025.",
+        "serie": "Serie anual, 2019 a 2025",
+        "codigo_url": "https://example.org/codigo/OV-2026-0004"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-03-21",
+        "respuesta": "La organización emisora respondió el 23 de marzo de 2026 que la cifra procedía de la memoria anual del Cabildo insular."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0005",
+      "ejemplo": true,
+      "titular": "En 2025 se entregaron en Canarias 412 viviendas protegidas de promoción pública, frente a 1.186 entre 2020 y 2024",
+      "resumen": "Según la estadística de vivienda protegida del Gobierno de Canarias, en 2025 se entregaron 412 viviendas de promoción pública en Canarias, y entre 2020 y 2024, 1.186. A 31 de diciembre de 2025 había 3.064 viviendas protegidas en construcción.",
+      "calificacion": {
+        "valor": 1,
+        "etiqueta": "Falso"
+      },
+      "afirmacion": {
+        "texto": "En 2025 entregamos 3.000 viviendas públicas en Canarias, más que en los cinco años anteriores juntos.",
+        "tipo_emisora": "Cargo público autonómico",
+        "fecha": "2026-04-11",
+        "canal": "X",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0005"
+      },
+      "materia": "Vivienda",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-04-15",
+      "via_entrada": [
+        "influenciabilidad",
+        "viralidad"
+      ],
+      "por_que": "La publicación de un cargo público con responsabilidad en la materia superó las 200.000 visualizaciones (vías de influenciabilidad y viralidad) y se refiere a la principal política de acceso a la vivienda para los hogares con menos ingresos. Las entregas de vivienda protegida constan en la estadística oficial y en las resoluciones de adjudicación.",
+      "evidencia": {
+        "a_favor": [],
+        "en_contra": [
+          "En 2025 se entregaron 412 viviendas protegidas de promoción pública, menos de una séptima parte de las 3.000 publicadas.",
+          "Entre 2020 y 2024 se entregaron 1.186, de modo que las entregas de 2025 tampoco superan las de los cinco años anteriores.",
+          "La cifra publicada se aproxima a las 3.064 viviendas protegidas que estaban en construcción a 31 de diciembre de 2025, que aún no se habían entregado."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Estadística de vivienda protegida: calificaciones, inicios y entregas",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-estadistica-de-vivienda-protegida",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-04-13"
+        },
+        {
+          "organismo": "Ministerio de Vivienda y Agenda Urbana",
+          "titulo": "Estadística de vivienda protegida por comunidad autónoma, serie anual",
+          "url": "https://example.org/fuentes/ministerio-de-vivienda-y-agenda-urbana-estadistica",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-04-13"
+        },
+        {
+          "organismo": "Boletín Oficial de Canarias",
+          "titulo": "Resoluciones de adjudicación de viviendas de promoción pública",
+          "url": "https://example.org/fuentes/boletin-oficial-de-canarias-resoluciones-de-adjudicacion",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-04-14"
+        }
+      ],
+      "metodo": {
+        "indicador": "Viviendas protegidas de promoción pública entregadas",
+        "definicion": "Viviendas de titularidad pública entregadas a la unidad de convivencia adjudicataria en el año natural, según la fecha de firma del contrato. No incluye viviendas en construcción ni calificadas sin entregar.",
+        "serie": "Serie anual, 2015 a 2025",
+        "codigo_url": "https://example.org/codigo/OV-2026-0005"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-04-12",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [
+        {
+          "fecha": "2026-04-17",
+          "tipo": "correccion",
+          "nota": "Se corrigió la cifra de viviendas entregadas entre 2020 y 2024 del titular, del resumen y de la evidencia, que era 1.186 y no 1.168. La calificación no cambia.",
+          "cambia_calificacion": false,
+          "version_original_pdf": "https://example.org/versiones/OV-2026-0005-v1.pdf"
+        }
+      ],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0006",
+      "ejemplo": true,
+      "titular": "La tasa de riesgo de pobreza en Canarias bajó al 26,1 % en 2025, la más baja desde 2008, año en que fue del 24,9 %",
+      "resumen": "Según la Encuesta de condiciones de vida del INE, la tasa de riesgo de pobreza en Canarias fue del 26,1 % en 2025, unas 581.500 personas, frente al 28,3 % de 2024. Es la más baja desde 2008, cuando se situó en el 24,9 %, de modo que no es el mínimo de la serie.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "Según el último informe de ODESOCAN, la pobreza en Canarias ha bajado al 26 %, el nivel más bajo de toda la serie.",
+        "tipo_emisora": "Cargo público autonómico",
+        "fecha": "2026-04-30",
+        "canal": "Pleno del Parlamento de Canarias",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0006"
+      },
+      "materia": "Pobreza y exclusión",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-05-06",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público hizo la afirmación en el Pleno del Parlamento de Canarias (vía de influenciabilidad) y se refiere al principal indicador de pobreza monetaria. Son verificables el valor de 2025 y su comparación con la serie desde 2008.",
+      "evidencia": {
+        "a_favor": [
+          "La tasa de riesgo de pobreza en Canarias fue del 26,1 % en 2025, frente al 28,3 % de 2024.",
+          "La cifra coincide con la que recoge el informe citado en la afirmación, que procede de la misma encuesta."
+        ],
+        "en_contra": [
+          "La tasa de 2025 no es la más baja de la serie: en 2008 fue del 24,9 %."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "INE",
+          "titulo": "Encuesta de condiciones de vida, resultados por comunidad autónoma",
+          "url": "https://example.org/fuentes/ine-encuesta-de-condiciones-de-vida-resultados",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-05-04"
+        },
+        {
+          "organismo": "ISTAC",
+          "titulo": "Indicadores de pobreza y condiciones de vida en Canarias",
+          "url": "https://example.org/fuentes/istac-indicadores-de-pobreza-y-condiciones-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-05-04"
+        },
+        {
+          "organismo": "ODESOCAN",
+          "titulo": "Informe anual sobre derechos sociales en Canarias",
+          "url": "https://example.org/fuentes/odesocan-informe-anual-sobre-derechos-sociales-en",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-05-02"
+        },
+        {
+          "organismo": "Parlamento de Canarias",
+          "titulo": "Diario de sesiones del Pleno",
+          "url": "https://example.org/fuentes/parlamento-de-canarias-diario-de-sesiones-del",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-05-01"
+        }
+      ],
+      "metodo": {
+        "indicador": "Tasa de riesgo de pobreza",
+        "definicion": "Porcentaje de personas que viven en hogares con ingresos por unidad de consumo inferiores al 60 % de la mediana nacional, según la Encuesta de condiciones de vida. Los ingresos se refieren al año anterior al de la encuesta.",
+        "serie": "Serie anual, 2008 a 2025",
+        "codigo_url": "https://example.org/codigo/OV-2026-0006"
+      },
+      "conflictos": "La afirmación cita un informe de ODESOCAN. Las fuentes propias no son centrales en esta verificación, que se apoya en la estadística oficial.",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-05-01",
+        "respuesta": "La persona emisora respondió el 4 de mayo de 2026 que se refería al periodo posterior a la crisis financiera de 2008."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0007",
+      "ejemplo": true,
+      "titular": "El presupuesto del programa autonómico de inclusión sociolaboral para personas migrantes pasó de 3,0 a 6,2 millones de euros en 2026, con 3,4 millones de fondos europeos extraordinarios",
+      "resumen": "Según los presupuestos de la Comunidad Autónoma de Canarias, el crédito inicial del programa de inclusión sociolaboral para personas migrantes es de 6,2 millones de euros en 2026, frente a 3,0 millones en 2025. De esa cifra, 3,4 millones proceden de fondos europeos extraordinarios para 2026-2027, y la aportación autonómica propia baja a 2,8 millones.",
+      "calificacion": {
+        "valor": 3,
+        "etiqueta": "Contexto"
+      },
+      "afirmacion": {
+        "texto": "Este año hemos duplicado el presupuesto del programa de inclusión sociolaboral para personas migrantes, hasta más de 6 millones de euros.",
+        "tipo_emisora": "Cargo público autonómico",
+        "fecha": "2026-05-22",
+        "canal": "Rueda de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0007"
+      },
+      "materia": "Migraciones",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-05-27",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "El cargo público responsable anunció la dotación en rueda de prensa (vía de influenciabilidad), y el programa financia itinerarios de formación y acompañamiento al empleo. Los créditos, su procedencia y su ejecución figuran en los presupuestos aprobados y en el estado de ejecución.",
+      "evidencia": {
+        "a_favor": [
+          "El crédito inicial del programa pasó de 3,0 millones de euros en 2025 a 6,2 millones en 2026, más del doble."
+        ],
+        "en_contra": [
+          "De los 6,2 millones de 2026, 3,4 millones son fondos europeos extraordinarios previstos solo para 2026-2027.",
+          "La aportación autonómica propia baja de 3,0 a 2,8 millones de euros, un 6,7 % menos.",
+          "En 2025 se ejecutaron 2,1 millones de euros, el 70,0 % del crédito inicial."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Presupuestos generales de la Comunidad Autónoma, estado de gastos por programa",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-presupuestos-generales-de-la",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-05-25"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Estado de ejecución presupuestaria a 31 de diciembre de 2025",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-estado-de-ejecucion-presupuestaria",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-05-25"
+        },
+        {
+          "organismo": "Boletín Oficial de Canarias",
+          "titulo": "Resolución de asignación de fondos europeos para programas de inclusión",
+          "url": "https://example.org/fuentes/boletin-oficial-de-canarias-resolucion-de-asignacion",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-05-25"
+        }
+      ],
+      "metodo": {
+        "indicador": "Crédito inicial y obligaciones reconocidas del programa",
+        "definicion": "Crédito inicial aprobado en la ley de presupuestos para el programa de inclusión sociolaboral de personas migrantes, desglosado por fuente de financiación, y obligaciones reconocidas a 31 de diciembre de cada año.",
+        "serie": "Serie anual, 2021 a 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0007"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-05-23",
+        "respuesta": "La persona emisora respondió el 25 de mayo de 2026 que los fondos europeos forman parte del crédito del programa a todos los efectos."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0008",
+      "ejemplo": true,
+      "titular": "La espera media para una primera consulta de especialista en La Palma bajó de 98 a 71 días entre marzo de 2025 y marzo de 2026, un 27,6 %",
+      "resumen": "Según el Servicio Canario de la Salud, la demora media para una primera consulta externa en el área de salud de La Palma era de 71 días a 31 de marzo de 2026, frente a 98 días un año antes. Las personas en espera pasaron de 6.120 a 4.980 en el mismo periodo.",
+      "calificacion": {
+        "valor": 4,
+        "etiqueta": "Verdadero"
+      },
+      "afirmacion": {
+        "texto": "La espera media para ver a un especialista por primera vez en La Palma ha bajado de 98 a 71 días en un año.",
+        "tipo_emisora": "Cargo público insular",
+        "fecha": "2026-06-05",
+        "canal": "Nota de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0008"
+      },
+      "materia": "Sanidad",
+      "isla": "La Palma",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-06-10",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "La nota de un cargo público insular difundió un dato sobre el acceso a la atención especializada en la isla (vía de influenciabilidad). La demora media por área de salud se publica cada trimestre y permite comprobar las dos cifras.",
+      "evidencia": {
+        "a_favor": [
+          "La demora media para una primera consulta externa en el área de salud de La Palma fue de 98 días a 31 de marzo de 2025 y de 71 días a 31 de marzo de 2026.",
+          "En ese mismo periodo, las personas en espera de primera consulta bajaron de 6.120 a 4.980, un 18,6 %."
+        ],
+        "en_contra": []
+      },
+      "fuentes": [
+        {
+          "organismo": "Servicio Canario de la Salud",
+          "titulo": "Lista de espera de consultas externas por área de salud, corte trimestral",
+          "url": "https://example.org/fuentes/servicio-canario-de-la-salud-lista-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-06-08"
+        },
+        {
+          "organismo": "Cabildo insular",
+          "titulo": "Nota de prensa sobre la atención especializada en la isla",
+          "url": "https://example.org/fuentes/cabildo-insular-nota-de-prensa-sobre-la",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-06-06"
+        }
+      ],
+      "metodo": {
+        "indicador": "Demora media para primera consulta externa",
+        "definicion": "Días transcurridos de media entre la fecha de solicitud de la primera consulta y la fecha de corte para las personas pendientes de cita en el área de salud de La Palma.",
+        "serie": "Serie trimestral, marzo de 2019 a marzo de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0008"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-06-06",
+        "respuesta": "La persona emisora acusó recibo el 7 de junio de 2026 sin aportar información adicional."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0009",
+      "ejemplo": true,
+      "titular": "En un municipio de Fuerteventura, la primera cita con el personal de trabajo social tardó 23 días de media en el primer trimestre de 2026, frente a 5,3 días para la información general",
+      "resumen": "Según el registro de citas de los servicios sociales municipales, la espera media para la primera cita de información y orientación fue de 5,3 días en el primer trimestre de 2026, y la primera cita con el personal de trabajo social, necesaria para tramitar prestaciones, tardó 23 días de media. Este segundo tipo supuso 878 de las 1.420 primeras citas del trimestre, el 61,8 %.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "En nuestro municipio damos cita en servicios sociales en menos de una semana: la espera media es de 5 días.",
+        "tipo_emisora": "Cargo público municipal",
+        "fecha": "2026-06-19",
+        "canal": "Facebook",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0009"
+      },
+      "materia": "Servicios sociales",
+      "isla": "Fuerteventura",
+      "ambito": "Municipal",
+      "fecha_publicacion": "2026-06-24",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "La publicación de un cargo público municipal (vía de influenciabilidad) se refiere al acceso a la puerta de entrada del sistema público de servicios sociales. Los tiempos de espera por tipo de cita constan en el registro municipal y en la memoria remitida al Gobierno de Canarias.",
+      "evidencia": {
+        "a_favor": [
+          "La espera media para la primera cita de información y orientación fue de 5,3 días en el primer trimestre de 2026."
+        ],
+        "en_contra": [
+          "La espera media para la primera cita con el personal de trabajo social fue de 23 días en el mismo trimestre.",
+          "Ese segundo tipo de cita, que es el que permite iniciar la tramitación de prestaciones, supuso 878 de las 1.420 primeras citas del trimestre, el 61,8 %."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Ayuntamiento",
+          "titulo": "Registro de citas de los servicios sociales municipales, explotación trimestral",
+          "url": "https://example.org/fuentes/ayuntamiento-registro-de-citas-de-los-servicios",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-06-22"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Memoria de los servicios sociales de atención primaria por municipio",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-memoria-de-los-servicios",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-06-23"
+        }
+      ],
+      "metodo": {
+        "indicador": "Espera media para la primera cita por tipo de atención",
+        "definicion": "Días naturales entre la solicitud de cita y la fecha de la primera atención, por tipo de cita, para las citas atendidas en el trimestre en los centros municipales de servicios sociales.",
+        "serie": "Serie trimestral, primer trimestre de 2024 a primer trimestre de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0009"
+      },
+      "conflictos": "La emisora es contraparte en una acción de ODESOCAN. La revisión y la calificación las hicieron personas no vinculadas a esa acción.",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-06-20",
+        "respuesta": "La persona emisora respondió el 22 de junio de 2026 que la publicación se refería a la cita de información general, que es la primera atención del servicio."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0010",
+      "ejemplo": true,
+      "titular": "La Gomera depuró en 2025 el 78,4 % del agua residual de su red de saneamiento, y las 2 depuradoras que deben tratar el resto estaban ejecutadas al 82 % y al 64 % a 30 de junio de 2026",
+      "resumen": "Según el Cabildo insular y el Gobierno de Canarias, en 2025 se depuró con tratamiento secundario el 78,4 % del agua residual recogida por la red de saneamiento de La Gomera. Las 2 depuradoras previstas para tratar el resto estaban ejecutadas al 82 % y al 64 % a 30 de junio de 2026, y sus autorizaciones de vertido siguen en tramitación.",
+      "calificacion": {
+        "valor": 3,
+        "etiqueta": "Contexto"
+      },
+      "afirmacion": {
+        "texto": "Con las dos depuradoras que entrarán en servicio este año, depuraremos el 100 % de las aguas residuales de la red de saneamiento de la isla.",
+        "tipo_emisora": "Cargo público insular",
+        "fecha": "2026-07-03",
+        "canal": "Rueda de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0010"
+      },
+      "materia": "Medio ambiente",
+      "isla": "La Gomera",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-07-08",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público insular hizo el anuncio en rueda de prensa (vía de influenciabilidad), y se refiere a una obligación de depuración con efectos sobre la calidad de las aguas costeras y de baño. Son verificables el grado de depuración actual y el estado de las obras y de los permisos; si las depuradoras entrarán en servicio en 2026 es una cuestión todavía abierta.",
+      "evidencia": {
+        "a_favor": [
+          "Los proyectos de las 2 depuradoras prevén tratar el 100 % del agua residual recogida por la red de saneamiento de la isla.",
+          "Ambas obras tienen fijado el final de la ejecución en diciembre de 2026."
+        ],
+        "en_contra": [
+          "En 2025 se depuró con tratamiento secundario el 78,4 % del agua residual recogida por la red de saneamiento.",
+          "A 30 de junio de 2026, las obras estaban ejecutadas al 82 % y al 64 %, y la entrada en servicio exige además superar las pruebas de funcionamiento.",
+          "Las autorizaciones de vertido de ambas depuradoras siguen en tramitación, sin resolución a la fecha de esta verificación."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Cabildo insular",
+          "titulo": "Informe de seguimiento de las obras de depuración de la isla",
+          "url": "https://example.org/fuentes/cabildo-insular-informe-de-seguimiento-de-las",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-07-06"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Censo de vertidos y depuración de aguas residuales urbanas",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-censo-de-vertidos-y",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-07-06"
+        },
+        {
+          "organismo": "Boletín Oficial de Canarias",
+          "titulo": "Anuncios de información pública de las solicitudes de autorización de vertido",
+          "url": "https://example.org/fuentes/boletin-oficial-de-canarias-anuncios-de-informacion",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-07-07"
+        }
+      ],
+      "metodo": {
+        "indicador": "Porcentaje de agua residual depurada con tratamiento secundario y grado de ejecución de las obras",
+        "definicion": "Volumen de agua residual recogido por la red de saneamiento que recibe tratamiento secundario o más riguroso, dividido entre el volumen total recogido en el año. El grado de ejecución es el de la certificación de obra más reciente.",
+        "serie": "Serie anual, 2019 a 2025, y certificaciones mensuales de obra, enero a junio de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0010"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-07-04",
+        "respuesta": "La persona emisora respondió el 6 de julio de 2026 que el calendario de las obras se mantiene y que las autorizaciones de vertido se esperan para el otoño."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0011",
+      "ejemplo": true,
+      "titular": "Las plazas públicas de residencia para personas mayores en Canarias eran 8.240 a 30 de junio de 2026",
+      "resumen": "Según el Gobierno de Canarias y el IMSERSO, Canarias contaba con 8.240 plazas residenciales para personas mayores de titularidad pública o concertadas a 30 de junio de 2026. El total de plazas, incluidas las privadas sin financiación pública, era de 16.310.",
+      "calificacion": {
+        "valor": 1,
+        "etiqueta": "Falso"
+      },
+      "afirmacion": {
+        "texto": "Canarias tiene ya más de 16.000 plazas públicas de residencia para personas mayores.",
+        "tipo_emisora": "Cargo público autonómico",
+        "fecha": "2026-07-16",
+        "canal": "Pleno del Parlamento de Canarias",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0011"
+      },
+      "materia": "Dependencia",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-07-22",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público hizo la afirmación en el Pleno del Parlamento de Canarias (vía de influenciabilidad), y se refiere a la capacidad del sistema público para atender a las personas mayores en situación de dependencia. El número de plazas por titularidad y financiación consta en los registros oficiales de centros.",
+      "evidencia": {
+        "a_favor": [],
+        "en_contra": [
+          "A 30 de junio de 2026 había 8.240 plazas residenciales para personas mayores de titularidad pública o concertadas, el 50,5 % del total.",
+          "El total de plazas, incluidas las privadas sin financiación pública, era de 16.310, una cifra cercana a la publicada."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Registro de centros y servicios sociales, plazas residenciales por titularidad",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-registro-de-centros-y",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-07-20"
+        },
+        {
+          "organismo": "IMSERSO",
+          "titulo": "Informe de servicios sociales para personas mayores por comunidad autónoma",
+          "url": "https://example.org/fuentes/imserso-informe-de-servicios-sociales-para-personas",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-07-20"
+        },
+        {
+          "organismo": "Parlamento de Canarias",
+          "titulo": "Diario de sesiones del Pleno",
+          "url": "https://example.org/fuentes/parlamento-de-canarias-diario-de-sesiones-del",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-07-17"
+        }
+      ],
+      "metodo": {
+        "indicador": "Plazas residenciales públicas para personas mayores",
+        "definicion": "Plazas autorizadas en centros residenciales para personas mayores de titularidad pública o con concierto o contrato con una administración pública en la fecha de corte. Las plazas privadas sin financiación pública se cuentan aparte.",
+        "serie": "Serie semestral, junio de 2020 a junio de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0011"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-07-17",
+        "respuesta": "La persona emisora respondió el 20 de julio de 2026 que la cifra incluía las plazas de todas las titularidades."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0012",
+      "ejemplo": true,
+      "titular": "En Gran Canaria se firmaron 74.600 contratos indefinidos en el primer semestre de 2026, el 40,9 % de los 182.400 registrados",
+      "resumen": "Según el Servicio Público de Empleo Estatal, en Gran Canaria se registraron 182.400 contratos en el primer semestre de 2026, de los que 74.600 fueron indefinidos, el 40,9 %. La proporción de 7 de cada 10 corresponde a otra medida, las personas asalariadas afiliadas con contrato indefinido, que eran el 70,8 % a 30 de junio de 2026 según el ISTAC.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "En Gran Canaria, 7 de cada 10 contratos firmados en el primer semestre ya son indefinidos.",
+        "tipo_emisora": "Cargo público insular",
+        "fecha": "2026-07-31",
+        "canal": "X",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0012"
+      },
+      "materia": "Empleo",
+      "isla": "Gran Canaria",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-08-05",
+      "via_entrada": [
+        "influenciabilidad",
+        "viralidad"
+      ],
+      "por_que": "La publicación de un cargo público insular tuvo amplia difusión (vías de influenciabilidad y viralidad) y presentó el dato como balance de la calidad del empleo en la isla. Las dos cifras que se mezclan, contratos firmados y personas asalariadas con contrato indefinido, se publican por separado y son verificables.",
+      "evidencia": {
+        "a_favor": [
+          "El 70,8 % de las personas asalariadas afiliadas en Gran Canaria tenía contrato indefinido a 30 de junio de 2026, una proporción cercana a 7 de cada 10."
+        ],
+        "en_contra": [
+          "De los 182.400 contratos registrados en Gran Canaria en el primer semestre de 2026, 74.600 fueron indefinidos, el 40,9 %.",
+          "La proporción de personas con contrato indefinido mide quién tiene ese contrato en una fecha, y no qué parte de los contratos nuevos es indefinida."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "SEPE",
+          "titulo": "Estadística de contratos registrados por municipio y modalidad",
+          "url": "https://example.org/fuentes/sepe-estadistica-de-contratos-registrados-por-municipio",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-03"
+        },
+        {
+          "organismo": "ISTAC",
+          "titulo": "Afiliación a la Seguridad Social por isla y tipo de contrato",
+          "url": "https://example.org/fuentes/istac-afiliacion-a-la-seguridad-social-por",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-03"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Informe mensual del mercado de trabajo por isla",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-informe-mensual-del-mercado",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-08-04"
+        }
+      ],
+      "metodo": {
+        "indicador": "Proporción de contratos indefinidos sobre el total de contratos registrados",
+        "definicion": "Contratos indefinidos, incluidos los fijos discontinuos, comunicados a los servicios públicos de empleo con centro de trabajo en Gran Canaria, divididos entre el total de contratos registrados en el periodo.",
+        "serie": "Serie mensual, enero de 2019 a junio de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0012"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-08-01",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0013",
+      "ejemplo": true,
+      "titular": "En un municipio de Tenerife, las ayudas al alquiler llegaron a 1.250 unidades de convivencia en 2026, frente a 410 en 2025, con una cuantía media anual que bajó de 1.980 a 1.120 euros",
+      "resumen": "Según las resoluciones de la convocatoria municipal, 1.250 unidades de convivencia recibieron ayuda al alquiler en 2026, frente a 410 en 2025. El presupuesto pasó de 811.800 euros a 1,4 millones, y la cuantía media anual por ayuda bajó de 1.980 a 1.120 euros, un 43,4 % menos.",
+      "calificacion": {
+        "valor": 3,
+        "etiqueta": "Contexto"
+      },
+      "afirmacion": {
+        "texto": "Este año hemos concedido ayudas al alquiler a 1.250 familias del municipio, el triple que el año pasado.",
+        "tipo_emisora": "Cargo público municipal",
+        "fecha": "2026-08-07",
+        "canal": "Rueda de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0013"
+      },
+      "materia": "Vivienda",
+      "isla": "Tenerife",
+      "ambito": "Municipal",
+      "fecha_publicacion": "2026-08-12",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público municipal hizo el anuncio en rueda de prensa (vía de influenciabilidad), y se refiere a una ayuda de la que depende el pago de la vivienda de cientos de hogares del municipio. El número de ayudas, su importe y el presupuesto figuran en las resoluciones publicadas.",
+      "evidencia": {
+        "a_favor": [
+          "Las ayudas concedidas pasaron de 410 en 2025 a 1.250 en 2026, algo más del triple."
+        ],
+        "en_contra": [
+          "La cuantía media anual por ayuda bajó de 1.980 euros en 2025 a 1.120 euros en 2026, un 43,4 % menos.",
+          "El presupuesto total creció un 72,5 %, de 811.800 euros a 1,4 millones, menos que el número de ayudas."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Ayuntamiento",
+          "titulo": "Resoluciones de concesión de la convocatoria municipal de ayudas al alquiler",
+          "url": "https://example.org/fuentes/ayuntamiento-resoluciones-de-concesion-de-la-convocatoria",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-10"
+        },
+        {
+          "organismo": "Ayuntamiento",
+          "titulo": "Bases de la convocatoria de ayudas al alquiler de vivienda habitual",
+          "url": "https://example.org/fuentes/ayuntamiento-bases-de-la-convocatoria-de-ayudas",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-10"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Programa autonómico de ayudas al alquiler, distribución por municipios",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-programa-autonomico-de-ayudas",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-08-11"
+        }
+      ],
+      "metodo": {
+        "indicador": "Ayudas al alquiler concedidas y cuantía media",
+        "definicion": "Unidades de convivencia con resolución de concesión en la convocatoria anual, y cociente entre el importe total concedido y el número de ayudas.",
+        "serie": "Serie anual por convocatoria, 2022 a 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0013"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-08-08",
+        "respuesta": "La persona emisora respondió el 10 de agosto de 2026 que la convocatoria de 2026 redujo la cuantía máxima para llegar a más hogares."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0014",
+      "ejemplo": true,
+      "titular": "En un municipio de Gran Canaria había 8 centros de servicios sociales a 31 de julio de 2026, uno por cada 10.700 habitantes, y 2 de los 3 abiertos ese año atienden dos días a la semana",
+      "resumen": "Según el registro de centros de servicios sociales del Gobierno de Canarias y el padrón municipal del INE a 1 de enero de 2025, el municipio cuenta con 8 centros de servicios sociales para 85.600 habitantes, uno por cada 10.700. Dos de los tres centros abiertos en 2026 atienden al público solo dos días a la semana.",
+      "calificacion": {
+        "valor": 3,
+        "etiqueta": "Contexto"
+      },
+      "afirmacion": {
+        "texto": "Con los 3 centros abiertos este año ya tenemos un centro de servicios sociales por cada 10.000 habitantes.",
+        "tipo_emisora": "Cargo público municipal",
+        "fecha": "2026-08-14",
+        "canal": "Instagram",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0014"
+      },
+      "materia": "Servicios sociales",
+      "isla": "Gran Canaria",
+      "ambito": "Municipal",
+      "fecha_publicacion": "2026-08-20",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "La afirmación de un cargo público municipal (vía de influenciabilidad) se refiere a la red de atención primaria de servicios sociales, la puerta de entrada al sistema. Son verificables el número de centros, su horario de atención y la población empadronada.",
+      "evidencia": {
+        "a_favor": [
+          "El municipio tiene 8 centros de servicios sociales en funcionamiento, 3 de ellos abiertos en 2026, para 85.600 habitantes según el padrón a 1 de enero de 2025.",
+          "La proporción es de un centro por cada 10.700 habitantes, cercana a la afirmada."
+        ],
+        "en_contra": [
+          "Dos de los tres centros abiertos en 2026 atienden al público dos días a la semana, de modo que la atención presencial no ha crecido en la misma proporción que el número de centros.",
+          "El personal de trabajo social es de 18 personas a 31 de julio de 2026, 2,1 por cada 10.000 habitantes, la misma cifra que un año antes."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Registro de centros y servicios sociales, red de atención primaria por municipio",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-registro-de-centros-y",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-17"
+        },
+        {
+          "organismo": "INE",
+          "titulo": "Padrón municipal de habitantes, cifras oficiales de población",
+          "url": "https://example.org/fuentes/ine-padron-municipal-de-habitantes-cifras-oficiales",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-17"
+        },
+        {
+          "organismo": "Ayuntamiento",
+          "titulo": "Horarios de atención de los centros municipales de servicios sociales",
+          "url": "https://example.org/fuentes/ayuntamiento-horarios-de-atencion-de-los-centros",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-18"
+        }
+      ],
+      "metodo": {
+        "indicador": "Habitantes por centro de servicios sociales",
+        "definicion": "Población empadronada a 1 de enero de 2025 dividida entre los centros de atención primaria de servicios sociales en funcionamiento a 31 de julio de 2026, incluidas las unidades de trabajo social de zona.",
+        "serie": "Corte a 31 de julio de 2026 y serie anual de centros, 2020 a 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0014"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-08-15",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [
+        {
+          "fecha": "2026-08-27",
+          "tipo": "correccion",
+          "nota": "Se corrigió el número de centros de servicios sociales en funcionamiento, que es 8 y no 6: la primera versión no contó 2 centros que el registro autonómico clasifica como unidades de trabajo social de zona. Con 8 centros hay uno por cada 10.700 habitantes, y no uno por cada 14.267. La calificación cambia de Engañoso a Contexto, porque la proporción se aproxima a la afirmada, aunque 2 de los 3 centros nuevos atienden solo dos días a la semana.",
+          "cambia_calificacion": true,
+          "calificacion_anterior": {
+            "valor": 2,
+            "etiqueta": "Engañoso"
+          },
+          "version_original_pdf": "https://example.org/versiones/OV-2026-0014-v1.pdf"
+        }
+      ],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0015",
+      "ejemplo": true,
+      "titular": "Las ayudas de comedor escolar concedidas en Canarias para el curso 2026-2027 son 76.050 en la resolución provisional, 1.740 más que en el curso 2025-2026",
+      "resumen": "Según la resolución provisional de la Consejería de Educación del Gobierno de Canarias, 76.050 estudiantes tienen concedida ayuda de comedor para el curso 2026-2027, frente a 74.310 en el curso 2025-2026, un 2,3 % más. Las solicitudes denegadas fueron 21.400, frente a 22.100 el curso anterior.",
+      "calificacion": {
+        "valor": 1,
+        "etiqueta": "Falso"
+      },
+      "afirmacion": {
+        "texto": "Este curso han quitado más de 20.000 becas de comedor en Canarias.",
+        "tipo_emisora": "Cuenta en redes con gran alcance",
+        "fecha": "2026-08-24",
+        "canal": "TikTok",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0015"
+      },
+      "materia": "Educación",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-08-27",
+      "via_entrada": [
+        "viralidad",
+        "peligrosidad"
+      ],
+      "por_que": "El vídeo superó las 300.000 reproducciones en tres días (vía de viralidad) y podía llevar a familias con derecho a la ayuda a no presentar alegaciones en plazo (vía de peligrosidad). El número de ayudas concedidas y denegadas consta en las resoluciones de cada convocatoria.",
+      "evidencia": {
+        "a_favor": [],
+        "en_contra": [
+          "La resolución provisional del curso 2026-2027 concede 76.050 ayudas de comedor, 1.740 más que las 74.310 del curso 2025-2026.",
+          "Las solicitudes denegadas en la resolución provisional fueron 21.400, una cifra cercana a la publicada pero inferior a las 22.100 del curso anterior, y corresponden a solicitudes que no cumplían los requisitos, no a ayudas retiradas."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Resolución provisional de ayudas de comedor escolar, curso 2026-2027",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-resolucion-provisional-de-ayudas",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-25"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Resolución definitiva de ayudas de comedor escolar, curso 2025-2026",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-resolucion-definitiva-de-ayudas",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-25"
+        },
+        {
+          "organismo": "Boletín Oficial de Canarias",
+          "titulo": "Convocatoria de ayudas de comedor escolar para el curso 2026-2027",
+          "url": "https://example.org/fuentes/boletin-oficial-de-canarias-convocatoria-de-ayudas",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-08-26"
+        }
+      ],
+      "metodo": {
+        "indicador": "Ayudas de comedor escolar concedidas",
+        "definicion": "Estudiantes de centros públicos con resolución de concesión de ayuda total o parcial para el servicio de comedor, según la resolución de cada convocatoria.",
+        "serie": "Serie anual por curso, 2019-2020 a 2026-2027 (provisional)",
+        "codigo_url": "https://example.org/codigo/OV-2026-0015"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": false,
+        "fecha_solicitud": null,
+        "respuesta": "No procede, porque la cuenta es anónima y no ofrece ninguna vía de contacto"
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0016",
+      "ejemplo": true,
+      "titular": "La ganancia media anual de las mujeres en Canarias fue de 20.650 euros en 2024, un 14,6 % menos que la de los hombres, que fue de 24.180 euros",
+      "resumen": "Según la Encuesta anual de estructura salarial del INE, la ganancia media anual por persona trabajadora en Canarias fue de 20.650 euros para las mujeres y de 24.180 euros para los hombres en 2024. La diferencia, de 3.530 euros, equivale al 14,6 %.",
+      "calificacion": {
+        "valor": 4,
+        "etiqueta": "Verdadero"
+      },
+      "afirmacion": {
+        "texto": "Las mujeres en Canarias siguen cobrando de media casi un 15 % menos que los hombres.",
+        "tipo_emisora": "Organización social",
+        "fecha": "2026-08-29",
+        "canal": "Entrevista en radio",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0016"
+      },
+      "materia": "Igualdad",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-09-03",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Una organización social hizo la afirmación en una entrevista de radio de alcance autonómico (vía de influenciabilidad), y se refiere a la desigualdad salarial entre mujeres y hombres. Es verificable con la última edición de la encuesta oficial de salarios, que se refiere a 2024.",
+      "evidencia": {
+        "a_favor": [
+          "La ganancia media anual de las mujeres fue un 14,6 % inferior a la de los hombres en Canarias en 2024, un dato que redondeado se corresponde con casi un 15 %.",
+          "La diferencia fue de 3.530 euros al año por persona trabajadora."
+        ],
+        "en_contra": []
+      },
+      "fuentes": [
+        {
+          "organismo": "INE",
+          "titulo": "Encuesta anual de estructura salarial, resultados por comunidad autónoma",
+          "url": "https://example.org/fuentes/ine-encuesta-anual-de-estructura-salarial-resultados",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-01"
+        },
+        {
+          "organismo": "ISTAC",
+          "titulo": "Salarios y ganancia media en Canarias por sexo",
+          "url": "https://example.org/fuentes/istac-salarios-y-ganancia-media-en-canarias",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-01"
+        },
+        {
+          "organismo": "Instituto Canario de Igualdad",
+          "titulo": "Indicadores de igualdad entre mujeres y hombres en Canarias",
+          "url": "https://example.org/fuentes/instituto-canario-de-igualdad-indicadores-de-igualdad",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-09-02"
+        }
+      ],
+      "metodo": {
+        "indicador": "Brecha de género en la ganancia media anual",
+        "definicion": "Diferencia entre la ganancia media anual bruta por persona trabajadora de los hombres y la de las mujeres, dividida entre la de los hombres.",
+        "serie": "Serie anual, 2008 a 2024",
+        "codigo_url": "https://example.org/codigo/OV-2026-0016"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-08-30",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0017",
+      "ejemplo": true,
+      "titular": "El consultorio de La Graciosa tuvo personal médico presencial 141 de los 181 días del primer semestre de 2026, el 77,9 %, y personal de enfermería todos los días",
+      "resumen": "Según el Servicio Canario de la Salud, el consultorio de La Graciosa contó con personal médico presencial 141 de los 181 días del primer semestre de 2026. Los 40 días restantes hubo personal de enfermería presencial y consulta médica a distancia con el centro de salud de referencia.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "La Graciosa tiene médico en el consultorio todos los días del año.",
+        "tipo_emisora": "Cargo público municipal",
+        "fecha": "2026-09-04",
+        "canal": "Nota de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0017"
+      },
+      "materia": "Sanidad",
+      "isla": "La Graciosa",
+      "ambito": "Municipal",
+      "fecha_publicacion": "2026-09-09",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "La nota de un cargo público municipal (vía de influenciabilidad) se refiere al acceso a la atención sanitaria en la isla menos poblada del archipiélago, que depende del transporte marítimo para cualquier derivación. La presencia diaria de personal sanitario consta en los cuadrantes del Servicio Canario de la Salud.",
+      "evidencia": {
+        "a_favor": [
+          "El consultorio tuvo atención sanitaria presencial todos los días del primer semestre de 2026, con personal de enfermería los 181 días."
+        ],
+        "en_contra": [
+          "Hubo personal médico presencial 141 de los 181 días del primer semestre de 2026, el 77,9 %.",
+          "Los 40 días sin personal médico presencial, la atención médica se prestó por teleconsulta desde el centro de salud de referencia."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Servicio Canario de la Salud",
+          "titulo": "Cuadrantes de cobertura de los consultorios locales de la zona básica de salud",
+          "url": "https://example.org/fuentes/servicio-canario-de-la-salud-cuadrantes-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-07"
+        },
+        {
+          "organismo": "Servicio Canario de la Salud",
+          "titulo": "Memoria de actividad de atención primaria del área de salud de Lanzarote",
+          "url": "https://example.org/fuentes/servicio-canario-de-la-salud-memoria-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-07"
+        },
+        {
+          "organismo": "Parlamento de Canarias",
+          "titulo": "Respuesta del Gobierno a una pregunta escrita sobre la cobertura sanitaria en La Graciosa",
+          "url": "https://example.org/fuentes/parlamento-de-canarias-respuesta-del-gobierno-a",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-09-08"
+        }
+      ],
+      "metodo": {
+        "indicador": "Días con personal médico presencial en el consultorio",
+        "definicion": "Días naturales en los que el cuadrante registra al menos una jornada de personal médico en el consultorio local, sobre el total de días del periodo.",
+        "serie": "Serie diaria agregada por semestre, primer semestre de 2024 a primer semestre de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0017"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-09-05",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0018",
+      "ejemplo": true,
+      "titular": "La prestación canaria de inserción puede solicitarse todo el año, y entre enero y agosto de 2026 se registraron 10.360 solicitudes",
+      "resumen": "Según el Gobierno de Canarias, la prestación canaria de inserción puede solicitarse en cualquier momento del año en los servicios sociales del municipio de residencia, sin plazo de cierre. Entre enero y agosto de 2026 se registraron 10.360 solicitudes, presentadas en todos los meses del periodo.",
+      "calificacion": {
+        "valor": 1,
+        "etiqueta": "Falso"
+      },
+      "afirmacion": {
+        "texto": "URGENTE. El viernes 18 termina el plazo para pedir la prestación canaria de inserción. Quien no la solicite antes se queda sin ella hasta el año que viene. Pásalo.",
+        "tipo_emisora": "Mensaje en cadena de autoría desconocida",
+        "fecha": "2026-09-15",
+        "canal": "WhatsApp",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0018"
+      },
+      "materia": "Pobreza y exclusión",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-09-16",
+      "via_entrada": [
+        "viralidad",
+        "peligrosidad"
+      ],
+      "por_que": "El mensaje circuló de forma masiva por WhatsApp (vía de viralidad) y podía provocar que personas con derecho a la prestación acudieran a la vez a los servicios sociales o dieran por perdida la posibilidad de solicitarla (vía de peligrosidad), por lo que se tramitó por la vía de emergencia. Son verificables la existencia de un plazo en la normativa y en las convocatorias, y el registro mensual de solicitudes.",
+      "evidencia": {
+        "a_favor": [],
+        "en_contra": [
+          "La normativa autonómica de la prestación no fija ningún plazo de solicitud: se puede pedir en cualquier momento del año en los servicios sociales del municipio de residencia.",
+          "Entre enero y agosto de 2026 se registraron 10.360 solicitudes, con un mínimo mensual de 1.120 en agosto.",
+          "El Gobierno de Canarias no ha publicado ninguna convocatoria ni resolución que establezca un plazo de cierre en septiembre de 2026."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Información sobre requisitos y solicitud de la prestación canaria de inserción",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-informacion-sobre-requisitos-y",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-15"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Estadística mensual de solicitudes y personas perceptoras de la prestación canaria de inserción",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-estadistica-mensual-de-solicitudes",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-15"
+        },
+        {
+          "organismo": "Boletín Oficial de Canarias",
+          "titulo": "Convocatorias y resoluciones sobre prestaciones de inserción publicadas en 2026",
+          "url": "https://example.org/fuentes/boletin-oficial-de-canarias-convocatorias-y-resoluciones",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-16"
+        }
+      ],
+      "metodo": {
+        "indicador": "Solicitudes registradas de la prestación canaria de inserción",
+        "definicion": "Solicitudes presentadas en los servicios sociales municipales y registradas en el sistema autonómico en cada mes, con independencia de su resolución, y revisión de la normativa y de las convocatorias publicadas en 2026.",
+        "serie": "Serie mensual, enero de 2023 a agosto de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0018"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": false,
+        "fecha_solicitud": null,
+        "respuesta": "No procede, porque la autoría del mensaje es desconocida"
+      },
+      "correcciones": [],
+      "emergencia": true
+    },
+    {
+      "id": "OV-2026-0019",
+      "ejemplo": true,
+      "titular": "En El Hierro, el grado de dependencia se resolvió en 124 días de media en el primer semestre de 2026, frente a 252 en Canarias, pero recibir la prestación llevó 414 días desde la solicitud",
+      "resumen": "Según el Gobierno de Canarias, las 186 resoluciones de grado de dependencia dictadas para personas de El Hierro en el primer semestre de 2026 tardaron 124 días de media desde la solicitud, frente a 252 en el conjunto de Canarias. El tiempo medio hasta recibir la prestación o el servicio fue de 414 días en la isla y de 523 en Canarias.",
+      "calificacion": {
+        "valor": 3,
+        "etiqueta": "Contexto"
+      },
+      "afirmacion": {
+        "texto": "En El Hierro resolvemos la dependencia en 4 meses, la mitad que en el resto de Canarias.",
+        "tipo_emisora": "Cargo público insular",
+        "fecha": "2026-09-17",
+        "canal": "Entrevista en radio",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0019"
+      },
+      "materia": "Dependencia",
+      "isla": "El Hierro",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-09-22",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público insular hizo la afirmación en una entrevista de radio (vía de influenciabilidad), y se refiere al tiempo que esperan las personas en situación de dependencia para acceder a sus derechos. Los plazos de cada fase del procedimiento se publican por isla.",
+      "evidencia": {
+        "a_favor": [
+          "El plazo medio de resolución del grado fue de 124 días en El Hierro y de 252 en Canarias en el primer semestre de 2026, aproximadamente la mitad."
+        ],
+        "en_contra": [
+          "La resolución del grado es la primera fase del procedimiento: el tiempo medio hasta recibir la prestación o el servicio fue de 414 días en El Hierro en el mismo semestre.",
+          "La cifra insular se calcula sobre 186 resoluciones, por lo que varía mucho de un semestre a otro: en el segundo semestre de 2025 fue de 171 días."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Plazos de tramitación del procedimiento de dependencia por isla y fase",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-plazos-de-tramitacion-del",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-21"
+        },
+        {
+          "organismo": "IMSERSO",
+          "titulo": "Estadística mensual del sistema para la autonomía y atención a la dependencia",
+          "url": "https://example.org/fuentes/imserso-estadistica-mensual-del-sistema-para-la",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-21"
+        },
+        {
+          "organismo": "Cabildo insular",
+          "titulo": "Memoria de los servicios sociales insulares",
+          "url": "https://example.org/fuentes/cabildo-insular-memoria-de-los-servicios-sociales",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-09-21"
+        }
+      ],
+      "metodo": {
+        "indicador": "Días entre la solicitud y la resolución de grado, y entre la solicitud y la prestación efectiva",
+        "definicion": "Media de días naturales entre la fecha de registro de la solicitud y la de la resolución de grado, y entre la solicitud y el inicio de la prestación o el servicio, para los expedientes resueltos en el semestre.",
+        "serie": "Serie semestral, primer semestre de 2022 a primer semestre de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0019"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-09-18",
+        "respuesta": "La persona emisora respondió el 19 de septiembre de 2026 que se refería solo a la resolución del grado, que es la fase en la que interviene el Cabildo insular."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0020",
+      "ejemplo": true,
+      "titular": "En un municipio de Lanzarote había 4.820 viviendas vacacionales inscritas a 30 de junio de 2026, y 6.940 hogares residían de alquiler según el Censo de 2021",
+      "resumen": "Según el registro turístico del Gobierno de Canarias, el municipio tenía 4.820 viviendas vacacionales inscritas a 30 de junio de 2026, y según el Censo de población y viviendas de 2021 del INE, 6.940 hogares residían en una vivienda alquilada. La cifra de 3.100 corresponde a los contratos de alquiler con fianza depositada en 2025.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "En este municipio ya hay más viviendas vacacionales que viviendas alquiladas a residentes: 4.800 frente a 3.100.",
+        "tipo_emisora": "Cuenta en redes sin relevancia pública",
+        "fecha": "2026-09-22",
+        "canal": "Instagram",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0020"
+      },
+      "materia": "Vivienda",
+      "isla": "Lanzarote",
+      "ambito": "Municipal",
+      "fecha_publicacion": "2026-09-25",
+      "via_entrada": [
+        "viralidad"
+      ],
+      "por_que": "La publicación se compartió ampliamente en grupos vecinales de la isla (vía de viralidad) y aborda la competencia entre el uso turístico y el residencial de la vivienda. Las dos cifras comparadas proceden de registros distintos y son verificables.",
+      "evidencia": {
+        "a_favor": [
+          "El municipio tenía 4.820 viviendas vacacionales inscritas a 30 de junio de 2026, en línea con la cifra publicada."
+        ],
+        "en_contra": [
+          "La cifra de 3.100 corresponde a los contratos de alquiler con fianza depositada durante 2025, no al número de viviendas alquiladas a residentes.",
+          "Según el Censo de 2021, 6.940 hogares del municipio residían en una vivienda alquilada."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Registro general turístico, viviendas vacacionales por municipio",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-registro-general-turistico-viviendas",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-23"
+        },
+        {
+          "organismo": "INE",
+          "titulo": "Censo de población y viviendas, hogares por régimen de tenencia",
+          "url": "https://example.org/fuentes/ine-censo-de-poblacion-y-viviendas-hogares",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-23"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Estadística de fianzas de contratos de arrendamiento depositadas",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-estadistica-de-fianzas-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-24"
+        }
+      ],
+      "metodo": {
+        "indicador": "Viviendas vacacionales inscritas y hogares en alquiler",
+        "definicion": "Viviendas inscritas en el registro turístico en la modalidad de vivienda vacacional a la fecha de corte, comparadas con los hogares cuya vivienda principal es de alquiler según el censo, que es la fuente más reciente sobre el parque alquilado y se refiere a 2021.",
+        "serie": "Corte a 30 de junio de 2026 (registro turístico) y Censo de 2021",
+        "codigo_url": "https://example.org/codigo/OV-2026-0020"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": false,
+        "fecha_solicitud": null,
+        "respuesta": "No procede, porque la cuenta es anónima y no ofrece ninguna vía de contacto"
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0021",
+      "ejemplo": true,
+      "titular": "El paro registrado de las personas menores de 25 años en Fuerteventura bajó un 4,8 % en un año, de 1.118 en agosto de 2025 a 1.064 en agosto de 2026",
+      "resumen": "Según el Servicio Público de Empleo Estatal, el paro registrado de las personas menores de 25 años en Fuerteventura fue de 1.064 en agosto de 2026, frente a 1.118 en agosto de 2025, un 4,8 % menos. En los últimos 24 meses, la mayor subida interanual fue del 6,2 %, en marzo de 2025.",
+      "calificacion": {
+        "valor": 1,
+        "etiqueta": "Falso"
+      },
+      "afirmacion": {
+        "texto": "El paro entre los menores de 25 años se dispara un 40 % en Fuerteventura en el último año.",
+        "tipo_emisora": "Medio de comunicación digital",
+        "fecha": "2026-09-25",
+        "canal": "Facebook",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0021"
+      },
+      "materia": "Empleo",
+      "isla": "Fuerteventura",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-09-30",
+      "via_entrada": [
+        "viralidad"
+      ],
+      "por_que": "La noticia se compartió en redes más de 4.000 veces (vía de viralidad) y se refiere a la situación laboral de la población joven de la isla. La variación interanual es verificable con la serie mensual de paro registrado por edad e isla.",
+      "evidencia": {
+        "a_favor": [],
+        "en_contra": [
+          "El paro registrado de las personas menores de 25 años bajó de 1.118 a 1.064 entre agosto de 2025 y agosto de 2026, un 4,8 %.",
+          "Ninguna variación interanual de los últimos 24 meses se acerca al 40 %: la mayor subida fue del 6,2 %, en marzo de 2025."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "SEPE",
+          "titulo": "Paro registrado por municipio, sexo y edad, serie mensual",
+          "url": "https://example.org/fuentes/sepe-paro-registrado-por-municipio-sexo-y",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-28"
+        },
+        {
+          "organismo": "ISTAC",
+          "titulo": "Paro registrado por isla y grupo de edad",
+          "url": "https://example.org/fuentes/istac-paro-registrado-por-isla-y-grupo",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-28"
+        }
+      ],
+      "metodo": {
+        "indicador": "Paro registrado de personas menores de 25 años",
+        "definicion": "Demandas de empleo pendientes el último día del mes de personas de 16 a 24 años con domicilio en Fuerteventura, según los criterios del SEPE, y su variación respecto al mismo mes del año anterior.",
+        "serie": "Serie mensual, enero de 2019 a agosto de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0021"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-09-26",
+        "respuesta": "El medio emisor respondió el 28 de septiembre de 2026 que había comparado dos meses consecutivos y que añadiría una aclaración a la noticia."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0022",
+      "ejemplo": true,
+      "titular": "Las autorizaciones de residencia por arraigo se resolvieron en Canarias en 147 días de media en el primer semestre de 2026, 57 más que el plazo máximo de 90 días",
+      "resumen": "Según la estadística del Ministerio de Inclusión, Seguridad Social y Migraciones, las 3.860 autorizaciones de residencia por arraigo resueltas en las dos provincias canarias en el primer semestre de 2026 tardaron 147 días de media, unos 4,8 meses. El plazo máximo de resolución que fija la normativa es de 3 meses.",
+      "calificacion": {
+        "valor": 4,
+        "etiqueta": "Verdadero"
+      },
+      "afirmacion": {
+        "texto": "En Canarias, una autorización de residencia por arraigo tarda de media casi cinco meses en resolverse, dos más que el plazo legal.",
+        "tipo_emisora": "Organización social",
+        "fecha": "2026-09-28",
+        "canal": "Nota de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0022"
+      },
+      "materia": "Migraciones",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-10-01",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "La nota de una organización social con presencia en todas las islas (vía de influenciabilidad) se refiere a un trámite del que depende el acceso al empleo y a los servicios de miles de personas. Son verificables el plazo medio de resolución y el plazo máximo que fija la normativa.",
+      "evidencia": {
+        "a_favor": [
+          "Las 3.860 autorizaciones de residencia por arraigo resueltas en Canarias en el primer semestre de 2026 tardaron 147 días de media, casi cinco meses.",
+          "El plazo máximo de resolución que fija la normativa estatal de extranjería es de 3 meses, de modo que la media lo supera en 57 días, casi dos meses."
+        ],
+        "en_contra": []
+      },
+      "fuentes": [
+        {
+          "organismo": "Ministerio de Inclusión, Seguridad Social y Migraciones",
+          "titulo": "Estadística de autorizaciones de residencia resueltas por provincia, tipo y plazo",
+          "url": "https://example.org/fuentes/ministerio-de-inclusion-seguridad-social-y-migraciones",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-29"
+        },
+        {
+          "organismo": "Ministerio de Inclusión, Seguridad Social y Migraciones",
+          "titulo": "Información sobre plazos máximos de resolución de las autorizaciones de residencia",
+          "url": "https://example.org/fuentes/ministerio-de-inclusion-seguridad-social-y-migraciones-2",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-29"
+        }
+      ],
+      "metodo": {
+        "indicador": "Días entre la solicitud y la resolución de las autorizaciones de residencia por arraigo",
+        "definicion": "Media de días naturales entre la presentación de la solicitud y la notificación de la resolución, favorable o no, para los expedientes resueltos en el semestre en las oficinas de extranjería de las dos provincias canarias.",
+        "serie": "Serie semestral, primer semestre de 2022 a primer semestre de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0022"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-09-28",
+        "respuesta": "La organización emisora respondió el 30 de septiembre de 2026 que la cifra procedía de la estadística semestral del ministerio."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0023",
+      "ejemplo": true,
+      "titular": "En un municipio de La Palma, las ayudas de emergencia social llegaron a 604 unidades de convivencia entre enero y agosto de 2026, un 32,7 % más que en el mismo periodo de 2025",
+      "resumen": "Según el registro municipal de prestaciones, entre enero y agosto de 2026 se concedieron 912 ayudas de emergencia social a 604 unidades de convivencia, frente a 598 ayudas y 455 unidades de convivencia en el mismo periodo de 2025. La cifra de 900 corresponde a las ayudas concedidas, no a los hogares atendidos.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "Hemos atendido a 900 familias con ayudas de emergencia social este año, un 50 % más que el año pasado.",
+        "tipo_emisora": "Cargo público municipal",
+        "fecha": "2026-09-28",
+        "canal": "Rueda de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0023"
+      },
+      "materia": "Pobreza y exclusión",
+      "isla": "La Palma",
+      "ambito": "Municipal",
+      "fecha_publicacion": "2026-10-02",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público municipal presentó el dato en rueda de prensa como balance de la atención a hogares en situación de vulnerabilidad económica (vía de influenciabilidad). El número de ayudas y el de unidades de convivencia beneficiarias figuran en el registro municipal y en la memoria remitida al Gobierno de Canarias.",
+      "evidencia": {
+        "a_favor": [
+          "Entre enero y agosto de 2026 se concedieron 912 ayudas de emergencia social, un 52,5 % más que las 598 del mismo periodo de 2025."
+        ],
+        "en_contra": [
+          "Las 912 ayudas se concedieron a 604 unidades de convivencia, porque 211 de ellas recibieron más de una ayuda en el periodo.",
+          "El número de unidades de convivencia atendidas creció un 32,7 %, de 455 a 604."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Ayuntamiento",
+          "titulo": "Registro municipal de prestaciones económicas de emergencia social",
+          "url": "https://example.org/fuentes/ayuntamiento-registro-municipal-de-prestaciones-economicas-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-30"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Memoria de prestaciones económicas de los servicios sociales municipales",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-memoria-de-prestaciones-economicas",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-09-30"
+        }
+      ],
+      "metodo": {
+        "indicador": "Ayudas de emergencia social y unidades de convivencia beneficiarias",
+        "definicion": "Ayudas económicas de emergencia social con resolución de concesión entre el 1 de enero y el 31 de agosto, y unidades de convivencia distintas que recibieron al menos una en ese periodo.",
+        "serie": "Serie anual de enero a agosto, 2022 a 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0023"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-09-29",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0024",
+      "ejemplo": true,
+      "titular": "La atención primaria de Canarias incorporó 207 profesionales de medicina de familia entre enero y agosto de 2026, pero 159 causaron baja, con un aumento neto de 48",
+      "resumen": "Según el Servicio Canario de la Salud, entre enero y agosto de 2026 se incorporaron 207 profesionales de medicina de familia a la atención primaria y causaron baja 159, sobre todo por jubilación. La plantilla en activo pasó de 1.642 a 1.690 profesionales, un 2,9 % más.",
+      "calificacion": {
+        "valor": 3,
+        "etiqueta": "Contexto"
+      },
+      "afirmacion": {
+        "texto": "Este año se han incorporado 210 profesionales de medicina de familia a la atención primaria canaria.",
+        "tipo_emisora": "Cargo público autonómico",
+        "fecha": "2026-10-02",
+        "canal": "Rueda de prensa",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0024"
+      },
+      "materia": "Sanidad",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-10-07",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público autonómico presentó el dato en rueda de prensa como respuesta a la falta de profesionales en los centros de salud (vía de influenciabilidad). Las incorporaciones, las bajas y la plantilla en activo constan en los registros de personal del Servicio Canario de la Salud.",
+      "evidencia": {
+        "a_favor": [
+          "Entre enero y agosto de 2026 se incorporaron 207 profesionales de medicina de familia a la atención primaria, una cifra cercana a la afirmada."
+        ],
+        "en_contra": [
+          "En el mismo periodo causaron baja 159 profesionales, 112 de ellos por jubilación.",
+          "La plantilla en activo creció en 48 profesionales entre enero y agosto de 2026, un 2,9 %, de 1.642 a 1.690."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Servicio Canario de la Salud",
+          "titulo": "Plantilla de atención primaria por categoría profesional, corte mensual",
+          "url": "https://example.org/fuentes/servicio-canario-de-la-salud-plantilla-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-05"
+        },
+        {
+          "organismo": "Servicio Canario de la Salud",
+          "titulo": "Movimientos de personal: incorporaciones y bajas por categoría",
+          "url": "https://example.org/fuentes/servicio-canario-de-la-salud-movimientos-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-05"
+        },
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Nota de prensa sobre la incorporación de profesionales a la atención primaria",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-nota-de-prensa-sobre",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-10-02"
+        }
+      ],
+      "metodo": {
+        "indicador": "Incorporaciones, bajas y plantilla en activo de medicina de familia",
+        "definicion": "Nombramientos con toma de posesión en plazas de medicina familiar y comunitaria de atención primaria, bajas definitivas por cualquier causa y profesionales en activo el último día del periodo.",
+        "serie": "Serie mensual, enero de 2022 a agosto de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0024"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-10-03",
+        "respuesta": "La persona emisora respondió el 5 de octubre de 2026 que la cifra se refería a las incorporaciones y que las bajas por jubilación estaban previstas."
+      },
+      "correcciones": [
+        {
+          "fecha": "2026-10-28",
+          "tipo": "actualizacion",
+          "nota": "Se actualizó la verificación con los datos a 30 de septiembre de 2026, publicados por el Servicio Canario de la Salud el 26 de octubre: entre enero y septiembre se incorporaron 216 profesionales y causaron baja 171, con un aumento neto de 45 y una plantilla en activo de 1.687. La calificación no cambia.",
+          "cambia_calificacion": false,
+          "version_original_pdf": "https://example.org/versiones/OV-2026-0024-v1.pdf"
+        }
+      ],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0025",
+      "ejemplo": true,
+      "titular": "En un municipio de Gran Canaria hay 486 plazas públicas de educación infantil de 0 a 3 años en el curso 2026-2027",
+      "resumen": "Según el registro de centros docentes del Gobierno de Canarias y los datos de admisión del Ayuntamiento, el municipio cuenta con 486 plazas públicas de primer ciclo de educación infantil en el curso 2026-2027. El plan municipal fija como objetivo llegar a 1.000 plazas en el curso 2029-2030.",
+      "calificacion": {
+        "valor": 1,
+        "etiqueta": "Falso"
+      },
+      "afirmacion": {
+        "texto": "El municipio ofrece ya 1.000 plazas públicas de escuela infantil para la etapa de 0 a 3 años.",
+        "tipo_emisora": "Cargo público municipal",
+        "fecha": "2026-10-09",
+        "canal": "X",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0025"
+      },
+      "materia": "Educación",
+      "isla": "Gran Canaria",
+      "ambito": "Municipal",
+      "fecha_publicacion": "2026-10-14",
+      "via_entrada": [
+        "influenciabilidad",
+        "viralidad"
+      ],
+      "por_que": "La publicación de un cargo público municipal circuló en grupos de familias del municipio (vías de influenciabilidad y viralidad) y se refiere a un servicio con lista de espera del que dependen la conciliación y la escolarización temprana. Las plazas autorizadas constan en el registro de centros.",
+      "evidencia": {
+        "a_favor": [],
+        "en_contra": [
+          "En el curso 2026-2027 hay 486 plazas públicas de primer ciclo de educación infantil en el municipio: 398 en 5 escuelas infantiles municipales y 88 en aulas para 2 años de centros públicos.",
+          "El plan municipal de educación infantil fija el objetivo de 1.000 plazas para el curso 2029-2030.",
+          "La lista de espera del curso 2026-2027 era de 312 solicitudes a 30 de septiembre de 2026."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Registro de centros docentes, plazas autorizadas de primer ciclo de educación infantil",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-registro-de-centros-docentes",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-12"
+        },
+        {
+          "organismo": "Ayuntamiento",
+          "titulo": "Plan municipal de educación infantil de 0 a 3 años",
+          "url": "https://example.org/fuentes/ayuntamiento-plan-municipal-de-educacion-infantil-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-12"
+        },
+        {
+          "organismo": "Ayuntamiento",
+          "titulo": "Listados de admisión y lista de espera de las escuelas infantiles municipales, curso 2026-2027",
+          "url": "https://example.org/fuentes/ayuntamiento-listados-de-admision-y-lista-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-12"
+        }
+      ],
+      "metodo": {
+        "indicador": "Plazas públicas de primer ciclo de educación infantil",
+        "definicion": "Plazas autorizadas para 0 a 3 años en escuelas infantiles de titularidad municipal y en aulas para 2 años de centros públicos del municipio, en el curso de referencia.",
+        "serie": "Serie anual por curso, 2020-2021 a 2026-2027",
+        "codigo_url": "https://example.org/codigo/OV-2026-0025"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-10-10",
+        "respuesta": "La persona emisora respondió el 12 de octubre de 2026 que se refería al objetivo del plan municipal para el curso 2029-2030."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0026",
+      "ejemplo": true,
+      "titular": "La renta media de los nuevos contratos de alquiler en Canarias subió un 8,7 % en 2025, de 820 a 891 euros al mes, el doble que el coste salarial (4,3 %)",
+      "resumen": "Según la estadística de fianzas de arrendamiento del Gobierno de Canarias, la renta media de los nuevos contratos de alquiler de vivienda fue de 891 euros al mes en 2025, un 8,7 % más que en 2024. El coste salarial medio por persona trabajadora creció un 4,3 % en 2025 según el INE, de modo que la proporción del doble se cumple con la subida del 8,7 % y no con la del 12 %.",
+      "calificacion": {
+        "valor": 2,
+        "etiqueta": "Engañoso"
+      },
+      "afirmacion": {
+        "texto": "El alquiler ha subido un 12 % en Canarias en el último año, el doble que los salarios.",
+        "tipo_emisora": "Cargo público autonómico",
+        "fecha": "2026-10-12",
+        "canal": "Entrevista en radio",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0026"
+      },
+      "materia": "Vivienda",
+      "isla": "Canarias",
+      "ambito": "Autonómico",
+      "fecha_publicacion": "2026-10-15",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público autonómico hizo la afirmación en una entrevista de radio de alcance autonómico (vía de influenciabilidad), y se refiere a la evolución del coste de la vivienda en alquiler respecto a los ingresos. La renta de los contratos y la evolución salarial son verificables con estadísticas oficiales.",
+      "evidencia": {
+        "a_favor": [
+          "La renta media de los nuevos contratos de alquiler subió un 8,7 % en 2025, el doble que el coste salarial medio, que creció un 4,3 %."
+        ],
+        "en_contra": [
+          "La subida de la renta media de los nuevos contratos en 2025 fue del 8,7 %, de 820 a 891 euros al mes, y no del 12 %.",
+          "Con una subida del 12 %, el alquiler habría crecido casi el triple que el coste salarial, no el doble."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Estadística de fianzas de contratos de arrendamiento de vivienda, serie anual",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-estadistica-de-fianzas-de",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-13"
+        },
+        {
+          "organismo": "INE",
+          "titulo": "Encuesta trimestral de coste laboral, resultados por comunidad autónoma",
+          "url": "https://example.org/fuentes/ine-encuesta-trimestral-de-coste-laboral-resultados",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-13"
+        },
+        {
+          "organismo": "ISTAC",
+          "titulo": "Indicadores de vivienda y alquiler en Canarias",
+          "url": "https://example.org/fuentes/istac-indicadores-de-vivienda-y-alquiler-en",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-10-13"
+        }
+      ],
+      "metodo": {
+        "indicador": "Renta media mensual de los nuevos contratos de alquiler de vivienda",
+        "definicion": "Media de la renta mensual declarada en los contratos de arrendamiento de vivienda con fianza depositada en el año, comparada con la variación anual del coste salarial total por persona trabajadora.",
+        "serie": "Serie anual, 2015 a 2025",
+        "codigo_url": "https://example.org/codigo/OV-2026-0026"
+      },
+      "conflictos": "La materia coincide con una iniciativa de incidencia de ODESOCAN en curso, pero los hechos verificados son distintos de los que la sostienen. Se declara la relación.",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-10-12",
+        "respuesta": "La persona emisora respondió el 14 de octubre de 2026 que la cifra del 12 % procedía de precios de oferta publicados en internet."
+      },
+      "correcciones": [],
+      "emergencia": false
+    },
+    {
+      "id": "OV-2026-0027",
+      "ejemplo": true,
+      "titular": "La fotografía de vehículos arrastrados que circula desde el 20 de octubre de 2026 se tomó en 2019 en otra comunidad autónoma",
+      "resumen": "La fotografía, que muestra varios vehículos arrastrados por el agua junto a un paseo marítimo, se publicó por primera vez en 2019 durante un episodio de lluvias en otra comunidad autónoma. Según el Gobierno de Canarias, la tromba del 20 de octubre de 2026 obligó a 14 intervenciones de emergencia en el municipio, ninguna por vehículos arrastrados al mar.",
+      "calificacion": {
+        "valor": 1,
+        "etiqueta": "Falso"
+      },
+      "afirmacion": {
+        "texto": "Así está ahora mismo el paseo de la costa tras la tromba de agua de esta mañana. Coches arrastrados hasta el mar. No salgan de casa.",
+        "tipo_emisora": "Cuenta en redes sin relevancia pública",
+        "fecha": "2026-10-20",
+        "canal": "Telegram",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0027"
+      },
+      "materia": "Medio ambiente",
+      "isla": "Tenerife",
+      "ambito": "Municipal",
+      "fecha_publicacion": "2026-10-21",
+      "via_entrada": [
+        "viralidad",
+        "peligrosidad"
+      ],
+      "por_que": "La imagen se reenvió miles de veces durante el episodio de lluvias (vía de viralidad) y podía causar alarma o llevar a la ciudadanía a tomar decisiones de riesgo en plena emergencia (vía de peligrosidad), por lo que se tramitó por la vía de emergencia. Son verificables el origen de la fotografía y el balance oficial de incidencias.",
+      "evidencia": {
+        "a_favor": [],
+        "en_contra": [
+          "La búsqueda inversa sitúa la primera publicación de la fotografía en 2019, en redes y medios de otra comunidad autónoma, con la misma composición y los mismos vehículos.",
+          "El balance del servicio de emergencias del Gobierno de Canarias registra 14 intervenciones en el municipio el 20 de octubre de 2026, ninguna por vehículos arrastrados al mar.",
+          "La señalización y el mobiliario urbano que aparecen en la imagen no corresponden a ningún paseo marítimo del municipio."
+        ]
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Balance de incidencias del servicio de emergencias durante el episodio de lluvias",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-balance-de-incidencias-del",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-21"
+        },
+        {
+          "organismo": "Agencia Estatal de Meteorología",
+          "titulo": "Precipitación horaria registrada en las estaciones automáticas de la isla",
+          "url": "https://example.org/fuentes/agencia-estatal-de-meteorologia-precipitacion-horaria-registrada",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-21"
+        },
+        {
+          "organismo": "Odesocan Verifica",
+          "titulo": "Informe de búsqueda inversa y comparación de la fotografía",
+          "url": "https://example.org/fuentes/odesocan-verifica-informe-de-busqueda-inversa-y",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-10-20"
+        }
+      ],
+      "metodo": {
+        "indicador": "Origen de la imagen y balance de incidencias",
+        "definicion": "Búsqueda inversa de la imagen en varios motores, comparación de elementos fijos (señalización, edificios y mobiliario urbano) con la zona citada y contraste con el balance oficial de intervenciones de emergencia en el municipio.",
+        "serie": "Episodio del 20 de octubre de 2026, con búsqueda de publicaciones de la imagen entre 2015 y 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0027"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": false,
+        "fecha_solicitud": null,
+        "respuesta": "No procede, porque la cuenta es anónima y no ofrece ninguna vía de contacto"
+      },
+      "correcciones": [],
+      "emergencia": true
+    },
+    {
+      "id": "OV-2026-0028",
+      "ejemplo": true,
+      "titular": "En La Gomera, 266 de las 1.080 personas con grado de dependencia reconocido recibían ayuda a domicilio a 30 de septiembre de 2026, el 24,6 %",
+      "resumen": "Según el Gobierno de Canarias, a 30 de septiembre de 2026 recibían el servicio de ayuda a domicilio 266 de las 1.080 personas con grado de dependencia reconocido residentes en La Gomera, el 24,6 %, casi una de cada cuatro.",
+      "calificacion": {
+        "valor": 4,
+        "etiqueta": "Verdadero"
+      },
+      "afirmacion": {
+        "texto": "En La Gomera, casi una de cada cuatro personas con la dependencia reconocida recibe ayuda a domicilio.",
+        "tipo_emisora": "Cargo público insular",
+        "fecha": "2026-10-23",
+        "canal": "Entrevista en radio",
+        "enlace_archivado": "https://example.org/archivo/OV-2026-0028"
+      },
+      "materia": "Dependencia",
+      "isla": "La Gomera",
+      "ambito": "Insular",
+      "fecha_publicacion": "2026-10-28",
+      "via_entrada": [
+        "influenciabilidad"
+      ],
+      "por_que": "Un cargo público insular hizo la afirmación en una entrevista de radio (vía de influenciabilidad), y se refiere a uno de los servicios más demandados por las personas en situación de dependencia que viven en sus hogares. Es verificable con los datos de prestaciones por isla del sistema de dependencia.",
+      "evidencia": {
+        "a_favor": [
+          "Un total de 266 de las 1.080 personas con grado reconocido recibían ayuda a domicilio a 30 de septiembre de 2026, el 24,6 %, una proporción que redondeada equivale a casi una de cada cuatro."
+        ],
+        "en_contra": []
+      },
+      "fuentes": [
+        {
+          "organismo": "Gobierno de Canarias",
+          "titulo": "Prestaciones y servicios del sistema de dependencia por isla, corte trimestral",
+          "url": "https://example.org/fuentes/gobierno-de-canarias-prestaciones-y-servicios-del",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "organismo": "IMSERSO",
+          "titulo": "Estadística mensual del sistema para la autonomía y atención a la dependencia",
+          "url": "https://example.org/fuentes/imserso-estadistica-mensual-del-sistema-para-la",
+          "tipo": "primaria",
+          "fecha_consulta": "2026-10-26"
+        },
+        {
+          "organismo": "Cabildo insular",
+          "titulo": "Memoria del servicio insular de ayuda a domicilio",
+          "url": "https://example.org/fuentes/cabildo-insular-memoria-del-servicio-insular-de",
+          "tipo": "secundaria",
+          "fecha_consulta": "2026-10-27"
+        }
+      ],
+      "metodo": {
+        "indicador": "Proporción de personas con grado reconocido que reciben ayuda a domicilio",
+        "definicion": "Personas residentes en La Gomera con el servicio de ayuda a domicilio activo como prestación del sistema de dependencia, divididas entre las personas con resolución de grado reconocido en la misma fecha.",
+        "serie": "Serie trimestral, marzo de 2022 a septiembre de 2026",
+        "codigo_url": "https://example.org/codigo/OV-2026-0028"
+      },
+      "conflictos": "Sin conflictos de interés que declarar",
+      "replica": {
+        "ofrecida": true,
+        "fecha_solicitud": "2026-10-24",
+        "respuesta": "Sin respuesta en el plazo de 48 horas"
+      },
+      "correcciones": [],
+      "emergencia": false
+    }
+  ]
+}
