@@ -54,7 +54,7 @@ export function TablaCategorias({ titulo, filas, total, columna = 'Categoría' }
             <tr>
               <th scope="row">Total</th>
               <td className="ov-num">{total}</td>
-              <td className="ov-num">100 %</td>
+              <td className="ov-num">100 %</td>
             </tr>
           </tfoot>
         )}

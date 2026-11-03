@@ -41,7 +41,7 @@ export const numero = (n, decimales = 0) => {
   return dec ? `${conMiles},${dec}` : conMiles;
 };
 
-/** 26,666 → «26,7 %», con espacio de no separación para que el % no quede solo al final de una línea. */
+/** 26,666 → «26,7 %», con espacio de no separación para que el % no quede solo al final de una línea. */
 export const porcentaje = (n, decimales = 1) => `${numero(n, decimales)}\u00a0%`;
 
 /** Fecha ISO de hoy en la zona horaria local. */
