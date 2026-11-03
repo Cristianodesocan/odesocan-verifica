@@ -1,0 +1,13 @@
+# Dependencias y construcción
+node_modules/
+dist/
+# Resultados de las pruebas (las capturas de referencia se guardan en docs/capturas)
+pruebas/resultados/
+pruebas/informes/
+# Variables de entorno locales
+.env
+.env.*
+!.env.example
+# Sistema
+.DS_Store
+*.log
