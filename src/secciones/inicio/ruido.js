@@ -80,6 +80,17 @@ export function componerRuido(formato) {
         referencia: REFERENCIAS[(i * 2) % REFERENCIAS.length],
       });
     }
+    // Publicaciones de relleno, medio fuera de la pantalla, para que el
+    // ruido tenga densidad a los lados de la mira. No llevan referencia.
+    for (let i = 0; i < 12; i++) {
+      publicaciones.push({
+        x: i % 2 === 0 ? 0.04 + r() * 0.06 : 0.9 + r() * 0.06,
+        y: (i + 0.5) / 12 + (r() - 0.5) * 0.04,
+        tipo: r() < 0.3 ? 'imagen' : 'texto',
+        lineas: 2 + Math.floor(r() * 3),
+        referencia: null,
+      });
+    }
     for (let i = 0; i < 40; i++) {
       const lado = r() < 0.5 ? r() * 0.22 : 0.78 + r() * 0.22;
       fragmentos.push({ x: lado, y: r(), ancho: 24 + r() * 70, alto: 6 + Math.round(r()) * 3 });

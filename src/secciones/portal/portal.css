@@ -644,6 +644,16 @@
   --ov-foco: var(--ov-teal);
 }
 
+.ov-app .ov-fab {
+  transition: transform var(--ov-medio) var(--ov-curva), opacity var(--ov-medio) ease;
+}
+
+.ov-app .ov-fab--oculto {
+  transform: translateY(24px) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+}
+
 .ov-app .ov-fab .ov-control {
   color: var(--ov-claro);
 }

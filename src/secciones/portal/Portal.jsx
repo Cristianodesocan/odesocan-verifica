@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router';
 import { Enlace } from '../../componentes/Enlace.jsx';
 import Pendiente from '../../componentes/Pendiente.jsx';
@@ -35,7 +35,18 @@ export default function Portal() {
   const escritorio = useMediaQuery(ESCRITORIO);
   const reducido = useMovimientoReducido();
   const [hoja, setHoja] = useState(false);
+  const [explorando, setExplorando] = useState(false);
   const cuenta = useRef(null);
+  const explorador = useRef(null);
+
+  // En móvil, el botón de filtros solo aparece mientras el explorador está
+  // en pantalla, para no tapar los indicadores.
+  useEffect(() => {
+    if (escritorio || !explorador.current) return undefined;
+    const o = new IntersectionObserver(([e]) => setExplorando(e.isIntersecting), { rootMargin: '0px 0px -30% 0px' });
+    o.observe(explorador.current);
+    return () => o.disconnect();
+  }, [escritorio, estado]);
 
   const cambiar = (parcial) =>
     setParams(escribirFiltros({ ...filtros, ...parcial }), { replace: true, preventScrollReset: true });
@@ -96,7 +107,7 @@ export default function Portal() {
         <>
           <Indicadores datos={datos} ejemplo={meta.ejemplo} hoy={hoy} filtros={filtros} alFiltrar={desdeGrafico} />
 
-          <section className="ov-contenedor ov-explorador" aria-labelledby="ov-explorador-titulo">
+          <section ref={explorador} className="ov-contenedor ov-explorador" aria-labelledby="ov-explorador-titulo">
             <h2 id="ov-explorador-titulo" className="ov-h2">
               Explorador
             </h2>
@@ -167,7 +178,9 @@ export default function Portal() {
             <>
               <button
                 type="button"
-                className="ov-fab"
+                className={`ov-fab ${explorando || hoja ? '' : 'ov-fab--oculto'}`}
+                tabIndex={explorando ? 0 : -1}
+                aria-hidden={!explorando && !hoja}
                 aria-haspopup="dialog"
                 aria-expanded={hoja}
                 onClick={() => setHoja(true)}

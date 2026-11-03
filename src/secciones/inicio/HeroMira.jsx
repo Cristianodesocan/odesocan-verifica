@@ -190,7 +190,8 @@ export default function HeroMira() {
         <div ref={lente} className="ov-hero__lente" style={{ '--ov-r': `${radio}px` }}>
           <div className="ov-hero__disco">
             <div ref={nitida} className="ov-nitida">
-              {publicaciones.map((p, i) => (
+              {publicaciones.map((p, i) =>
+                !p.referencia ? null : (
                 <span
                   key={`r${i}`}
                   className="ov-nitida__ref"
@@ -200,7 +201,8 @@ export default function HeroMira() {
                   <span>{p.referencia[1]}</span>
                   <span className="ov-nitida__dato">{p.referencia[2]}</span>
                 </span>
-              ))}
+                ),
+              )}
             </div>
           </div>
           <svg

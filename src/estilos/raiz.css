@@ -90,7 +90,10 @@
   outline-offset: 2px;
 }
 
-.ov-app :where([tabindex='-1']:focus:not(:focus-visible)) {
+/* Los destinos de foco programático (encabezados al cambiar de página o de
+   apartado) no son controles: reciben el foco para orientar al lector de
+   pantalla, pero no muestran contorno. */
+.ov-app :where([tabindex='-1']:focus) {
   outline: none;
 }
 
