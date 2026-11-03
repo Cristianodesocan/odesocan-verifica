@@ -1,12 +1,12 @@
 name: Comprobar
 
-# En cada pull request y en cada push a la rama de propuesta: valida los
-# datos de ejemplo contra el contrato y comprueba que el modelo se construye.
+# En cada pull request y en cada push a main: valida los datos de ejemplo
+# contra el contrato y comprueba que el modelo se construye.
 
 on:
   pull_request:
   push:
-    branches: [propuesta/odesocan-verifica]
+    branches: [main]
 
 permissions:
   contents: read

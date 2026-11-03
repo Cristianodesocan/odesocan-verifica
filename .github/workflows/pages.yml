@@ -2,18 +2,16 @@ name: Publicar en GitHub Pages
 
 # Construye el modelo con Vite y lo publica en GitHub Pages.
 #
-# Antes del primer despliegue hay que activar Pages en el repositorio:
-# Settings > Pages > Build and deployment > Source: GitHub Actions.
+# Requiere Settings > Pages > Build and deployment > Source: GitHub Actions.
+# Con «Deploy from a branch», GitHub lanza además su propia publicación con
+# Jekyll, que sube el código sin construir y compite con este flujo.
 #
-# Se publica en cada push a main y, mientras dure la revisión, también en
-# cada push a la rama de propuesta. Por defecto, el entorno github-pages solo
-# admite despliegues desde la rama por defecto: para la rama de propuesta hay
-# que añadirla en Settings > Environments > github-pages > Deployment branches.
-# Cuando se fusione, puede quitarse de esta lista.
+# Solo publica main: cada push a main (por ejemplo, al fusionar una pull
+# request) despliega la build, y también se puede lanzar a mano.
 
 on:
   push:
-    branches: [main, propuesta/odesocan-verifica]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
