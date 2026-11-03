@@ -4,7 +4,7 @@ Modelo navegable de la sección «Odesocan Verifica», el servicio de verificaci
 
 > **Prototipo de diseño.** Todos los contenidos son un borrador pendiente de revisión por el equipo de ODESOCAN, y las treinta verificaciones son ficticias: cifras, fuentes y afirmaciones son inventadas, aunque los organismos citados existan. La web no está indexada (`noindex` y `robots.txt`).
 
-- **URL publicada:** https://cristianodesocan.github.io/odesocan-verifica/ (disponible cuando se active GitHub Pages; ver [Publicación](#publicación)).
+- **URL publicada:** https://cristianodesocan.github.io/odesocan-verifica/ (ver [Publicación](#publicación)).
 - **Encargo:** [`docs/encargo.md`](docs/encargo.md).
 - **Plan aprobado en la fase 0:** [`docs/plan-fase-0.md`](docs/plan-fase-0.md).
 - **Decisiones, alternativas descartadas y pendientes:** [`docs/decisiones.md`](docs/decisiones.md).
@@ -247,10 +247,10 @@ Lo que cubre el modelo, además de las pruebas automáticas:
 
 El repositorio tiene dos flujos de GitHub Actions:
 
-- `comprobar.yml`: en cada pull request y en cada push a la rama de propuesta, valida los datos, construye el modelo y comprueba que no hay rayas en los textos.
-- `pages.yml`: construye y publica en GitHub Pages con `actions/upload-pages-artifact` y `actions/deploy-pages`, en cada push a `main` o a la rama de propuesta, y también a mano.
+- `comprobar.yml`: en cada pull request y en cada push a `main`, valida los datos, construye el modelo y comprueba que no hay rayas en los textos.
+- `pages.yml`: construye y publica en GitHub Pages con `actions/upload-pages-artifact` y `actions/deploy-pages`, en cada push a `main` y también a mano. Solo publica `main`.
 
-Para activarlo hay que hacer una vez, desde la web de GitHub, **Settings > Pages > Build and deployment > Source: GitHub Actions**. Después, la publicación es automática con cada push a `main`. Para que la rama de propuesta también pueda publicar, tiene que estar en **Settings > Environments > github-pages > Deployment branches**; cuando se fusione, puede quitarse de allí y de la lista de ramas de `pages.yml`.
+GitHub Pages tiene que estar configurado con **Settings > Pages > Build and deployment > Source: GitHub Actions**. Con **Deploy from a branch**, GitHub lanza además su propia publicación con Jekyll, que sube el código sin construir y compite con este flujo, de modo que la página puede quedar en blanco según cuál termine antes. Para ver un cambio publicado, fusiónalo en `main`; en **Settings > Environments > github-pages > Deployment branches** basta con `main`.
 
 ## Licencia
 
