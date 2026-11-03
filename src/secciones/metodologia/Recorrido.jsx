@@ -240,6 +240,9 @@ function Historias() {
             aria-roledescription="diapositiva"
             aria-label={`Fase ${i + 1} de 9: ${f.titulo}`}
             aria-hidden={i !== activa}
+            // La historia activa puede desbordar en pantallas bajas: se puede
+            // enfocar para desplazar su texto con el teclado.
+            tabIndex={i === activa ? 0 : -1}
           >
             <ContenidoFase f={f} i={i} />
           </article>

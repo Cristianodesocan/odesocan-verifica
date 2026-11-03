@@ -177,8 +177,8 @@ Todos los huecos se pintan con el componente `src/componentes/Pendiente.jsx` (en
 
 ## 7. Resultado de la revisión (fase 3)
 
-- **axe-core** (WCAG 2.0, 2.1 y 2.2 A y AA, y buenas prácticas), en las ocho rutas a 390 y 1440 px, con movimiento normal y reducido: ninguna infracción. Antes de corregir había dos graves (contraste de las fases inactivas de la metodología, atenuadas con `opacity`) y varias moderadas (notas al margen como `<aside>` anidados y la banda fuera de una región), ya resueltas.
-- **Lighthouse en móvil**: Inicio 91, Portal 94, Metodología 98 y Envía 92 de rendimiento; 100 de accesibilidad y de buenas prácticas en todas. Las cifras completas están en el README y se reproducen con `npm run pruebas:lighthouse`.
+- **axe-core** (WCAG 2.0, 2.1 y 2.2 A y AA, y buenas prácticas), en las ocho rutas a 390 y 1440 px, con movimiento normal y reducido: ninguna infracción. Antes de corregir había infracciones graves (contraste de las fases inactivas de la metodología, atenuadas con `opacity`, y una historia desplazable que no se podía enfocar) y varias moderadas (notas al margen como `<aside>` anidados y la banda fuera de una región), ya resueltas.
+- **Lighthouse en móvil** (rendimiento): Inicio 93, Qué es verificar 90, Metodología 98, Envía un contenido 92, Portal 94, Ficha 93 y Transparencia 94; 100 de accesibilidad y de buenas prácticas en todas. Se reproducen con `npm run pruebas:lighthouse`. Antes de reservar el espacio de carga, el portal se quedaba en 70 por el desplazamiento acumulado de diseño.
 - **Capturas** a 360, 390, 768, 1024 y 1440 px, con movimiento normal y reducido (`npm run pruebas:capturas`). Tras revisarlas se corrigieron, entre otras cosas: el tamaño del anillo del hero, las referencias que no cabían en la mira, el corte brusco del ruido junto al titular, la columna de la mira en móvil, la alineación de las barras, el espacio de no separación antes de %, las etiquetas superpuestas en «Dos caminos», el contorno de foco en los títulos y el botón de filtros que tapaba los indicadores.
 
 ## 8. Pautas para portarlo a WordPress

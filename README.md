@@ -211,10 +211,10 @@ Resultados del 3 de noviembre de 2026 sobre la build de producción:
 | Prueba | Resultado |
 |---|---|
 | axe-core (WCAG 2.0, 2.1 y 2.2 A y AA, y buenas prácticas), 8 rutas a 390 y 1440 px, movimiento normal y reducido | Ninguna infracción |
-| Lighthouse en móvil, Inicio | Rendimiento 91, accesibilidad 100, buenas prácticas 100 |
-| Lighthouse en móvil, Portal | Rendimiento 94, accesibilidad 100, buenas prácticas 100 |
-| Lighthouse en móvil, Metodología | Rendimiento 98, accesibilidad 100, buenas prácticas 100 |
-| Lighthouse en móvil, Envía un contenido | Rendimiento 92, accesibilidad 100, buenas prácticas 100 |
+| Lighthouse en móvil, rendimiento | Inicio 93, Qué es verificar 90, Metodología 98, Envía un contenido 92, Portal 94, Ficha 93, Transparencia 94 |
+| Lighthouse en móvil, accesibilidad y buenas prácticas | 100 en todas las rutas medidas |
+
+Qué es verificar queda justo en el umbral (LCP de 3,0 s en la simulación de 4G lenta); si al portarlo baja de 90, lo primero que conviene revisar es el peso de las tipografías que se cargan antes del primer pintado.
 
 Lo que cubre el modelo, además de las pruebas automáticas:
 
