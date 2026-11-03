@@ -5,14 +5,15 @@ name: Publicar en GitHub Pages
 # Antes del primer despliegue hay que activar Pages en el repositorio:
 # Settings > Pages > Build and deployment > Source: GitHub Actions.
 #
-# Por defecto, el entorno github-pages solo admite despliegues desde la rama
-# por defecto (main). Para publicar la rama de propuesta antes de fusionarla,
-# añádela en Settings > Environments > github-pages > Deployment branches y
-# lanza este flujo a mano (Actions > Publicar en GitHub Pages > Run workflow).
+# Se publica en cada push a main y, mientras dure la revisión, también en
+# cada push a la rama de propuesta. Por defecto, el entorno github-pages solo
+# admite despliegues desde la rama por defecto: para la rama de propuesta hay
+# que añadirla en Settings > Environments > github-pages > Deployment branches.
+# Cuando se fusione, puede quitarse de esta lista.
 
 on:
   push:
-    branches: [main]
+    branches: [main, propuesta/odesocan-verifica]
   workflow_dispatch:
 
 permissions:

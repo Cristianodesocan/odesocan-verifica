@@ -248,9 +248,9 @@ Lo que cubre el modelo, además de las pruebas automáticas:
 El repositorio tiene dos flujos de GitHub Actions:
 
 - `comprobar.yml`: en cada pull request y en cada push a la rama de propuesta, valida los datos, construye el modelo y comprueba que no hay rayas en los textos.
-- `pages.yml`: construye y publica en GitHub Pages con `actions/upload-pages-artifact` y `actions/deploy-pages`, en cada push a `main` y también a mano.
+- `pages.yml`: construye y publica en GitHub Pages con `actions/upload-pages-artifact` y `actions/deploy-pages`, en cada push a `main` o a la rama de propuesta, y también a mano.
 
-Para activarlo hay que hacer una vez, desde la web de GitHub, **Settings > Pages > Build and deployment > Source: GitHub Actions**. Después, la publicación es automática al fusionar en `main`. Para publicar la rama de propuesta antes de fusionarla, añádela en **Settings > Environments > github-pages > Deployment branches** y lanza el flujo desde **Actions > Publicar en GitHub Pages > Run workflow**.
+Para activarlo hay que hacer una vez, desde la web de GitHub, **Settings > Pages > Build and deployment > Source: GitHub Actions**. Después, la publicación es automática con cada push a `main`. Para que la rama de propuesta también pueda publicar, tiene que estar en **Settings > Environments > github-pages > Deployment branches**; cuando se fusione, puede quitarse de allí y de la lista de ramas de `pages.yml`.
 
 ## Licencia
 
