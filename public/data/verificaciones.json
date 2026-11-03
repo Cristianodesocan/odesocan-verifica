@@ -5,8 +5,8 @@
     {
       "id": "OV-2025-0001",
       "ejemplo": true,
-      "titular": "La lista de espera quirúrgica en Canarias bajó un 16,6 % en un año, hasta 28.460 personas a 30 de junio de 2025, y solo se redujeron a la mitad las esperas de más de seis meses",
-      "resumen": "Según el Servicio Canario de la Salud, 28.460 personas esperaban una intervención quirúrgica a 30 de junio de 2025, frente a 34.120 un año antes, un descenso del 16,6 %. Lo que se redujo a la mitad fue el número de personas con más de seis meses de espera, que pasó de 9.830 a 4.870.",
+      "titular": "La lista de espera quirúrgica en Canarias bajó un 16,6 % en un año, hasta 28.460 personas a 30 de junio de 2025, y solo se redujeron a la mitad las esperas de más de seis meses",
+      "resumen": "Según el Servicio Canario de la Salud, 28.460 personas esperaban una intervención quirúrgica a 30 de junio de 2025, frente a 34.120 un año antes, un descenso del 16,6 %. Lo que se redujo a la mitad fue el número de personas con más de seis meses de espera, que pasó de 9.830 a 4.870.",
       "calificacion": {
         "valor": 2,
         "etiqueta": "Engañoso"
@@ -28,12 +28,12 @@
       "por_que": "Un cargo público con responsabilidad en la materia hizo la afirmación en sede parlamentaria (vía de influenciabilidad), y se refiere a un servicio del que dependen decenas de miles de personas. La parte verificable es la evolución de la lista de espera quirúrgica, que el Servicio Canario de la Salud publica cada semestre.",
       "evidencia": {
         "a_favor": [
-          "Las personas con más de seis meses de espera quirúrgica pasaron de 9.830 a 4.870 entre junio de 2024 y junio de 2025, un descenso del 50,5 %.",
+          "Las personas con más de seis meses de espera quirúrgica pasaron de 9.830 a 4.870 entre junio de 2024 y junio de 2025, un descenso del 50,5 %.",
           "La lista total también bajó en ese periodo, de 34.120 a 28.460 personas."
         ],
         "en_contra": [
-          "La lista de espera quirúrgica total se redujo un 16,6 % entre junio de 2024 y junio de 2025, no a la mitad.",
-          "La demora media bajó de 162 a 131 días en el mismo periodo, un 19,1 %."
+          "La lista de espera quirúrgica total se redujo un 16,6 % entre junio de 2024 y junio de 2025, no a la mitad.",
+          "La demora media bajó de 162 a 131 días en el mismo periodo, un 19,1 %."
         ]
       },
       "fuentes": [
@@ -77,14 +77,14 @@
     {
       "id": "OV-2025-0002",
       "ejemplo": true,
-      "titular": "Las inscripciones de demanda de vivienda protegida en Gran Canaria bajaron un 9,0 % entre diciembre de 2024 y septiembre de 2025 por la baja de 2.940 solicitudes caducadas, sin la cual habrían subido un 3,4 %",
+      "titular": "Las inscripciones de demanda de vivienda protegida en Gran Canaria bajaron un 9,0 % entre diciembre de 2024 y septiembre de 2025 por la baja de 2.940 solicitudes caducadas, sin la cual habrían subido un 3,4 %",
       "resumen": "Según el registro público de demandantes de vivienda protegida del Gobierno de Canarias, las inscripciones en Gran Canaria pasaron de 23.610 a 31 de diciembre de 2024 a 21.480 a 30 de septiembre de 2025. El descenso se debe a la baja de oficio de 2.940 solicitudes caducadas en marzo de 2025.",
       "calificacion": {
         "valor": 3,
         "etiqueta": "Contexto"
       },
       "afirmacion": {
-        "texto": "Las personas inscritas como demandantes de vivienda protegida en Gran Canaria han bajado un 9 % este año.",
+        "texto": "Las personas inscritas como demandantes de vivienda protegida en Gran Canaria han bajado un 9 % este año.",
         "tipo_emisora": "Cargo público insular",
         "fecha": "2025-10-17",
         "canal": "Rueda de prensa",
@@ -100,11 +100,11 @@
       "por_que": "Un cargo público insular dio la cifra en rueda de prensa como indicador de la mejora del acceso a la vivienda (vía de influenciabilidad). Son verificables tanto el dato del registro como la depuración administrativa que explica su evolución.",
       "evidencia": {
         "a_favor": [
-          "Las inscripciones bajaron de 23.610 a 21.480 entre diciembre de 2024 y septiembre de 2025, un 9,0 %, como sostuvo la persona emisora."
+          "Las inscripciones bajaron de 23.610 a 21.480 entre diciembre de 2024 y septiembre de 2025, un 9,0 %, como sostuvo la persona emisora."
         ],
         "en_contra": [
           "En marzo de 2025 se dieron de baja de oficio 2.940 inscripciones que no se habían renovado en el plazo establecido.",
-          "Sin esa depuración, las inscripciones habrían llegado a 24.420 a 30 de septiembre de 2025, un 3,4 % más que a finales de 2024."
+          "Sin esa depuración, las inscripciones habrían llegado a 24.420 a 30 de septiembre de 2025, un 3,4 % más que a finales de 2024."
         ]
       },
       "fuentes": [
@@ -146,7 +146,7 @@
         {
           "fecha": "2026-02-10",
           "tipo": "actualizacion",
-          "nota": "Se actualizó la verificación con el dato a 31 de diciembre de 2025, publicado el 5 de febrero de 2026: 21.730 inscripciones, un 8,0 % menos que un año antes. Sin la baja de las 2.940 solicitudes caducadas, el aumento habría sido del 4,5 %. La calificación no cambia.",
+          "nota": "Se actualizó la verificación con el dato a 31 de diciembre de 2025, publicado el 5 de febrero de 2026: 21.730 inscripciones, un 8,0 % menos que un año antes. Sin la baja de las 2.940 solicitudes caducadas, el aumento habría sido del 4,5 %. La calificación no cambia.",
           "cambia_calificacion": false,
           "version_original_pdf": "https://example.org/versiones/OV-2025-0002-v1.pdf"
         }
@@ -156,8 +156,8 @@
     {
       "id": "OV-2026-0001",
       "ejemplo": true,
-      "titular": "El paro registrado en Canarias bajó en 13.222 personas en 2025, un 8,5 %, hasta 142.318 en diciembre, la cifra más baja en ese mes desde 2007",
-      "resumen": "Según el Servicio Público de Empleo Estatal, el paro registrado en Canarias fue de 142.318 personas en diciembre de 2025, 13.222 menos que en diciembre de 2024, un 8,5 % menos. Es el dato de diciembre más bajo desde 2007, cuando se registraron 136.870 personas.",
+      "titular": "El paro registrado en Canarias bajó en 13.222 personas en 2025, un 8,5 %, hasta 142.318 en diciembre, la cifra más baja en ese mes desde 2007",
+      "resumen": "Según el Servicio Público de Empleo Estatal, el paro registrado en Canarias fue de 142.318 personas en diciembre de 2025, 13.222 menos que en diciembre de 2024, un 8,5 % menos. Es el dato de diciembre más bajo desde 2007, cuando se registraron 136.870 personas.",
       "calificacion": {
         "valor": 4,
         "etiqueta": "Verdadero"
@@ -295,7 +295,7 @@
       "id": "OV-2026-0003",
       "ejemplo": true,
       "titular": "La ratio media en el segundo ciclo de infantil en Lanzarote es de 19,2 escolares por grupo en el curso 2025-2026, pero 14 de los 412 grupos superan los 25",
-      "resumen": "Según la estadística de la Consejería de Educación del Gobierno de Canarias, la ratio media del segundo ciclo de educación infantil en los centros públicos de Lanzarote es de 19,2 escolares por grupo en el curso 2025-2026. Ese mismo curso, 14 de los 412 grupos, el 3,4 %, tienen más de 25 escolares.",
+      "resumen": "Según la estadística de la Consejería de Educación del Gobierno de Canarias, la ratio media del segundo ciclo de educación infantil en los centros públicos de Lanzarote es de 19,2 escolares por grupo en el curso 2025-2026. Ese mismo curso, 14 de los 412 grupos, el 3,4 %, tienen más de 25 escolares.",
       "calificacion": {
         "valor": 2,
         "etiqueta": "Engañoso"
@@ -320,7 +320,7 @@
           "La ratio media del segundo ciclo de infantil en los centros públicos de Lanzarote bajó de 21,0 escolares por grupo en el curso 2023-2024 a 19,2 en el curso 2025-2026."
         ],
         "en_contra": [
-          "En el curso 2025-2026 hay 14 grupos de infantil con más de 25 escolares en centros públicos de Lanzarote, el 3,4 % de los 412 grupos.",
+          "En el curso 2025-2026 hay 14 grupos de infantil con más de 25 escolares en centros públicos de Lanzarote, el 3,4 % de los 412 grupos.",
           "Esos 14 grupos se concentran en 6 centros cuya matrícula supera la capacidad prevista en la planificación del curso."
         ]
       },
@@ -365,14 +365,14 @@
     {
       "id": "OV-2026-0004",
       "ejemplo": true,
-      "titular": "Las mujeres atendidas por la red insular contra la violencia de género en Tenerife subieron un 32,0 % en 2025, hasta 2.946, pero en los centros que ya existían en 2024 el aumento fue del 6,1 %",
-      "resumen": "Según la memoria anual del Cabildo insular, la red de atención a víctimas de violencia de género atendió a 2.946 mujeres en 2025, frente a 2.232 en 2024. De ellas, 578 fueron atendidas en los 4 puntos abiertos a lo largo de 2025, y en los centros que ya funcionaban el aumento fue del 6,1 %.",
+      "titular": "Las mujeres atendidas por la red insular contra la violencia de género en Tenerife subieron un 32,0 % en 2025, hasta 2.946, pero en los centros que ya existían en 2024 el aumento fue del 6,1 %",
+      "resumen": "Según la memoria anual del Cabildo insular, la red de atención a víctimas de violencia de género atendió a 2.946 mujeres en 2025, frente a 2.232 en 2024. De ellas, 578 fueron atendidas en los 4 puntos abiertos a lo largo de 2025, y en los centros que ya funcionaban el aumento fue del 6,1 %.",
       "calificacion": {
         "valor": 3,
         "etiqueta": "Contexto"
       },
       "afirmacion": {
-        "texto": "Las mujeres atendidas por la red insular contra la violencia de género en Tenerife han aumentado un 32 % en 2025.",
+        "texto": "Las mujeres atendidas por la red insular contra la violencia de género en Tenerife han aumentado un 32 % en 2025.",
         "tipo_emisora": "Organización social",
         "fecha": "2026-03-20",
         "canal": "Nota de prensa",
@@ -389,11 +389,11 @@
       "por_que": "La nota de una organización social fue reproducida por varios medios insulares y se compartió ampliamente en redes (vías de influenciabilidad y viralidad). Los datos de atención de la red insular son públicos y permiten separar el efecto de la apertura de nuevos puntos de atención.",
       "evidencia": {
         "a_favor": [
-          "La red insular atendió a 2.946 mujeres en 2025 y a 2.232 en 2024, un aumento del 32,0 %."
+          "La red insular atendió a 2.946 mujeres en 2025 y a 2.232 en 2024, un aumento del 32,0 %."
         ],
         "en_contra": [
           "En 2025 se abrieron 4 puntos de atención nuevos, que atendieron a 578 mujeres ese año.",
-          "En los centros que ya funcionaban en 2024, las mujeres atendidas pasaron de 2.232 a 2.368, un 6,1 % más."
+          "En los centros que ya funcionaban en 2024, las mujeres atendidas pasaron de 2.232 a 2.368, un 6,1 % más."
         ]
       },
       "fuentes": [
@@ -516,14 +516,14 @@
     {
       "id": "OV-2026-0006",
       "ejemplo": true,
-      "titular": "La tasa de riesgo de pobreza en Canarias bajó al 26,1 % en 2025, la más baja desde 2008, año en que fue del 24,9 %",
-      "resumen": "Según la Encuesta de condiciones de vida del INE, la tasa de riesgo de pobreza en Canarias fue del 26,1 % en 2025, unas 581.500 personas, frente al 28,3 % de 2024. Es la más baja desde 2008, cuando se situó en el 24,9 %, de modo que no es el mínimo de la serie.",
+      "titular": "La tasa de riesgo de pobreza en Canarias bajó al 26,1 % en 2025, la más baja desde 2008, año en que fue del 24,9 %",
+      "resumen": "Según la Encuesta de condiciones de vida del INE, la tasa de riesgo de pobreza en Canarias fue del 26,1 % en 2025, unas 581.500 personas, frente al 28,3 % de 2024. Es la más baja desde 2008, cuando se situó en el 24,9 %, de modo que no es el mínimo de la serie.",
       "calificacion": {
         "valor": 2,
         "etiqueta": "Engañoso"
       },
       "afirmacion": {
-        "texto": "Según el último informe de ODESOCAN, la pobreza en Canarias ha bajado al 26 %, el nivel más bajo de toda la serie.",
+        "texto": "Según el último informe de ODESOCAN, la pobreza en Canarias ha bajado al 26 %, el nivel más bajo de toda la serie.",
         "tipo_emisora": "Cargo público autonómico",
         "fecha": "2026-04-30",
         "canal": "Pleno del Parlamento de Canarias",
@@ -539,11 +539,11 @@
       "por_que": "Un cargo público hizo la afirmación en el Pleno del Parlamento de Canarias (vía de influenciabilidad) y se refiere al principal indicador de pobreza monetaria. Son verificables el valor de 2025 y su comparación con la serie desde 2008.",
       "evidencia": {
         "a_favor": [
-          "La tasa de riesgo de pobreza en Canarias fue del 26,1 % en 2025, frente al 28,3 % de 2024.",
+          "La tasa de riesgo de pobreza en Canarias fue del 26,1 % en 2025, frente al 28,3 % de 2024.",
           "La cifra coincide con la que recoge el informe citado en la afirmación, que procede de la misma encuesta."
         ],
         "en_contra": [
-          "La tasa de 2025 no es la más baja de la serie: en 2008 fue del 24,9 %."
+          "La tasa de 2025 no es la más baja de la serie: en 2008 fue del 24,9 %."
         ]
       },
       "fuentes": [
@@ -578,7 +578,7 @@
       ],
       "metodo": {
         "indicador": "Tasa de riesgo de pobreza",
-        "definicion": "Porcentaje de personas que viven en hogares con ingresos por unidad de consumo inferiores al 60 % de la mediana nacional, según la Encuesta de condiciones de vida. Los ingresos se refieren al año anterior al de la encuesta.",
+        "definicion": "Porcentaje de personas que viven en hogares con ingresos por unidad de consumo inferiores al 60 % de la mediana nacional, según la Encuesta de condiciones de vida. Los ingresos se refieren al año anterior al de la encuesta.",
         "serie": "Serie anual, 2008 a 2025",
         "codigo_url": "https://example.org/codigo/OV-2026-0006"
       },
@@ -621,8 +621,8 @@
         ],
         "en_contra": [
           "De los 6,2 millones de 2026, 3,4 millones son fondos europeos extraordinarios previstos solo para 2026-2027.",
-          "La aportación autonómica propia baja de 3,0 a 2,8 millones de euros, un 6,7 % menos.",
-          "En 2025 se ejecutaron 2,1 millones de euros, el 70,0 % del crédito inicial."
+          "La aportación autonómica propia baja de 3,0 a 2,8 millones de euros, un 6,7 % menos.",
+          "En 2025 se ejecutaron 2,1 millones de euros, el 70,0 % del crédito inicial."
         ]
       },
       "fuentes": [
@@ -666,7 +666,7 @@
     {
       "id": "OV-2026-0008",
       "ejemplo": true,
-      "titular": "La espera media para una primera consulta de especialista en La Palma bajó de 98 a 71 días entre marzo de 2025 y marzo de 2026, un 27,6 %",
+      "titular": "La espera media para una primera consulta de especialista en La Palma bajó de 98 a 71 días entre marzo de 2025 y marzo de 2026, un 27,6 %",
       "resumen": "Según el Servicio Canario de la Salud, la demora media para una primera consulta externa en el área de salud de La Palma era de 71 días a 31 de marzo de 2026, frente a 98 días un año antes. Las personas en espera pasaron de 6.120 a 4.980 en el mismo periodo.",
       "calificacion": {
         "valor": 4,
@@ -690,7 +690,7 @@
       "evidencia": {
         "a_favor": [
           "La demora media para una primera consulta externa en el área de salud de La Palma fue de 98 días a 31 de marzo de 2025 y de 71 días a 31 de marzo de 2026.",
-          "En ese mismo periodo, las personas en espera de primera consulta bajaron de 6.120 a 4.980, un 18,6 %."
+          "En ese mismo periodo, las personas en espera de primera consulta bajaron de 6.120 a 4.980, un 18,6 %."
         ],
         "en_contra": []
       },
@@ -729,7 +729,7 @@
       "id": "OV-2026-0009",
       "ejemplo": true,
       "titular": "En un municipio de Fuerteventura, la primera cita con el personal de trabajo social tardó 23 días de media en el primer trimestre de 2026, frente a 5,3 días para la información general",
-      "resumen": "Según el registro de citas de los servicios sociales municipales, la espera media para la primera cita de información y orientación fue de 5,3 días en el primer trimestre de 2026, y la primera cita con el personal de trabajo social, necesaria para tramitar prestaciones, tardó 23 días de media. Este segundo tipo supuso 878 de las 1.420 primeras citas del trimestre, el 61,8 %.",
+      "resumen": "Según el registro de citas de los servicios sociales municipales, la espera media para la primera cita de información y orientación fue de 5,3 días en el primer trimestre de 2026, y la primera cita con el personal de trabajo social, necesaria para tramitar prestaciones, tardó 23 días de media. Este segundo tipo supuso 878 de las 1.420 primeras citas del trimestre, el 61,8 %.",
       "calificacion": {
         "valor": 2,
         "etiqueta": "Engañoso"
@@ -755,7 +755,7 @@
         ],
         "en_contra": [
           "La espera media para la primera cita con el personal de trabajo social fue de 23 días en el mismo trimestre.",
-          "Ese segundo tipo de cita, que es el que permite iniciar la tramitación de prestaciones, supuso 878 de las 1.420 primeras citas del trimestre, el 61,8 %."
+          "Ese segundo tipo de cita, que es el que permite iniciar la tramitación de prestaciones, supuso 878 de las 1.420 primeras citas del trimestre, el 61,8 %."
         ]
       },
       "fuentes": [
@@ -792,14 +792,14 @@
     {
       "id": "OV-2026-0010",
       "ejemplo": true,
-      "titular": "La Gomera depuró en 2025 el 78,4 % del agua residual de su red de saneamiento, y las 2 depuradoras que deben tratar el resto estaban ejecutadas al 82 % y al 64 % a 30 de junio de 2026",
-      "resumen": "Según el Cabildo insular y el Gobierno de Canarias, en 2025 se depuró con tratamiento secundario el 78,4 % del agua residual recogida por la red de saneamiento de La Gomera. Las 2 depuradoras previstas para tratar el resto estaban ejecutadas al 82 % y al 64 % a 30 de junio de 2026, y sus autorizaciones de vertido siguen en tramitación.",
+      "titular": "La Gomera depuró en 2025 el 78,4 % del agua residual de su red de saneamiento, y las 2 depuradoras que deben tratar el resto estaban ejecutadas al 82 % y al 64 % a 30 de junio de 2026",
+      "resumen": "Según el Cabildo insular y el Gobierno de Canarias, en 2025 se depuró con tratamiento secundario el 78,4 % del agua residual recogida por la red de saneamiento de La Gomera. Las 2 depuradoras previstas para tratar el resto estaban ejecutadas al 82 % y al 64 % a 30 de junio de 2026, y sus autorizaciones de vertido siguen en tramitación.",
       "calificacion": {
         "valor": 3,
         "etiqueta": "Contexto"
       },
       "afirmacion": {
-        "texto": "Con las dos depuradoras que entrarán en servicio este año, depuraremos el 100 % de las aguas residuales de la red de saneamiento de la isla.",
+        "texto": "Con las dos depuradoras que entrarán en servicio este año, depuraremos el 100 % de las aguas residuales de la red de saneamiento de la isla.",
         "tipo_emisora": "Cargo público insular",
         "fecha": "2026-07-03",
         "canal": "Rueda de prensa",
@@ -815,12 +815,12 @@
       "por_que": "Un cargo público insular hizo el anuncio en rueda de prensa (vía de influenciabilidad), y se refiere a una obligación de depuración con efectos sobre la calidad de las aguas costeras y de baño. Son verificables el grado de depuración actual y el estado de las obras y de los permisos; si las depuradoras entrarán en servicio en 2026 es una cuestión todavía abierta.",
       "evidencia": {
         "a_favor": [
-          "Los proyectos de las 2 depuradoras prevén tratar el 100 % del agua residual recogida por la red de saneamiento de la isla.",
+          "Los proyectos de las 2 depuradoras prevén tratar el 100 % del agua residual recogida por la red de saneamiento de la isla.",
           "Ambas obras tienen fijado el final de la ejecución en diciembre de 2026."
         ],
         "en_contra": [
-          "En 2025 se depuró con tratamiento secundario el 78,4 % del agua residual recogida por la red de saneamiento.",
-          "A 30 de junio de 2026, las obras estaban ejecutadas al 82 % y al 64 %, y la entrada en servicio exige además superar las pruebas de funcionamiento.",
+          "En 2025 se depuró con tratamiento secundario el 78,4 % del agua residual recogida por la red de saneamiento.",
+          "A 30 de junio de 2026, las obras estaban ejecutadas al 82 % y al 64 %, y la entrada en servicio exige además superar las pruebas de funcionamiento.",
           "Las autorizaciones de vertido de ambas depuradoras siguen en tramitación, sin resolución a la fecha de esta verificación."
         ]
       },
@@ -889,7 +889,7 @@
       "evidencia": {
         "a_favor": [],
         "en_contra": [
-          "A 30 de junio de 2026 había 8.240 plazas residenciales para personas mayores de titularidad pública o concertadas, el 50,5 % del total.",
+          "A 30 de junio de 2026 había 8.240 plazas residenciales para personas mayores de titularidad pública o concertadas, el 50,5 % del total.",
           "El total de plazas, incluidas las privadas sin financiación pública, era de 16.310, una cifra cercana a la publicada."
         ]
       },
@@ -934,8 +934,8 @@
     {
       "id": "OV-2026-0012",
       "ejemplo": true,
-      "titular": "En Gran Canaria se firmaron 74.600 contratos indefinidos en el primer semestre de 2026, el 40,9 % de los 182.400 registrados",
-      "resumen": "Según el Servicio Público de Empleo Estatal, en Gran Canaria se registraron 182.400 contratos en el primer semestre de 2026, de los que 74.600 fueron indefinidos, el 40,9 %. La proporción de 7 de cada 10 corresponde a otra medida, las personas asalariadas afiliadas con contrato indefinido, que eran el 70,8 % a 30 de junio de 2026 según el ISTAC.",
+      "titular": "En Gran Canaria se firmaron 74.600 contratos indefinidos en el primer semestre de 2026, el 40,9 % de los 182.400 registrados",
+      "resumen": "Según el Servicio Público de Empleo Estatal, en Gran Canaria se registraron 182.400 contratos en el primer semestre de 2026, de los que 74.600 fueron indefinidos, el 40,9 %. La proporción de 7 de cada 10 corresponde a otra medida, las personas asalariadas afiliadas con contrato indefinido, que eran el 70,8 % a 30 de junio de 2026 según el ISTAC.",
       "calificacion": {
         "valor": 2,
         "etiqueta": "Engañoso"
@@ -958,10 +958,10 @@
       "por_que": "La publicación de un cargo público insular tuvo amplia difusión (vías de influenciabilidad y viralidad) y presentó el dato como balance de la calidad del empleo en la isla. Las dos cifras que se mezclan, contratos firmados y personas asalariadas con contrato indefinido, se publican por separado y son verificables.",
       "evidencia": {
         "a_favor": [
-          "El 70,8 % de las personas asalariadas afiliadas en Gran Canaria tenía contrato indefinido a 30 de junio de 2026, una proporción cercana a 7 de cada 10."
+          "El 70,8 % de las personas asalariadas afiliadas en Gran Canaria tenía contrato indefinido a 30 de junio de 2026, una proporción cercana a 7 de cada 10."
         ],
         "en_contra": [
-          "De los 182.400 contratos registrados en Gran Canaria en el primer semestre de 2026, 74.600 fueron indefinidos, el 40,9 %.",
+          "De los 182.400 contratos registrados en Gran Canaria en el primer semestre de 2026, 74.600 fueron indefinidos, el 40,9 %.",
           "La proporción de personas con contrato indefinido mide quién tiene ese contrato en una fecha, y no qué parte de los contratos nuevos es indefinida."
         ]
       },
@@ -1007,7 +1007,7 @@
       "id": "OV-2026-0013",
       "ejemplo": true,
       "titular": "En un municipio de Tenerife, las ayudas al alquiler llegaron a 1.250 unidades de convivencia en 2026, frente a 410 en 2025, con una cuantía media anual que bajó de 1.980 a 1.120 euros",
-      "resumen": "Según las resoluciones de la convocatoria municipal, 1.250 unidades de convivencia recibieron ayuda al alquiler en 2026, frente a 410 en 2025. El presupuesto pasó de 811.800 euros a 1,4 millones, y la cuantía media anual por ayuda bajó de 1.980 a 1.120 euros, un 43,4 % menos.",
+      "resumen": "Según las resoluciones de la convocatoria municipal, 1.250 unidades de convivencia recibieron ayuda al alquiler en 2026, frente a 410 en 2025. El presupuesto pasó de 811.800 euros a 1,4 millones, y la cuantía media anual por ayuda bajó de 1.980 a 1.120 euros, un 43,4 % menos.",
       "calificacion": {
         "valor": 3,
         "etiqueta": "Contexto"
@@ -1032,8 +1032,8 @@
           "Las ayudas concedidas pasaron de 410 en 2025 a 1.250 en 2026, algo más del triple."
         ],
         "en_contra": [
-          "La cuantía media anual por ayuda bajó de 1.980 euros en 2025 a 1.120 euros en 2026, un 43,4 % menos.",
-          "El presupuesto total creció un 72,5 %, de 811.800 euros a 1,4 millones, menos que el número de ayudas."
+          "La cuantía media anual por ayuda bajó de 1.980 euros en 2025 a 1.120 euros en 2026, un 43,4 % menos.",
+          "El presupuesto total creció un 72,5 %, de 811.800 euros a 1,4 millones, menos que el número de ayudas."
         ]
       },
       "fuentes": [
@@ -1162,7 +1162,7 @@
       "id": "OV-2026-0015",
       "ejemplo": true,
       "titular": "Las ayudas de comedor escolar concedidas en Canarias para el curso 2026-2027 son 76.050 en la resolución provisional, 1.740 más que en el curso 2025-2026",
-      "resumen": "Según la resolución provisional de la Consejería de Educación del Gobierno de Canarias, 76.050 estudiantes tienen concedida ayuda de comedor para el curso 2026-2027, frente a 74.310 en el curso 2025-2026, un 2,3 % más. Las solicitudes denegadas fueron 21.400, frente a 22.100 el curso anterior.",
+      "resumen": "Según la resolución provisional de la Consejería de Educación del Gobierno de Canarias, 76.050 estudiantes tienen concedida ayuda de comedor para el curso 2026-2027, frente a 74.310 en el curso 2025-2026, un 2,3 % más. Las solicitudes denegadas fueron 21.400, frente a 22.100 el curso anterior.",
       "calificacion": {
         "valor": 1,
         "etiqueta": "Falso"
@@ -1231,14 +1231,14 @@
     {
       "id": "OV-2026-0016",
       "ejemplo": true,
-      "titular": "La ganancia media anual de las mujeres en Canarias fue de 20.650 euros en 2024, un 14,6 % menos que la de los hombres, que fue de 24.180 euros",
-      "resumen": "Según la Encuesta anual de estructura salarial del INE, la ganancia media anual por persona trabajadora en Canarias fue de 20.650 euros para las mujeres y de 24.180 euros para los hombres en 2024. La diferencia, de 3.530 euros, equivale al 14,6 %.",
+      "titular": "La ganancia media anual de las mujeres en Canarias fue de 20.650 euros en 2024, un 14,6 % menos que la de los hombres, que fue de 24.180 euros",
+      "resumen": "Según la Encuesta anual de estructura salarial del INE, la ganancia media anual por persona trabajadora en Canarias fue de 20.650 euros para las mujeres y de 24.180 euros para los hombres en 2024. La diferencia, de 3.530 euros, equivale al 14,6 %.",
       "calificacion": {
         "valor": 4,
         "etiqueta": "Verdadero"
       },
       "afirmacion": {
-        "texto": "Las mujeres en Canarias siguen cobrando de media casi un 15 % menos que los hombres.",
+        "texto": "Las mujeres en Canarias siguen cobrando de media casi un 15 % menos que los hombres.",
         "tipo_emisora": "Organización social",
         "fecha": "2026-08-29",
         "canal": "Entrevista en radio",
@@ -1254,7 +1254,7 @@
       "por_que": "Una organización social hizo la afirmación en una entrevista de radio de alcance autonómico (vía de influenciabilidad), y se refiere a la desigualdad salarial entre mujeres y hombres. Es verificable con la última edición de la encuesta oficial de salarios, que se refiere a 2024.",
       "evidencia": {
         "a_favor": [
-          "La ganancia media anual de las mujeres fue un 14,6 % inferior a la de los hombres en Canarias en 2024, un dato que redondeado se corresponde con casi un 15 %.",
+          "La ganancia media anual de las mujeres fue un 14,6 % inferior a la de los hombres en Canarias en 2024, un dato que redondeado se corresponde con casi un 15 %.",
           "La diferencia fue de 3.530 euros al año por persona trabajadora."
         ],
         "en_contra": []
@@ -1300,7 +1300,7 @@
     {
       "id": "OV-2026-0017",
       "ejemplo": true,
-      "titular": "El consultorio de La Graciosa tuvo personal médico presencial 141 de los 181 días del primer semestre de 2026, el 77,9 %, y personal de enfermería todos los días",
+      "titular": "El consultorio de La Graciosa tuvo personal médico presencial 141 de los 181 días del primer semestre de 2026, el 77,9 %, y personal de enfermería todos los días",
       "resumen": "Según el Servicio Canario de la Salud, el consultorio de La Graciosa contó con personal médico presencial 141 de los 181 días del primer semestre de 2026. Los 40 días restantes hubo personal de enfermería presencial y consulta médica a distancia con el centro de salud de referencia.",
       "calificacion": {
         "valor": 2,
@@ -1326,7 +1326,7 @@
           "El consultorio tuvo atención sanitaria presencial todos los días del primer semestre de 2026, con personal de enfermería los 181 días."
         ],
         "en_contra": [
-          "Hubo personal médico presencial 141 de los 181 días del primer semestre de 2026, el 77,9 %.",
+          "Hubo personal médico presencial 141 de los 181 días del primer semestre de 2026, el 77,9 %.",
           "Los 40 días sin personal médico presencial, la atención médica se prestó por teleconsulta desde el centro de salud de referencia."
         ]
       },
@@ -1584,14 +1584,14 @@
     {
       "id": "OV-2026-0021",
       "ejemplo": true,
-      "titular": "El paro registrado de las personas menores de 25 años en Fuerteventura bajó un 4,8 % en un año, de 1.118 en agosto de 2025 a 1.064 en agosto de 2026",
-      "resumen": "Según el Servicio Público de Empleo Estatal, el paro registrado de las personas menores de 25 años en Fuerteventura fue de 1.064 en agosto de 2026, frente a 1.118 en agosto de 2025, un 4,8 % menos. En los últimos 24 meses, la mayor subida interanual fue del 6,2 %, en marzo de 2025.",
+      "titular": "El paro registrado de las personas menores de 25 años en Fuerteventura bajó un 4,8 % en un año, de 1.118 en agosto de 2025 a 1.064 en agosto de 2026",
+      "resumen": "Según el Servicio Público de Empleo Estatal, el paro registrado de las personas menores de 25 años en Fuerteventura fue de 1.064 en agosto de 2026, frente a 1.118 en agosto de 2025, un 4,8 % menos. En los últimos 24 meses, la mayor subida interanual fue del 6,2 %, en marzo de 2025.",
       "calificacion": {
         "valor": 1,
         "etiqueta": "Falso"
       },
       "afirmacion": {
-        "texto": "El paro entre los menores de 25 años se dispara un 40 % en Fuerteventura en el último año.",
+        "texto": "El paro entre los menores de 25 años se dispara un 40 % en Fuerteventura en el último año.",
         "tipo_emisora": "Medio de comunicación digital",
         "fecha": "2026-09-25",
         "canal": "Facebook",
@@ -1608,8 +1608,8 @@
       "evidencia": {
         "a_favor": [],
         "en_contra": [
-          "El paro registrado de las personas menores de 25 años bajó de 1.118 a 1.064 entre agosto de 2025 y agosto de 2026, un 4,8 %.",
-          "Ninguna variación interanual de los últimos 24 meses se acerca al 40 %: la mayor subida fue del 6,2 %, en marzo de 2025."
+          "El paro registrado de las personas menores de 25 años bajó de 1.118 a 1.064 entre agosto de 2025 y agosto de 2026, un 4,8 %.",
+          "Ninguna variación interanual de los últimos 24 meses se acerca al 40 %: la mayor subida fue del 6,2 %, en marzo de 2025."
         ]
       },
       "fuentes": [
@@ -1708,14 +1708,14 @@
     {
       "id": "OV-2026-0023",
       "ejemplo": true,
-      "titular": "En un municipio de La Palma, las ayudas de emergencia social llegaron a 604 unidades de convivencia entre enero y agosto de 2026, un 32,7 % más que en el mismo periodo de 2025",
+      "titular": "En un municipio de La Palma, las ayudas de emergencia social llegaron a 604 unidades de convivencia entre enero y agosto de 2026, un 32,7 % más que en el mismo periodo de 2025",
       "resumen": "Según el registro municipal de prestaciones, entre enero y agosto de 2026 se concedieron 912 ayudas de emergencia social a 604 unidades de convivencia, frente a 598 ayudas y 455 unidades de convivencia en el mismo periodo de 2025. La cifra de 900 corresponde a las ayudas concedidas, no a los hogares atendidos.",
       "calificacion": {
         "valor": 2,
         "etiqueta": "Engañoso"
       },
       "afirmacion": {
-        "texto": "Hemos atendido a 900 familias con ayudas de emergencia social este año, un 50 % más que el año pasado.",
+        "texto": "Hemos atendido a 900 familias con ayudas de emergencia social este año, un 50 % más que el año pasado.",
         "tipo_emisora": "Cargo público municipal",
         "fecha": "2026-09-28",
         "canal": "Rueda de prensa",
@@ -1731,11 +1731,11 @@
       "por_que": "Un cargo público municipal presentó el dato en rueda de prensa como balance de la atención a hogares en situación de vulnerabilidad económica (vía de influenciabilidad). El número de ayudas y el de unidades de convivencia beneficiarias figuran en el registro municipal y en la memoria remitida al Gobierno de Canarias.",
       "evidencia": {
         "a_favor": [
-          "Entre enero y agosto de 2026 se concedieron 912 ayudas de emergencia social, un 52,5 % más que las 598 del mismo periodo de 2025."
+          "Entre enero y agosto de 2026 se concedieron 912 ayudas de emergencia social, un 52,5 % más que las 598 del mismo periodo de 2025."
         ],
         "en_contra": [
           "Las 912 ayudas se concedieron a 604 unidades de convivencia, porque 211 de ellas recibieron más de una ayuda en el periodo.",
-          "El número de unidades de convivencia atendidas creció un 32,7 %, de 455 a 604."
+          "El número de unidades de convivencia atendidas creció un 32,7 %, de 455 a 604."
         ]
       },
       "fuentes": [
@@ -1773,7 +1773,7 @@
       "id": "OV-2026-0024",
       "ejemplo": true,
       "titular": "La atención primaria de Canarias incorporó 207 profesionales de medicina de familia entre enero y agosto de 2026, pero 159 causaron baja, con un aumento neto de 48",
-      "resumen": "Según el Servicio Canario de la Salud, entre enero y agosto de 2026 se incorporaron 207 profesionales de medicina de familia a la atención primaria y causaron baja 159, sobre todo por jubilación. La plantilla en activo pasó de 1.642 a 1.690 profesionales, un 2,9 % más.",
+      "resumen": "Según el Servicio Canario de la Salud, entre enero y agosto de 2026 se incorporaron 207 profesionales de medicina de familia a la atención primaria y causaron baja 159, sobre todo por jubilación. La plantilla en activo pasó de 1.642 a 1.690 profesionales, un 2,9 % más.",
       "calificacion": {
         "valor": 3,
         "etiqueta": "Contexto"
@@ -1799,7 +1799,7 @@
         ],
         "en_contra": [
           "En el mismo periodo causaron baja 159 profesionales, 112 de ellos por jubilación.",
-          "La plantilla en activo creció en 48 profesionales entre enero y agosto de 2026, un 2,9 %, de 1.642 a 1.690."
+          "La plantilla en activo creció en 48 profesionales entre enero y agosto de 2026, un 2,9 %, de 1.642 a 1.690."
         ]
       },
       "fuentes": [
@@ -1922,14 +1922,14 @@
     {
       "id": "OV-2026-0026",
       "ejemplo": true,
-      "titular": "La renta media de los nuevos contratos de alquiler en Canarias subió un 8,7 % en 2025, de 820 a 891 euros al mes, el doble que el coste salarial (4,3 %)",
-      "resumen": "Según la estadística de fianzas de arrendamiento del Gobierno de Canarias, la renta media de los nuevos contratos de alquiler de vivienda fue de 891 euros al mes en 2025, un 8,7 % más que en 2024. El coste salarial medio por persona trabajadora creció un 4,3 % en 2025 según el INE, de modo que la proporción del doble se cumple con la subida del 8,7 % y no con la del 12 %.",
+      "titular": "La renta media de los nuevos contratos de alquiler en Canarias subió un 8,7 % en 2025, de 820 a 891 euros al mes, el doble que el coste salarial (4,3 %)",
+      "resumen": "Según la estadística de fianzas de arrendamiento del Gobierno de Canarias, la renta media de los nuevos contratos de alquiler de vivienda fue de 891 euros al mes en 2025, un 8,7 % más que en 2024. El coste salarial medio por persona trabajadora creció un 4,3 % en 2025 según el INE, de modo que la proporción del doble se cumple con la subida del 8,7 % y no con la del 12 %.",
       "calificacion": {
         "valor": 2,
         "etiqueta": "Engañoso"
       },
       "afirmacion": {
-        "texto": "El alquiler ha subido un 12 % en Canarias en el último año, el doble que los salarios.",
+        "texto": "El alquiler ha subido un 12 % en Canarias en el último año, el doble que los salarios.",
         "tipo_emisora": "Cargo público autonómico",
         "fecha": "2026-10-12",
         "canal": "Entrevista en radio",
@@ -1945,11 +1945,11 @@
       "por_que": "Un cargo público autonómico hizo la afirmación en una entrevista de radio de alcance autonómico (vía de influenciabilidad), y se refiere a la evolución del coste de la vivienda en alquiler respecto a los ingresos. La renta de los contratos y la evolución salarial son verificables con estadísticas oficiales.",
       "evidencia": {
         "a_favor": [
-          "La renta media de los nuevos contratos de alquiler subió un 8,7 % en 2025, el doble que el coste salarial medio, que creció un 4,3 %."
+          "La renta media de los nuevos contratos de alquiler subió un 8,7 % en 2025, el doble que el coste salarial medio, que creció un 4,3 %."
         ],
         "en_contra": [
-          "La subida de la renta media de los nuevos contratos en 2025 fue del 8,7 %, de 820 a 891 euros al mes, y no del 12 %.",
-          "Con una subida del 12 %, el alquiler habría crecido casi el triple que el coste salarial, no el doble."
+          "La subida de la renta media de los nuevos contratos en 2025 fue del 8,7 %, de 820 a 891 euros al mes, y no del 12 %.",
+          "Con una subida del 12 %, el alquiler habría crecido casi el triple que el coste salarial, no el doble."
         ]
       },
       "fuentes": [
@@ -1985,7 +1985,7 @@
       "replica": {
         "ofrecida": true,
         "fecha_solicitud": "2026-10-12",
-        "respuesta": "La persona emisora respondió el 14 de octubre de 2026 que la cifra del 12 % procedía de precios de oferta publicados en internet."
+        "respuesta": "La persona emisora respondió el 14 de octubre de 2026 que la cifra del 12 % procedía de precios de oferta publicados en internet."
       },
       "correcciones": [],
       "emergencia": false
@@ -2064,8 +2064,8 @@
     {
       "id": "OV-2026-0028",
       "ejemplo": true,
-      "titular": "En La Gomera, 266 de las 1.080 personas con grado de dependencia reconocido recibían ayuda a domicilio a 30 de septiembre de 2026, el 24,6 %",
-      "resumen": "Según el Gobierno de Canarias, a 30 de septiembre de 2026 recibían el servicio de ayuda a domicilio 266 de las 1.080 personas con grado de dependencia reconocido residentes en La Gomera, el 24,6 %, casi una de cada cuatro.",
+      "titular": "En La Gomera, 266 de las 1.080 personas con grado de dependencia reconocido recibían ayuda a domicilio a 30 de septiembre de 2026, el 24,6 %",
+      "resumen": "Según el Gobierno de Canarias, a 30 de septiembre de 2026 recibían el servicio de ayuda a domicilio 266 de las 1.080 personas con grado de dependencia reconocido residentes en La Gomera, el 24,6 %, casi una de cada cuatro.",
       "calificacion": {
         "valor": 4,
         "etiqueta": "Verdadero"
@@ -2087,7 +2087,7 @@
       "por_que": "Un cargo público insular hizo la afirmación en una entrevista de radio (vía de influenciabilidad), y se refiere a uno de los servicios más demandados por las personas en situación de dependencia que viven en sus hogares. Es verificable con los datos de prestaciones por isla del sistema de dependencia.",
       "evidencia": {
         "a_favor": [
-          "Un total de 266 de las 1.080 personas con grado reconocido recibían ayuda a domicilio a 30 de septiembre de 2026, el 24,6 %, una proporción que redondeada equivale a casi una de cada cuatro."
+          "Un total de 266 de las 1.080 personas con grado reconocido recibían ayuda a domicilio a 30 de septiembre de 2026, el 24,6 %, una proporción que redondeada equivale a casi una de cada cuatro."
         ],
         "en_contra": []
       },

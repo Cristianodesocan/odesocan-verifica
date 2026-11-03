@@ -1,0 +1,211 @@
+/* Ficha de verificación */
+
+.ov-app .ov-ficha {
+  padding-top: var(--ov-e-5);
+}
+
+.ov-app .ov-ficha__miga {
+  font-size: 14px;
+  color: var(--ov-muted-texto);
+  margin-bottom: var(--ov-e-5);
+}
+
+.ov-app .ov-ficha__miga a {
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-ficha__rejilla {
+  display: grid;
+  gap: var(--ov-e-7);
+}
+
+@media (min-width: 1024px) {
+  .ov-app .ov-ficha__rejilla {
+    grid-template-columns: minmax(0, 720px) minmax(240px, 300px);
+    gap: var(--ov-e-8);
+    align-items: start;
+  }
+
+  .ov-app .ov-ficha__lateral {
+    position: sticky;
+    top: calc(var(--ov-alto-banda) + var(--ov-alto-cabecera) + var(--ov-e-5));
+  }
+}
+
+.ov-app .ov-ficha__cabeza {
+  display: grid;
+  gap: var(--ov-e-4);
+}
+
+.ov-app .ov-ficha__calificacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ov-e-3);
+}
+
+/* El dato verificado se compone como el sumario de .np. */
+.ov-app .ov-ficha__titular {
+  border-left: 4px solid var(--ov-teal);
+  padding: 8px 0 8px 20px;
+  font-size: var(--ov-t-sumario);
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  color: var(--ov-tinta);
+  text-wrap: pretty;
+}
+
+.ov-app .ov-ficha__resumen {
+  font-size: clamp(17px, 2.2vw, 19px);
+  line-height: 1.65;
+  color: var(--ov-cuerpo);
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-ficha__ejemplo {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-ficha__correccion {
+  margin-top: var(--ov-e-6);
+  padding: var(--ov-e-4) var(--ov-e-5);
+  background: var(--ov-claro);
+  border: 1.5px solid var(--ov-tinta);
+  border-radius: var(--ov-radio);
+  display: grid;
+  gap: var(--ov-e-2);
+}
+
+.ov-app .ov-ficha__cambio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.ov-app .ov-ficha__seccion {
+  margin-top: var(--ov-e-7);
+}
+
+.ov-app .ov-ficha__seccion > p {
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-ficha__aclaracion,
+.ov-app .ov-ficha__meta {
+  margin-top: var(--ov-e-3);
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-ficha__evidencia {
+  display: grid;
+  gap: var(--ov-e-5);
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-ficha__evidencia {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--ov-e-6);
+  }
+}
+
+.ov-app .ov-ficha__evidencia > div {
+  border-top: 2px solid var(--ov-tinta);
+  padding-top: var(--ov-e-3);
+}
+
+.ov-app .ov-ficha__evidencia .ov-lista {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.ov-app .ov-fuentes {
+  display: grid;
+  border-top: 1px solid var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-fuentes__item {
+  padding: var(--ov-e-3) 0;
+  border-bottom: 1px solid var(--ov-linea);
+  display: grid;
+  gap: 2px;
+}
+
+.ov-app .ov-fuentes__organismo {
+  font-weight: 600;
+  color: var(--ov-tinta);
+  font-size: 15.5px;
+}
+
+.ov-app .ov-fuentes__titulo {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ov-app .ov-fuentes__meta {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-historial {
+  display: grid;
+  border-left: 2px solid var(--ov-linea-fuerte);
+  margin-left: 6px;
+}
+
+.ov-app .ov-historial__item {
+  position: relative;
+  display: grid;
+  gap: 2px;
+  padding: 0 0 var(--ov-e-4) var(--ov-e-5);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.ov-app .ov-historial__item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--ov-tinta);
+  border-radius: 50%;
+  background: var(--ov-blanco);
+}
+
+.ov-app .ov-historial__fecha {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-ficha__marcado {
+  margin-top: var(--ov-e-7);
+}
+
+.ov-app .ov-ficha__lateral {
+  display: grid;
+  gap: var(--ov-e-5);
+}
+
+.ov-app .ov-ficha__bloque {
+  border-top: 2px solid var(--ov-tinta);
+  padding-top: var(--ov-e-3);
+  display: grid;
+  gap: var(--ov-e-2);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.ov-app .ov-compartir__estado {
+  min-height: 1.5em;
+  font-size: 14px;
+  color: var(--ov-muted-texto);
+}

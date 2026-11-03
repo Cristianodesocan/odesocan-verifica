@@ -1,0 +1,748 @@
+/* Portal de verificaciones: aviso, indicadores, explorador y filtros. */
+
+/* Aviso permanente de datos de ejemplo, fijo bajo la banda de prototipo. */
+.ov-app .ov-portal__aviso {
+  position: sticky;
+  top: var(--ov-alto-banda);
+  z-index: 40;
+  background: var(--ov-tinta);
+  color: var(--ov-claro);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.ov-app .ov-portal__aviso p {
+  padding-block: 8px;
+}
+
+@media (min-width: 1024px) {
+  .ov-app .ov-portal__aviso {
+    top: calc(var(--ov-alto-banda) + var(--ov-alto-cabecera));
+  }
+}
+
+/* ---------- Indicadores (panel navy) ---------- */
+
+.ov-app .ov-indicadores {
+  margin-top: var(--ov-e-6);
+  padding-block: var(--ov-e-7);
+}
+
+.ov-app .ov-indicadores__titulo {
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-indicadores__resumen {
+  border-left: 4px solid var(--ov-teal);
+  padding: 6px 0 6px 20px;
+  max-width: 30ch;
+  font-size: clamp(22px, 3.4vw, 30px);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ov-claro);
+  text-wrap: balance;
+}
+
+.ov-app .ov-indicadores__rejilla {
+  margin-top: var(--ov-e-7);
+  display: grid;
+  gap: var(--ov-e-7);
+}
+
+/* En pantallas anchas, dos columnas que se reparten la altura (los
+   gráficos tienen alturas muy distintas y una rejilla dejaría huecos). */
+@media (min-width: 900px) {
+  .ov-app .ov-indicadores__rejilla {
+    display: block;
+    columns: 2;
+    column-gap: var(--ov-e-8);
+  }
+
+  .ov-app .ov-indicadores__rejilla > .ov-grafico {
+    break-inside: avoid;
+    margin-bottom: var(--ov-e-7);
+  }
+}
+
+.ov-app .ov-indicadores__cautela {
+  margin-top: var(--ov-e-7);
+  padding-top: var(--ov-e-4);
+  border-top: 1px solid var(--ov-linea-navy);
+  max-width: 70ch;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-grafico {
+  margin: 0;
+  min-width: 0;
+}
+
+.ov-app .ov-grafico__cabeza {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--ov-e-3);
+  padding-bottom: var(--ov-e-3);
+  margin-bottom: var(--ov-e-3);
+  border-bottom: 1px solid var(--ov-linea-navy);
+}
+
+.ov-app .ov-grafico__titulo {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-grafico__alternar {
+  flex-shrink: 0;
+  min-height: var(--ov-tactil);
+  padding: 0 2px;
+  background: none;
+  border: 0;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-claro);
+  text-decoration: underline;
+  text-decoration-color: var(--ov-teal);
+  text-underline-offset: 3px;
+}
+
+.ov-app .ov-grafico__nota {
+  margin-top: var(--ov-e-3);
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ov-muted);
+}
+
+/* Barras horizontales */
+.ov-app .ov-barras {
+  display: grid;
+  gap: 2px;
+}
+
+.ov-app .ov-barras__fila {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'etiqueta valor'
+    'pista pista';
+  align-items: center;
+  gap: 6px 12px;
+  padding: 8px 8px 10px;
+  background: none;
+  border: 0;
+  border-left: 3px solid transparent;
+  text-align: left;
+  color: var(--ov-claro);
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+@media (min-width: 600px) {
+  .ov-app .ov-barras__fila {
+    grid-template-columns: minmax(120px, 0.9fr) minmax(0, 1.6fr) 84px;
+    grid-template-areas: 'etiqueta pista valor';
+  }
+}
+
+.ov-app .ov-barras__fila--boton {
+  cursor: pointer;
+  min-height: var(--ov-tactil);
+}
+
+.ov-app .ov-barras__fila--boton:hover {
+  background: var(--ov-navy-2);
+}
+
+.ov-app .ov-barras__fila--boton[aria-pressed='true'] {
+  background: var(--ov-navy-2);
+  border-left-color: var(--ov-teal);
+}
+
+.ov-app .ov-barras__etiqueta {
+  grid-area: etiqueta;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.ov-app .ov-barras__pista {
+  grid-area: pista;
+  height: 12px;
+  background: rgba(248, 249, 251, 0.07);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ov-app .ov-barras__relleno {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 2px;
+}
+
+.ov-app .ov-barras__valor {
+  grid-area: valor;
+  font-family: var(--ov-f-mono);
+  font-size: 13px;
+  white-space: nowrap;
+  color: var(--ov-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.ov-app .ov-barras__valor strong {
+  color: var(--ov-claro);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* Columnas mensuales */
+.ov-app .ov-columnas {
+  width: 100%;
+}
+
+.ov-app .ov-columnas__svg {
+  display: block;
+  overflow: visible;
+}
+
+.ov-app .ov-columnas__col {
+  fill: var(--ov-neutro);
+}
+
+.ov-app .ov-columnas__base {
+  stroke: var(--ov-linea-navy);
+}
+
+.ov-app .ov-columnas__valor {
+  fill: var(--ov-claro);
+  font-family: var(--ov-f-mono);
+  font-size: 12px;
+}
+
+.ov-app .ov-columnas__mes {
+  fill: var(--ov-muted);
+  font-family: var(--ov-f-mono);
+  font-size: 11.5px;
+}
+
+/* Proporción (réplica) */
+.ov-app .ov-proporcion {
+  display: grid;
+  gap: var(--ov-e-4);
+}
+
+.ov-app .ov-proporcion__texto {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ov-claro);
+  margin-bottom: 8px;
+}
+
+.ov-app .ov-proporcion__pista {
+  display: block;
+  height: 12px;
+  background: rgba(248, 249, 251, 0.07);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ov-app .ov-proporcion__relleno {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--ov-neutro);
+}
+
+/* ---------- Explorador ---------- */
+
+.ov-app .ov-explorador {
+  margin-top: var(--ov-e-8);
+}
+
+.ov-app .ov-explorador__rejilla {
+  display: grid;
+  gap: var(--ov-e-6);
+}
+
+@media (min-width: 1024px) {
+  .ov-app .ov-explorador__rejilla {
+    grid-template-columns: 292px minmax(0, 1fr);
+    gap: var(--ov-e-7);
+    align-items: start;
+  }
+
+  .ov-app .ov-explorador__filtros {
+    position: sticky;
+    top: calc(var(--ov-alto-banda) + var(--ov-alto-cabecera) + 52px);
+    max-height: calc(100vh - var(--ov-alto-banda) - var(--ov-alto-cabecera) - 68px);
+    overflow-y: auto;
+    padding: 4px 8px 24px 4px;
+    scrollbar-width: thin;
+  }
+}
+
+.ov-app .ov-explorador__mira {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding-bottom: var(--ov-e-4);
+  margin-bottom: var(--ov-e-4);
+  border-bottom: 1px solid var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-explorador__estado {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-explorador__cuenta {
+  font-weight: 600;
+  color: var(--ov-tinta);
+  padding-bottom: var(--ov-e-3);
+  margin-bottom: var(--ov-e-2);
+  scroll-margin-top: calc(var(--ov-alto-banda) + 56px);
+}
+
+@media (min-width: 1024px) {
+  .ov-app .ov-explorador__cuenta {
+    scroll-margin-top: calc(var(--ov-alto-banda) + var(--ov-alto-cabecera) + 56px);
+  }
+}
+
+.ov-app .ov-resultados {
+  display: grid;
+  gap: var(--ov-e-3);
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-resultados {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--ov-e-3) var(--ov-e-6);
+  }
+}
+
+.ov-app .ov-vacio {
+  display: grid;
+  gap: var(--ov-e-4);
+  justify-items: start;
+  padding: var(--ov-e-6) 0;
+  border-top: 2px solid var(--ov-tinta);
+  max-width: 52ch;
+}
+
+/* La mira como control */
+.ov-app .ov-control {
+  display: inline-grid;
+  place-items: center;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-control--leyenda {
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 2px 4px;
+}
+
+.ov-app .ov-control--leyenda .ov-control__mira {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.ov-app .ov-control__anillo {
+  stroke: currentColor;
+}
+
+.ov-app .ov-control__marca {
+  stroke: currentColor;
+  transition: stroke var(--ov-rapido) ease, stroke-width var(--ov-rapido) ease;
+}
+
+.ov-app .ov-control__marca--activa {
+  stroke: var(--ov-teal);
+}
+
+.ov-app .ov-control__cifra {
+  fill: currentColor;
+  font-family: var(--ov-f-sans);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.ov-app .ov-control__etiqueta {
+  font-family: var(--ov-f-mono);
+  font-size: 11.5px;
+  line-height: 1.2;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-control__etiqueta--activa {
+  color: var(--ov-tinta);
+  font-weight: 600;
+}
+
+.ov-app .ov-control__etiqueta--0 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.ov-app .ov-control__etiqueta--1 {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: start;
+}
+
+.ov-app .ov-control__etiqueta--2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.ov-app .ov-control__etiqueta--3 {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: end;
+}
+
+/* ---------- Filtros ---------- */
+
+.ov-app .ov-filtros {
+  display: grid;
+  gap: var(--ov-e-5);
+}
+
+.ov-app .ov-filtros__grupo {
+  border: 0;
+  min-width: 0;
+  display: grid;
+  gap: var(--ov-e-2);
+}
+
+.ov-app .ov-filtros__leyenda {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.ov-app .ov-filtros__busqueda,
+.ov-app .ov-filtros__rango input {
+  width: 100%;
+  min-height: var(--ov-tactil);
+  padding: 8px 12px;
+  border: 1.5px solid var(--ov-tinta);
+  border-radius: var(--ov-radio);
+  background: var(--ov-blanco);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-filtros__busqueda::placeholder {
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-filtros__opciones {
+  display: grid;
+  gap: 0;
+}
+
+.ov-app .ov-opcion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--ov-tinta);
+  cursor: pointer;
+}
+
+.ov-app .ov-opcion input,
+.ov-app .ov-chip input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+}
+
+/* La marca de la opción es una mira pequeña: al elegirla aparece el punto. */
+.ov-app .ov-opcion__marca {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--ov-tinta);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}
+
+.ov-app .ov-opcion__marca::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ov-tinta);
+  transform: scale(0);
+  transition: transform var(--ov-rapido) ease;
+}
+
+.ov-app .ov-opcion input:checked + .ov-opcion__marca::after {
+  transform: scale(1);
+}
+
+.ov-app .ov-opcion:has(input:checked) {
+  font-weight: 600;
+}
+
+.ov-app .ov-opcion:has(input:focus-visible) .ov-opcion__marca,
+.ov-app .ov-chip:has(input:focus-visible) {
+  outline: 3px solid var(--ov-foco);
+  outline-offset: 2px;
+}
+
+.ov-app .ov-filtros__rango {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--ov-e-3);
+  margin-top: var(--ov-e-2);
+}
+
+.ov-app .ov-filtros__rango label {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-filtros__rango input {
+  font-size: 14px;
+  padding: 6px 8px;
+}
+
+.ov-app .ov-filtros__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ov-app .ov-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--ov-tactil);
+  padding: 6px 12px;
+  border: 1.5px solid var(--ov-linea-fuerte);
+  border-radius: var(--ov-radio);
+  background: var(--ov-blanco);
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ov-tinta);
+  cursor: pointer;
+  user-select: none;
+}
+
+.ov-app .ov-chip:hover {
+  border-color: var(--ov-tinta);
+}
+
+.ov-app .ov-chip:has(input:checked) {
+  background: var(--ov-tinta);
+  border-color: var(--ov-tinta);
+  color: var(--ov-blanco);
+}
+
+.ov-app .ov-chip--falso:has(input:checked) {
+  background: var(--ov-falso);
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-chip--enganoso:has(input:checked) {
+  background: var(--ov-enganoso);
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-chip--contexto:has(input:checked) {
+  background: var(--ov-contexto);
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-chip--verdadero:has(input:checked) {
+  background: var(--ov-verdadero);
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-filtros__limpiar {
+  justify-self: start;
+}
+
+/* ---------- Correcciones e informes ---------- */
+
+.ov-app .ov-portal__mas {
+  margin-top: var(--ov-e-8);
+}
+
+.ov-app .ov-portal__enlaces {
+  display: grid;
+  gap: var(--ov-e-5);
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-portal__enlaces {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--ov-e-6);
+  }
+}
+
+.ov-app .ov-portal__enlaces li {
+  border-top: 2px solid var(--ov-tinta);
+  padding-top: var(--ov-e-3);
+}
+
+.ov-app .ov-portal__enlace {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-portal__enlace--pendiente {
+  display: inline-block;
+}
+
+.ov-app .ov-portal__enlaces p {
+  margin-top: var(--ov-e-2);
+  font-size: 15.5px;
+}
+
+/* ---------- Botón flotante de filtros (móvil) ---------- */
+
+.ov-app .ov-fab {
+  position: fixed;
+  right: var(--ov-margen);
+  bottom: calc(var(--ov-alto-pestanas) + 16px + env(safe-area-inset-bottom, 0));
+  z-index: 45;
+  display: grid;
+  justify-items: center;
+  gap: 0;
+  padding: 6px 8px 8px;
+  background: var(--ov-navy);
+  color: var(--ov-claro);
+  border: 0;
+  border-radius: 40px 40px 16px 16px;
+  box-shadow: 0 6px 18px rgba(13, 27, 42, 0.28);
+  --ov-foco: var(--ov-teal);
+}
+
+.ov-app .ov-fab .ov-control {
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-fab .ov-control__cifra {
+  font-size: 24px;
+}
+
+.ov-app .ov-fab__texto {
+  font-family: var(--ov-f-mono);
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: -4px;
+}
+
+/* ---------- Hoja inferior de filtros ---------- */
+
+.ov-app .ov-hoja {
+  margin: auto 0 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 88dvh;
+  border: 0;
+  border-radius: 14px 14px 0 0;
+  background: var(--ov-blanco);
+  color: var(--ov-cuerpo);
+  box-shadow: 0 -8px 32px rgba(13, 27, 42, 0.3);
+  overscroll-behavior: contain;
+}
+
+.ov-app .ov-hoja::backdrop {
+  background: rgba(13, 27, 42, 0.62);
+}
+
+.ov-app .ov-hoja[open] {
+  animation: ov-hoja-sube 260ms var(--ov-curva);
+}
+
+@keyframes ov-hoja-sube {
+  from {
+    transform: translateY(40%);
+    opacity: 0.4;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.ov-app .ov-hoja__interior {
+  display: grid;
+  gap: var(--ov-e-4);
+  padding: 0 var(--ov-margen) 0;
+}
+
+.ov-app .ov-hoja__cabeza {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ov-e-3);
+  padding: 20px 0 12px;
+  background: var(--ov-blanco);
+  border-bottom: 1px solid var(--ov-linea);
+}
+
+.ov-app .ov-hoja__asa {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 40px;
+  height: 4px;
+  margin-left: -20px;
+  border-radius: 2px;
+  background: var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-hoja__pie {
+  position: sticky;
+  bottom: 0;
+  padding: 12px 0 calc(12px + env(safe-area-inset-bottom, 0));
+  background: var(--ov-blanco);
+  border-top: 1px solid var(--ov-linea);
+}
+
+.ov-app .ov-hoja__ver {
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ov-app .ov-hoja[open] {
+    animation: none;
+  }
+
+  .ov-app .ov-opcion__marca::after,
+  .ov-app .ov-control__marca {
+    transition: none;
+  }
+}
