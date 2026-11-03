@@ -1,0 +1,35 @@
+/* Transparencia */
+
+.ov-app .ov-transparencia .ov-cabeza {
+  padding-top: var(--ov-e-7);
+}
+
+.ov-app .ov-transparencia .ov-bloque + .ov-bloque {
+  margin-top: var(--ov-e-6);
+}
+
+.ov-app .ov-transparencia .ov-bloque__principal > * + * {
+  margin-top: var(--ov-e-3);
+}
+
+.ov-app .ov-transparencia .ov-h3 {
+  margin-bottom: var(--ov-e-3);
+}
+
+.ov-app .ov-transparencia__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ov-e-3) var(--ov-e-5);
+}
+
+.ov-app .ov-transparencia__nota {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-doc-pendiente {
+  font-weight: 600;
+  color: var(--ov-tinta);
+}

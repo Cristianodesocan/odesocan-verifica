@@ -1,0 +1,154 @@
+/*
+ * Reset acotado a la raíz de la aplicación.
+ *
+ * Todo cuelga de .ov-app y usa :where() para no subir la especificidad:
+ * cualquier clase .ov-* gana a estas reglas sin necesidad de !important.
+ * No hay ningún selector global fuera de este bloque.
+ */
+.ov-app {
+  font-family: var(--ov-f-sans);
+  font-weight: 300;
+  font-size: var(--ov-t-cuerpo);
+  line-height: 1.8;
+  color: var(--ov-cuerpo);
+  background: var(--ov-blanco);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+}
+
+.ov-app :where(*, *::before, *::after) {
+  box-sizing: border-box;
+}
+
+.ov-app :where(h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote, fieldset, legend) {
+  margin: 0;
+  padding: 0;
+}
+
+.ov-app :where(ul, ol) {
+  list-style: none;
+}
+
+.ov-app :where(h1, h2, h3, h4) {
+  font-weight: 600;
+  color: var(--ov-tinta);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.ov-app :where(p, li, dd) {
+  text-wrap: pretty;
+}
+
+.ov-app :where(strong, b) {
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app :where(em, i) {
+  font-style: italic;
+}
+
+.ov-app :where(a) {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: var(--ov-teal);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.ov-app :where(a:hover) {
+  text-decoration-thickness: 3px;
+}
+
+.ov-app :where(button, input, select, textarea) {
+  font: inherit;
+  color: inherit;
+}
+
+.ov-app :where(button) {
+  cursor: pointer;
+}
+
+.ov-app :where(img, svg) {
+  display: block;
+  max-width: 100%;
+}
+
+.ov-app :where(table) {
+  border-collapse: collapse;
+}
+
+.ov-app :where(:focus-visible) {
+  outline: 3px solid var(--ov-foco);
+  outline-offset: 2px;
+}
+
+/* Los destinos de foco programático (encabezados al cambiar de página o de
+   apartado) no son controles: reciben el foco para orientar al lector de
+   pantalla, pero no muestran contorno. */
+.ov-app :where([tabindex='-1']:focus) {
+  outline: none;
+}
+
+/* Utilidades compartidas */
+.ov-app .ov-oculto {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.ov-app .ov-contenedor {
+  width: 100%;
+  max-width: var(--ov-ancho-max);
+  margin-inline: auto;
+  padding-inline: var(--ov-margen);
+}
+
+.ov-app .ov-mono {
+  font-family: var(--ov-f-mono);
+  font-weight: 400;
+  font-size: var(--ov-t-mono);
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+.ov-app .ov-id {
+  font-family: var(--ov-f-mono);
+  font-weight: 400;
+  font-size: var(--ov-t-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Transiciones de elemento compartido (View Transitions API) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 180ms;
+}
+
+::view-transition-group(ov-mira) {
+  animation-duration: 520ms;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

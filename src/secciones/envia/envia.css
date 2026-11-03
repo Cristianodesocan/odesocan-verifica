@@ -1,0 +1,766 @@
+/* Envía un contenido: triaje, clasificación, línea de tiempo y formulario. */
+
+.ov-app .ov-envia__bloque {
+  margin-top: var(--ov-e-8);
+}
+
+.ov-app .ov-envia__intro {
+  max-width: var(--ov-ancho-texto);
+  margin-bottom: var(--ov-e-5);
+}
+
+.ov-app .ov-envia__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ov-e-3) var(--ov-e-5);
+}
+
+.ov-app .ov-que-si-no {
+  display: grid;
+  gap: var(--ov-e-4);
+}
+
+@media (min-width: 600px) {
+  .ov-app .ov-que-si-no {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--ov-e-6);
+  }
+}
+
+.ov-app .ov-que-si-no > div {
+  border-top: 2px solid var(--ov-tinta);
+  padding-top: var(--ov-e-3);
+}
+
+/* ---------- Triaje ---------- */
+
+.ov-app .ov-triaje {
+  scroll-margin-top: calc(var(--ov-alto-banda) + 8px);
+}
+
+.ov-app .ov-triaje--paneles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--ov-e-5);
+  align-items: start;
+}
+
+.ov-app .ov-triaje__panel {
+  display: grid;
+  gap: var(--ov-e-3);
+  align-content: start;
+  padding: var(--ov-e-5);
+  border: 1.5px solid var(--ov-tinta);
+  border-radius: var(--ov-radio);
+  background: var(--ov-blanco);
+  min-height: 100%;
+}
+
+.ov-app .ov-triaje__panel--espera {
+  border-style: dashed;
+  border-color: var(--ov-linea-fuerte);
+  background: var(--ov-claro);
+}
+
+.ov-app .ov-triaje__panel--canal:not(.ov-triaje__panel--espera) {
+  background: var(--ov-navy);
+  color: var(--ov-claro);
+  border-color: var(--ov-navy);
+  --ov-foco: var(--ov-teal);
+}
+
+.ov-app .ov-triaje__panel--canal:not(.ov-triaje__panel--espera) .ov-triaje__titulo,
+.ov-app .ov-triaje__panel--canal:not(.ov-triaje__panel--espera) .ov-triaje__paso {
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-triaje__paso {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-triaje__titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-triaje__titulo:focus {
+  outline: none;
+}
+
+.ov-app .ov-triaje__espera {
+  font-size: 15px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-triaje__opciones {
+  display: grid;
+  gap: 8px;
+}
+
+.ov-app .ov-triaje__opcion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 8px 14px 8px 8px;
+  border: 1.5px solid var(--ov-linea-fuerte);
+  border-radius: var(--ov-radio);
+  background: var(--ov-blanco);
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-triaje__opcion:hover {
+  border-color: var(--ov-tinta);
+}
+
+.ov-app .ov-triaje__opcion[aria-pressed='true'] {
+  border-color: var(--ov-tinta);
+  border-width: 2.5px;
+  background: var(--ov-claro);
+}
+
+/* La mira del triaje: hueco fijo a la izquierda de cada opción. */
+.ov-app .ov-triaje__foco {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px dashed var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-triaje__foco--titulo {
+  border: 0;
+}
+
+.ov-app .ov-triaje__opcion[aria-pressed='true'] .ov-triaje__foco {
+  border-color: transparent;
+}
+
+.ov-app .ov-triaje__mira {
+  position: absolute;
+  inset: -3px;
+  display: block;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-triaje__foco--titulo .ov-triaje__mira {
+  color: var(--ov-teal);
+  inset: 0;
+}
+
+.ov-app .ov-triaje__volver {
+  justify-self: start;
+  min-height: var(--ov-tactil);
+  padding: 0;
+  background: none;
+  border: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--ov-teal);
+  text-underline-offset: 3px;
+}
+
+/* Móvil: cada paso ocupa la pantalla, con botones grandes. */
+.ov-app .ov-triaje--pasos .ov-triaje__panel {
+  min-height: calc(100svh - var(--ov-alto-banda) - var(--ov-alto-pestanas) - 140px);
+  margin-inline: calc(var(--ov-margen) * -1);
+  padding: var(--ov-e-5) var(--ov-margen);
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  scroll-margin-top: var(--ov-alto-banda);
+}
+
+.ov-app .ov-triaje--pasos .ov-triaje__opcion {
+  min-height: 60px;
+  font-size: 17px;
+}
+
+.ov-app .ov-triaje--pasos .ov-triaje__titulo {
+  font-size: 23px;
+}
+
+/* Recomendación */
+.ov-app .ov-recomendacion {
+  display: grid;
+  gap: var(--ov-e-4);
+}
+
+.ov-app .ov-recomendacion__112 {
+  display: grid;
+  gap: var(--ov-e-3);
+  font-weight: 400;
+}
+
+.ov-app .ov-recomendacion__112-titulo {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-recomendacion__llamar {
+  font-size: 16px;
+  min-height: 56px;
+}
+
+.ov-app .ov-recomendacion__urgente {
+  font-size: 15px;
+  line-height: 1.6;
+  padding-left: var(--ov-e-3);
+  border-left: 3px solid var(--ov-teal);
+}
+
+.ov-app .ov-recomendacion__etiqueta {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted);
+}
+
+.ov-app .ov-recomendacion__otros {
+  border-color: var(--ov-linea-navy);
+}
+
+.ov-app .ov-recomendacion__otros > summary {
+  color: inherit;
+}
+
+.ov-app .ov-canales {
+  display: grid;
+  gap: var(--ov-e-4);
+}
+
+.ov-app .ov-canal {
+  display: grid;
+  gap: 6px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.ov-app .ov-canales .ov-canal {
+  padding-top: var(--ov-e-3);
+  border-top: 1px solid var(--ov-linea-navy);
+}
+
+.ov-app .ov-canal__nombre {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.ov-app .ov-canal--destacado .ov-canal__nombre {
+  font-size: 22px;
+}
+
+.ov-app .ov-canal__motivo {
+  font-weight: 600;
+}
+
+.ov-app .ov-canal__nota {
+  font-size: 14px;
+  color: var(--ov-muted);
+}
+
+.ov-app .ov-canal__accion {
+  margin-top: 4px;
+}
+
+.ov-app .ov-canal__estado {
+  display: inline-block;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  padding: 4px 8px;
+  border: 1px dashed currentColor;
+  border-radius: 2px;
+}
+
+.ov-app .ov-canal--inactivo .ov-canal__nombre,
+.ov-app .ov-canal--inactivo .ov-canal__uso {
+  opacity: 0.75;
+}
+
+/* Fuera del panel navy (por ejemplo, en móvil) los canales usan tinta. */
+.ov-app .ov-triaje__panel:not(.ov-triaje__panel--canal) .ov-canal__nota {
+  color: var(--ov-muted-texto);
+}
+
+/* ---------- ¿Esto se puede verificar? ---------- */
+
+.ov-app .ov-clasifica {
+  display: grid;
+  gap: var(--ov-e-4);
+  max-width: 720px;
+}
+
+.ov-app .ov-clasifica__posicion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-clasifica__pista-gesto {
+  display: none;
+}
+
+@media (pointer: coarse) {
+  .ov-app .ov-clasifica__pista-gesto {
+    display: inline;
+  }
+}
+
+.ov-app .ov-clasifica__mesa {
+  position: relative;
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  padding: var(--ov-e-5) 0;
+  background: var(--ov-claro);
+  border-radius: var(--ov-radio);
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.ov-app .ov-clasifica__lado {
+  position: absolute;
+  top: 12px;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+  padding: 4px 8px;
+  border: 1.5px solid var(--ov-tinta);
+  border-radius: 2px;
+  background: var(--ov-blanco);
+}
+
+.ov-app .ov-clasifica__lado--no {
+  left: 12px;
+}
+
+.ov-app .ov-clasifica__lado--si {
+  right: 12px;
+}
+
+.ov-app .ov-clasifica__tarjeta {
+  width: min(88%, 460px);
+  padding: var(--ov-e-6) var(--ov-e-5);
+  background: var(--ov-navy);
+  color: var(--ov-claro);
+  border-left: 4px solid var(--ov-teal);
+  border-radius: var(--ov-radio);
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  --ov-foco: var(--ov-teal);
+}
+
+.ov-app .ov-clasifica__tarjeta:active {
+  cursor: grabbing;
+}
+
+.ov-app .ov-clasifica__tarjeta--respondida {
+  cursor: default;
+}
+
+.ov-app .ov-clasifica__texto {
+  font-family: var(--ov-f-serif);
+  font-style: italic;
+  font-size: clamp(21px, 3vw, 26px);
+  line-height: 1.4;
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-clasifica__botones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--ov-e-3);
+}
+
+.ov-app .ov-clasifica__botones button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.ov-app .ov-clasifica__respuesta:empty {
+  display: none;
+}
+
+.ov-app .ov-clasifica__respuesta {
+  display: grid;
+  gap: var(--ov-e-2);
+}
+
+.ov-app .ov-clasifica__veredicto,
+.ov-app .ov-clasifica__resultado {
+  font-weight: 700;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-clasifica__resultado {
+  font-size: 21px;
+}
+
+.ov-app .ov-clasifica > .ov-boton,
+.ov-app .ov-clasifica > .ov-boton-sec {
+  justify-self: start;
+}
+
+/* ---------- Qué pasa después ---------- */
+
+.ov-app .ov-despues {
+  display: grid;
+  gap: var(--ov-e-5);
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-despues {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--ov-e-5);
+  }
+}
+
+.ov-app .ov-despues__paso {
+  position: relative;
+  display: grid;
+  gap: var(--ov-e-2);
+  align-content: start;
+  padding-top: var(--ov-e-6);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.ov-app .ov-despues__paso::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: calc(var(--ov-e-5) * -1);
+  top: 15px;
+  height: 2px;
+  background: var(--ov-tinta);
+}
+
+.ov-app .ov-despues__paso:last-child::before {
+  right: 0;
+}
+
+.ov-app .ov-despues__numero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--ov-blanco);
+  border: 2px solid var(--ov-tinta);
+  font-family: var(--ov-f-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+@media (max-width: 767px) {
+  .ov-app .ov-despues__paso {
+    padding: 0 0 0 48px;
+  }
+
+  .ov-app .ov-despues__paso::before {
+    left: 15px;
+    right: auto;
+    top: 32px;
+    bottom: calc(var(--ov-e-5) * -1);
+    width: 2px;
+    height: auto;
+  }
+
+  .ov-app .ov-despues__paso:last-child::before {
+    display: none;
+  }
+}
+
+/* ---------- Formulario ---------- */
+
+.ov-app .ov-formulario {
+  display: grid;
+  gap: var(--ov-e-5);
+  max-width: 760px;
+  padding: var(--ov-e-5);
+  border: 1.5px solid var(--ov-tinta);
+  border-radius: var(--ov-radio);
+}
+
+@media (max-width: 599px) {
+  .ov-app .ov-formulario {
+    padding: var(--ov-e-4);
+    margin-inline: calc(var(--ov-e-2) * -1);
+  }
+}
+
+.ov-app .ov-formulario__demo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-formulario__errores {
+  padding: var(--ov-e-4);
+  border-left: 6px solid var(--ov-falso);
+  background: var(--ov-claro);
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-formulario__errores ul {
+  margin-top: 6px;
+  display: grid;
+  gap: 4px;
+}
+
+.ov-app .ov-formulario__fila {
+  display: grid;
+  gap: var(--ov-e-5);
+}
+
+@media (min-width: 600px) {
+  .ov-app .ov-formulario__fila {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+}
+
+.ov-app .ov-campo {
+  display: grid;
+  gap: 6px;
+}
+
+.ov-app .ov-campo__etiqueta {
+  font-weight: 600;
+  color: var(--ov-tinta);
+  line-height: 1.4;
+}
+
+.ov-app .ov-campo__opcional {
+  font-weight: 300;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-campo__ayuda {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-campo__control {
+  width: 100%;
+  min-height: var(--ov-tactil);
+  padding: 10px 12px;
+  border: 1.5px solid var(--ov-tinta);
+  border-radius: var(--ov-radio);
+  background: var(--ov-blanco);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ov-tinta);
+  resize: vertical;
+}
+
+.ov-app .ov-campo__control[aria-invalid='true'] {
+  border-color: var(--ov-falso);
+  border-width: 2.5px;
+}
+
+.ov-app .ov-campo__error {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+  padding-left: 10px;
+  border-left: 4px solid var(--ov-falso);
+}
+
+.ov-app .ov-campo__archivo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.ov-app .ov-campo__archivo:has(input:focus-visible) .ov-boton-sec {
+  outline: 3px solid var(--ov-foco);
+  outline-offset: 2px;
+}
+
+.ov-app .ov-campo__nombre-archivo {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-formulario__avisos {
+  display: grid;
+  gap: var(--ov-e-2);
+  font-size: 14.5px;
+  line-height: 1.55;
+  padding-left: var(--ov-e-3);
+  border-left: 3px solid var(--ov-teal);
+}
+
+.ov-app .ov-capa {
+  padding: var(--ov-e-4);
+  background: var(--ov-claro);
+  border-radius: var(--ov-radio);
+}
+
+.ov-app .ov-capa__titulo {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+  margin-bottom: var(--ov-e-3);
+}
+
+.ov-app .ov-capa__datos {
+  display: grid;
+  gap: 8px;
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+.ov-app .ov-capa__datos > div {
+  display: grid;
+  gap: 2px;
+}
+
+@media (min-width: 600px) {
+  .ov-app .ov-capa__datos > div {
+    grid-template-columns: 140px 1fr;
+    gap: 12px;
+  }
+}
+
+.ov-app .ov-capa__datos dt {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-capa__datos dd {
+  color: var(--ov-tinta);
+  font-weight: 400;
+}
+
+.ov-app .ov-casilla {
+  position: relative;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 12px;
+  align-items: start;
+  min-height: var(--ov-tactil);
+  padding: 6px 0;
+  font-size: 15.5px;
+  line-height: 1.5;
+  color: var(--ov-tinta);
+  cursor: pointer;
+}
+
+.ov-app .ov-casilla input {
+  position: absolute;
+  opacity: 0;
+  width: 26px;
+  height: 26px;
+  margin: 6px 0 0;
+}
+
+.ov-app .ov-casilla__marca {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--ov-tinta);
+  border-radius: 3px;
+  background: var(--ov-blanco);
+  display: grid;
+  place-items: center;
+}
+
+.ov-app .ov-casilla input:checked + .ov-casilla__marca {
+  background: var(--ov-tinta);
+}
+
+.ov-app .ov-casilla input:checked + .ov-casilla__marca::after {
+  content: '';
+  width: 6px;
+  height: 12px;
+  border-right: 2.5px solid var(--ov-blanco);
+  border-bottom: 2.5px solid var(--ov-blanco);
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.ov-app .ov-casilla input:focus-visible + .ov-casilla__marca {
+  outline: 3px solid var(--ov-foco);
+  outline-offset: 2px;
+}
+
+.ov-app .ov-casilla--error .ov-casilla__marca {
+  border-color: var(--ov-falso);
+  border-width: 3px;
+}
+
+.ov-app .ov-formulario__enviar .ov-boton {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .ov-app .ov-formulario__enviar .ov-boton {
+    width: auto;
+  }
+}
+
+.ov-app .ov-formulario__confirmacion {
+  display: grid;
+  gap: var(--ov-e-3);
+  justify-items: start;
+  max-width: 640px;
+  padding: var(--ov-e-5);
+  border: 1.5px dashed var(--ov-tinta);
+  border-radius: var(--ov-radio);
+  background: var(--ov-claro);
+}
+
+/* Opción ya elegida en un paso anterior: la mira ha pasado al paso
+   siguiente y en su hueco queda el punto central. */
+.ov-app .ov-triaje__opcion[aria-pressed='true'] .ov-triaje__foco:empty {
+  border: 2px solid var(--ov-tinta);
+  display: grid;
+  place-items: center;
+}
+
+.ov-app .ov-triaje__opcion[aria-pressed='true'] .ov-triaje__foco:empty::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ov-tinta);
+}

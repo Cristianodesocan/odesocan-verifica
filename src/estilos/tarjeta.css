@@ -1,0 +1,81 @@
+/* Tarjeta de verificación: filete superior, sin sombra y sin radio. */
+
+.ov-app .ov-tarjeta {
+  position: relative;
+  display: grid;
+  gap: var(--ov-e-3);
+  align-content: start;
+  padding: var(--ov-e-4) 0 var(--ov-e-5);
+  border-top: 2px solid var(--ov-tinta);
+}
+
+.ov-app .ov-tarjeta__cabeza {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ov-e-3);
+}
+
+.ov-app .ov-tarjeta__titular {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.32;
+  color: var(--ov-tinta);
+  text-wrap: pretty;
+}
+
+.ov-app .ov-tarjeta--grande .ov-tarjeta__titular {
+  font-size: clamp(19px, 2.2vw, 22px);
+}
+
+.ov-app .ov-tarjeta__enlace {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* El enlace cubre toda la tarjeta. */
+.ov-app .ov-tarjeta__enlace::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.ov-app .ov-tarjeta__enlace:hover,
+.ov-app .ov-tarjeta__enlace:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: var(--ov-teal);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.ov-app .ov-tarjeta__enlace:focus-visible {
+  outline: none;
+}
+
+.ov-app .ov-tarjeta:focus-within {
+  outline: 3px solid var(--ov-foco);
+  outline-offset: 6px;
+}
+
+.ov-app .ov-tarjeta__datos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 16px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.ov-app .ov-tarjeta__datos dt {
+  font-family: var(--ov-f-mono);
+  font-size: 11.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-tarjeta__datos dd {
+  color: var(--ov-cuerpo);
+  font-weight: 400;
+}
+
+.ov-app .ov-tarjeta__id {
+  color: var(--ov-muted-texto);
+}

@@ -1,0 +1,658 @@
+/* Metodología: recorrido de las nueve fases, escala, preguntas y casos. */
+
+.ov-app .ov-recorrido-seccion {
+  margin-top: var(--ov-e-6);
+}
+
+/* ---------- Escritorio: scrollytelling ---------- */
+
+.ov-app .ov-recorrido {
+  display: grid;
+  grid-template-columns: minmax(300px, 5fr) minmax(0, 7fr);
+  gap: var(--ov-e-8);
+  margin-top: var(--ov-e-5);
+}
+
+.ov-app .ov-recorrido__fijo {
+  position: sticky;
+  top: calc(var(--ov-alto-banda) + var(--ov-alto-cabecera) + var(--ov-e-5));
+  align-self: start;
+  display: grid;
+  gap: var(--ov-e-5);
+}
+
+.ov-app .ov-linea {
+  position: relative;
+  display: grid;
+  gap: 0;
+}
+
+.ov-app .ov-linea::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  bottom: 16px;
+  width: 2px;
+  background: var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-linea__boton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--ov-e-3);
+  width: 100%;
+  min-height: var(--ov-tactil);
+  padding: 4px 0;
+  background: none;
+  border: 0;
+  text-align: left;
+  color: var(--ov-muted-texto);
+  font-size: 15px;
+}
+
+.ov-app .ov-linea__boton[aria-current='step'] {
+  color: var(--ov-tinta);
+  font-weight: 600;
+}
+
+.ov-app .ov-linea__fase--hecha .ov-linea__boton {
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-linea__nodo {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}
+
+.ov-app .ov-linea__nodo::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ov-blanco);
+  border: 2px solid var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-linea__fase--hecha .ov-linea__nodo::before {
+  background: var(--ov-tinta);
+  border-color: var(--ov-tinta);
+}
+
+.ov-app .ov-linea__mira {
+  position: absolute;
+  inset: -4px;
+  color: var(--ov-teal);
+  display: block;
+}
+
+.ov-app .ov-linea__numero {
+  font-family: var(--ov-f-mono);
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 6px;
+}
+
+.ov-app .ov-expediente {
+  background: var(--ov-navy);
+  color: var(--ov-claro);
+  border-radius: var(--ov-radio);
+  padding: var(--ov-e-4);
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.ov-app .ov-expediente__cabeza {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--ov-e-3);
+  margin-bottom: var(--ov-e-3);
+  border-bottom: 1px solid var(--ov-linea-navy);
+  color: var(--ov-teal);
+}
+
+.ov-app .ov-expediente .ov-sello {
+  color: var(--ov-muted);
+}
+
+.ov-app .ov-expediente__lineas {
+  display: grid;
+  gap: 6px;
+}
+
+.ov-app .ov-expediente__linea {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 8px;
+  color: var(--ov-muted);
+  min-height: 1.5em;
+}
+
+.ov-app .ov-expediente__linea--escrita {
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-expediente__fase {
+  color: var(--ov-muted);
+}
+
+.ov-app .ov-recorrido__pasos {
+  display: grid;
+}
+
+.ov-app .ov-fase {
+  position: relative;
+  min-height: 72vh;
+  padding: 18vh 0 6vh var(--ov-e-5);
+  border-left: 3px solid transparent;
+  transition: border-color var(--ov-medio) ease;
+}
+
+.ov-app .ov-fase:first-child {
+  padding-top: 4vh;
+}
+
+.ov-app .ov-recorrido .ov-fase--activa {
+  border-left-color: var(--ov-teal);
+}
+
+.ov-app .ov-historia.ov-fase,
+.ov-app .ov-historia {
+  border-left: 0;
+}
+
+.ov-app .ov-fase__titulo {
+  display: grid;
+  gap: 4px;
+  font-size: clamp(22px, 2.6vw, 28px);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ov-tinta);
+  margin-bottom: var(--ov-e-4);
+}
+
+.ov-app .ov-fase__numero {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-fase__cuerpo {
+  display: grid;
+  gap: var(--ov-e-3);
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-fase__datos {
+  margin-top: var(--ov-e-5);
+  display: grid;
+  gap: var(--ov-e-3);
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-fase__datos > div {
+  border-left: 3px solid var(--ov-teal);
+  padding-left: var(--ov-e-4);
+}
+
+.ov-app .ov-fase__datos dt {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-fase__datos dd {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ov-tinta);
+  font-weight: 400;
+}
+
+/* ---------- Móvil: historias a pantalla completa ---------- */
+
+.ov-app .ov-historias {
+  margin-top: var(--ov-e-4);
+  margin-inline: calc(var(--ov-margen) * -1);
+  background: var(--ov-blanco);
+  border-top: 1px solid var(--ov-linea);
+  border-bottom: 1px solid var(--ov-linea);
+  /* A pantalla completa: del borde de la banda a la barra de pestañas. */
+  /* Se descuenta también el título del apartado, para que al llegar a
+     #/metodologia/recorrido se vean el título y los controles a la vez. */
+  height: calc(100svh - var(--ov-alto-banda) - var(--ov-alto-pestanas) - env(safe-area-inset-bottom, 0px) - 64px);
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: var(--ov-alto-banda);
+}
+
+.ov-app .ov-historias__barras {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 4px;
+  padding: 12px var(--ov-margen) 0;
+}
+
+.ov-app .ov-historias__barra {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-historias__barra--llena {
+  background: var(--ov-tinta);
+}
+
+.ov-app .ov-historias__cabeza {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px var(--ov-margen) 0;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-linea--compacta {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px calc(var(--ov-margen) + 4px) 4px;
+}
+
+.ov-app .ov-linea--compacta::before {
+  left: calc(var(--ov-margen) + 20px);
+  right: calc(var(--ov-margen) + 20px);
+  top: 50%;
+  bottom: auto;
+  width: auto;
+  height: 2px;
+  margin-top: 3px;
+}
+
+.ov-app .ov-linea--compacta .ov-linea__nodo {
+  width: 28px;
+  height: 28px;
+}
+
+.ov-app .ov-historias__pista {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.ov-app .ov-historias__pista::-webkit-scrollbar {
+  display: none;
+}
+
+.ov-app .ov-historias__pista:focus-visible {
+  outline-offset: -3px;
+}
+
+.ov-app .ov-historia {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  padding: var(--ov-e-4) var(--ov-margen) var(--ov-e-5);
+}
+
+.ov-app .ov-historia .ov-fase__titulo {
+  font-size: 24px;
+}
+
+.ov-app .ov-historia .ov-fase__cuerpo {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.ov-app .ov-historias__controles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--ov-e-3);
+  padding: var(--ov-e-3) var(--ov-margen) var(--ov-e-4);
+  border-top: 1px solid var(--ov-linea);
+}
+
+.ov-app .ov-historias__controles button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* ---------- Escala ---------- */
+
+.ov-app .ov-escala {
+  display: grid;
+  gap: 0;
+  border-top: 2px solid var(--ov-tinta);
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-escala {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 0;
+    gap: var(--ov-e-4);
+  }
+}
+
+.ov-app .ov-escala__item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  grid-template-areas:
+    'glifo nombre'
+    'glifo definicion'
+    'glifo lectura';
+  column-gap: var(--ov-e-3);
+  padding: var(--ov-e-4) 0;
+  border-bottom: 1px solid var(--ov-linea-fuerte);
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-escala__item {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'glifo' 'nombre' 'definicion' 'lectura';
+    align-content: start;
+    gap: var(--ov-e-2);
+    border-bottom: 0;
+    border-top: 6px solid;
+    padding-top: var(--ov-e-4);
+  }
+
+  .ov-app .ov-escala__item--falso { border-top-color: var(--ov-falso); }
+  .ov-app .ov-escala__item--enganoso { border-top-color: var(--ov-enganoso); }
+  .ov-app .ov-escala__item--contexto { border-top-color: var(--ov-contexto); }
+  .ov-app .ov-escala__item--verdadero { border-top-color: var(--ov-verdadero); }
+}
+
+.ov-app .ov-escala__glifo {
+  grid-area: glifo;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-escala__valor {
+  display: none;
+}
+
+.ov-app .ov-escala__nombre {
+  grid-area: nombre;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ov-app .ov-escala__definicion {
+  grid-area: definicion;
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.ov-app .ov-escala__lectura {
+  grid-area: lectura;
+  margin-top: 6px;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ov-muted-texto);
+}
+
+/* ---------- Preguntas de decisión ---------- */
+
+.ov-app .ov-preguntas {
+  display: grid;
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-preguntas__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: var(--ov-e-3);
+  row-gap: var(--ov-e-2);
+  padding-bottom: var(--ov-e-5);
+}
+
+.ov-app .ov-preguntas__item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  bottom: 0;
+  width: 2px;
+  background: var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-preguntas__numero {
+  grid-row: 1 / span 3;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ov-tinta);
+  border-radius: 50%;
+  font-family: var(--ov-f-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+  background: var(--ov-blanco);
+}
+
+.ov-app .ov-preguntas__texto {
+  font-weight: 600;
+  color: var(--ov-tinta);
+  line-height: 1.5;
+  padding-top: 6px;
+}
+
+.ov-app .ov-preguntas__si {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.ov-app .ov-preguntas__etiqueta {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-preguntas__no {
+  font-size: 14.5px;
+  color: var(--ov-muted-texto);
+}
+
+/* ---------- Pon a prueba la escala ---------- */
+
+.ov-app .ov-prueba {
+  display: grid;
+  gap: var(--ov-e-4);
+  padding: var(--ov-e-5);
+  background: var(--ov-claro);
+  border-radius: var(--ov-radio);
+  max-width: 820px;
+}
+
+.ov-app .ov-prueba__posicion {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-prueba__caso {
+  border: 0;
+  display: grid;
+  gap: var(--ov-e-4);
+  min-width: 0;
+}
+
+.ov-app .ov-prueba__enunciado {
+  font-size: clamp(18px, 2.2vw, 21px);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-prueba__opciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.ov-app .ov-prueba__opcion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 8px 12px;
+  border: 1.5px solid var(--ov-tinta);
+  border-radius: var(--ov-radio);
+  background: var(--ov-blanco);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+  text-align: left;
+}
+
+.ov-app .ov-prueba__opcion:not(:disabled):hover {
+  background: var(--ov-claro);
+}
+
+.ov-app .ov-prueba__opcion:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.ov-app .ov-prueba__opcion--marcada,
+.ov-app .ov-prueba__opcion--correcta {
+  opacity: 1 !important;
+}
+
+.ov-app .ov-prueba__opcion--marcada {
+  border-width: 3px;
+}
+
+.ov-app .ov-prueba__opcion--correcta.ov-prueba__opcion--falso { background: var(--ov-falso); }
+.ov-app .ov-prueba__opcion--correcta.ov-prueba__opcion--enganoso { background: var(--ov-enganoso); }
+.ov-app .ov-prueba__opcion--correcta.ov-prueba__opcion--contexto { background: var(--ov-contexto); }
+.ov-app .ov-prueba__opcion--correcta.ov-prueba__opcion--verdadero { background: var(--ov-verdadero); }
+.ov-app .ov-prueba__opcion--correcta.ov-prueba__opcion--ninguna { background: var(--ov-tinta); color: var(--ov-blanco); }
+
+.ov-app .ov-prueba__sin {
+  width: 18px;
+  height: 18px;
+  border: 2.2px dashed currentColor;
+  border-radius: 50%;
+}
+
+.ov-app .ov-prueba__respuesta {
+  display: grid;
+  gap: var(--ov-e-2);
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-prueba__respuesta:empty {
+  display: none;
+}
+
+.ov-app .ov-prueba__veredicto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-prueba__correcta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.ov-app .ov-prueba__resultado {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-prueba > .ov-boton,
+.ov-app .ov-prueba > .ov-boton-sec {
+  justify-self: start;
+}
+
+/* ---------- Emergencia ---------- */
+
+.ov-app .ov-emergencia {
+  display: grid;
+  gap: var(--ov-e-5);
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-emergencia {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--ov-e-6);
+  }
+}
+
+.ov-app .ov-emergencia > div {
+  border-top: 2px solid var(--ov-tinta);
+  padding-top: var(--ov-e-3);
+  display: grid;
+  gap: var(--ov-e-3);
+  align-content: start;
+  font-size: 15.5px;
+  line-height: 1.65;
+}
+
+.ov-app .ov-emergencia__condiciones {
+  display: grid;
+  gap: var(--ov-e-2);
+  counter-reset: ov-c;
+}
+
+.ov-app .ov-emergencia__condiciones li {
+  counter-increment: ov-c;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-emergencia__condiciones li::before {
+  content: counter(ov-c);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--ov-tinta);
+  display: grid;
+  place-items: center;
+  font-family: var(--ov-f-mono);
+  font-size: 12px;
+}
+
+.ov-app .ov-emergencia__condiciones li + li::after {
+  content: '';
+}
+
+.ov-app .ov-metodologia__lectura {
+  margin-top: var(--ov-e-8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ov-app .ov-fase {
+    transition: none;
+  }
+}

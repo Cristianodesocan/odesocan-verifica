@@ -1,0 +1,695 @@
+/* Componentes compartidos por todas las secciones. */
+
+/* ---------- Tipografía editorial (sistema .np) ---------- */
+
+.ov-app .ov-cabeza {
+  padding-top: var(--ov-e-7);
+  padding-bottom: var(--ov-e-5);
+}
+
+.ov-app .ov-titulo {
+  font-size: var(--ov-t-titulo);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--ov-tinta);
+  margin-bottom: var(--ov-e-5);
+}
+
+/* El dato verificado y la entradilla: el elemento más grande de la página. */
+.ov-app .ov-sumario {
+  border-left: 4px solid var(--ov-teal);
+  padding: 10px 0 10px 20px;
+  max-width: 30ch;
+  font-size: var(--ov-t-sumario);
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  color: var(--ov-tinta);
+  text-wrap: balance;
+}
+
+.ov-app .ov-sumario--ancho {
+  max-width: 34ch;
+}
+
+.ov-app .ov-entradilla {
+  margin-top: var(--ov-e-5);
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-h2 {
+  font-size: var(--ov-t-h2);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ov-tinta);
+  margin-bottom: var(--ov-e-4);
+  scroll-margin-top: calc(var(--ov-alto-banda) + var(--ov-e-5));
+}
+
+@media (min-width: 1024px) {
+  .ov-app .ov-h2,
+  .ov-app [id^='ov-ap-'] {
+    scroll-margin-top: calc(var(--ov-alto-banda) + var(--ov-alto-cabecera) + var(--ov-e-5));
+  }
+}
+
+.ov-app .ov-h3 {
+  font-size: var(--ov-t-h3);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ov-tinta);
+  margin-bottom: var(--ov-e-2);
+}
+
+.ov-app .ov-prosa > * + * {
+  margin-top: var(--ov-e-4);
+}
+
+.ov-app .ov-prosa p,
+.ov-app .ov-prosa li {
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-dateline {
+  font-family: var(--ov-f-mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ov-muted-texto);
+  padding-bottom: var(--ov-e-3);
+  border-bottom: 1px solid var(--ov-linea);
+}
+
+.ov-app .ov-lista {
+  display: grid;
+  gap: var(--ov-e-3);
+}
+
+.ov-app .ov-lista > li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.ov-app .ov-lista > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.85em;
+  width: 10px;
+  height: 2px;
+  background: var(--ov-teal);
+}
+
+.ov-app .ov-lista--numerada {
+  counter-reset: ov-n;
+}
+
+.ov-app .ov-lista--numerada > li {
+  counter-increment: ov-n;
+  padding-left: 32px;
+}
+
+.ov-app .ov-lista--numerada > li::before {
+  content: counter(ov-n);
+  width: auto;
+  height: auto;
+  top: 0.15em;
+  background: none;
+  font-family: var(--ov-f-mono);
+  font-size: 13px;
+  color: var(--ov-muted-texto);
+}
+
+/* ---------- Composición de lectura ---------- */
+
+.ov-app .ov-lectura {
+  padding-bottom: var(--ov-e-7);
+}
+
+.ov-app .ov-lectura__indice {
+  display: none;
+}
+
+.ov-app .ov-lectura__cuerpo > .ov-seccion + .ov-seccion {
+  margin-top: var(--ov-e-8);
+}
+
+.ov-app .ov-seccion > * + * {
+  margin-top: var(--ov-e-5);
+}
+
+.ov-app .ov-seccion > .ov-h2 + * {
+  margin-top: 0;
+}
+
+.ov-app .ov-bloque {
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-bloque--ancho {
+  max-width: none;
+}
+
+@media (min-width: 1024px) {
+  .ov-app .ov-lectura {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    column-gap: 56px;
+  }
+
+  .ov-app .ov-lectura__indice {
+    display: block;
+    position: sticky;
+    top: calc(var(--ov-alto-banda) + var(--ov-alto-cabecera) + var(--ov-e-6));
+    align-self: start;
+    padding-top: 6px;
+  }
+
+  .ov-app .ov-bloque {
+    display: grid;
+    grid-template-columns: minmax(0, var(--ov-ancho-texto)) minmax(170px, 220px);
+    column-gap: 40px;
+    max-width: none;
+    align-items: start;
+  }
+
+  .ov-app .ov-bloque--ancho > .ov-bloque__principal {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---------- Notas al margen ---------- */
+
+.ov-app .ov-nota {
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  gap: 8px;
+  padding-top: 6px;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-nota__marca {
+  margin-top: 4px;
+  color: var(--ov-muted);
+}
+
+.ov-app .ov-nota a {
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-nota-movil {
+  margin-top: var(--ov-e-2);
+}
+
+.ov-app .ov-nota-movil__boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--ov-tactil);
+  padding: 0 4px 0 0;
+  background: none;
+  border: 0;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+  text-decoration: underline;
+  text-decoration-color: var(--ov-linea-fuerte);
+  text-underline-offset: 3px;
+}
+
+.ov-app .ov-nota-movil__texto {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--ov-muted-texto);
+  padding: var(--ov-e-3) 0 var(--ov-e-2) var(--ov-e-4);
+  border-left: 2px solid var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-nota-movil__texto a {
+  color: var(--ov-tinta);
+}
+
+/* ---------- Índice de lectura ---------- */
+
+.ov-app .ov-indice__titulo {
+  font-family: var(--ov-f-mono);
+  font-size: 12px;
+  color: var(--ov-muted-texto);
+  margin-bottom: var(--ov-e-3);
+}
+
+.ov-app .ov-indice__lista {
+  display: grid;
+  gap: 2px;
+  border-left: 1px solid var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-indice__item {
+  position: relative;
+}
+
+.ov-app .ov-indice__mira {
+  position: absolute;
+  left: -9px;
+  top: 8px;
+  color: var(--ov-tinta);
+  background: var(--ov-blanco);
+  border-radius: 50%;
+  line-height: 0;
+}
+
+.ov-app .ov-indice__enlace {
+  display: block;
+  padding: 6px 0 6px 18px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--ov-muted-texto);
+  text-decoration: none;
+}
+
+.ov-app .ov-indice__enlace:hover {
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-indice__enlace[aria-current='location'] {
+  color: var(--ov-tinta);
+  font-weight: 600;
+}
+
+/* ---------- Botones ---------- */
+
+/* Botón principal, heredado de .np-boton. */
+.ov-app .ov-boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 24px;
+  font-family: var(--ov-f-mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ov-navy);
+  background: var(--ov-teal);
+  border: 0;
+  border-radius: var(--ov-radio);
+  transition: background var(--ov-rapido) ease;
+}
+
+.ov-app .ov-boton:hover {
+  background: var(--ov-teal-hover);
+}
+
+.ov-app .ov-boton[aria-disabled='true'],
+.ov-app .ov-boton:disabled {
+  background: var(--ov-claro);
+  color: var(--ov-muted-texto);
+  border: 1px dashed var(--ov-linea-fuerte);
+  cursor: not-allowed;
+}
+
+.ov-app .ov-boton svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Botón secundario: contorno en tinta, en minúsculas. */
+.ov-app .ov-boton-sec {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--ov-tactil);
+  padding: 8px 16px;
+  font-family: var(--ov-f-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ov-tinta);
+  background: var(--ov-blanco);
+  border: 1.5px solid var(--ov-tinta);
+  border-radius: var(--ov-radio);
+  text-decoration: none;
+}
+
+.ov-app .ov-boton-sec:hover {
+  background: var(--ov-claro);
+}
+
+.ov-app .ov-navy .ov-boton-sec {
+  color: var(--ov-claro);
+  background: transparent;
+  border-color: var(--ov-claro);
+}
+
+.ov-app .ov-navy .ov-boton-sec:hover {
+  background: var(--ov-navy-2);
+}
+
+.ov-app .ov-enlace-accion {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--ov-tactil);
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-navy .ov-enlace-accion {
+  color: var(--ov-claro);
+}
+
+/* ---------- Insignias de calificación ---------- */
+
+.ov-app .ov-insignia {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px 3px 6px;
+  border-radius: var(--ov-radio);
+  font-family: var(--ov-f-sans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ov-tinta);
+  white-space: nowrap;
+}
+
+.ov-app .ov-insignia--grande {
+  gap: 10px;
+  padding: 6px 16px 6px 10px;
+  font-size: 18px;
+}
+
+.ov-app .ov-insignia__valor {
+  font-family: var(--ov-f-mono);
+  font-weight: 400;
+  margin-right: 6px;
+}
+
+.ov-app .ov-insignia--falso {
+  background: var(--ov-falso);
+}
+
+.ov-app .ov-insignia--enganoso {
+  background: var(--ov-enganoso);
+}
+
+.ov-app .ov-insignia--contexto {
+  background: var(--ov-contexto);
+}
+
+.ov-app .ov-insignia--verdadero {
+  background: var(--ov-verdadero);
+}
+
+/* ---------- Pendientes ---------- */
+
+.ov-app .ov-pendiente {
+  display: inline;
+  font-family: var(--ov-f-mono);
+  font-size: 0.86em;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--ov-tinta);
+  padding: 1px 4px;
+  border-radius: 2px;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(212, 148, 10, 0.16),
+    rgba(212, 148, 10, 0.16) 4px,
+    rgba(212, 148, 10, 0.05) 4px,
+    rgba(212, 148, 10, 0.05) 8px
+  );
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  white-space: normal;
+}
+
+.ov-app .ov-navy .ov-pendiente {
+  color: var(--ov-claro);
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(248, 249, 251, 0.16),
+    rgba(248, 249, 251, 0.16) 4px,
+    rgba(248, 249, 251, 0.05) 4px,
+    rgba(248, 249, 251, 0.05) 8px
+  );
+}
+
+/* ---------- Afirmación literal: voz citada sobre navy ---------- */
+
+.ov-app .ov-afirmacion {
+  background: var(--ov-navy);
+  color: var(--ov-claro);
+  border-left: 4px solid var(--ov-teal);
+  padding: var(--ov-e-5) var(--ov-e-5) var(--ov-e-4);
+  border-radius: 0 var(--ov-radio) var(--ov-radio) 0;
+}
+
+.ov-app .ov-afirmacion__texto {
+  font-family: var(--ov-f-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(18px, 2.4vw, 22px);
+  line-height: 1.5;
+  color: var(--ov-claro);
+}
+
+.ov-app .ov-afirmacion__datos {
+  margin-top: var(--ov-e-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted);
+}
+
+.ov-app .ov-afirmacion__datos dt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.ov-app .ov-afirmacion a {
+  color: var(--ov-teal);
+}
+
+/* ---------- Avisos ---------- */
+
+.ov-app .ov-aviso {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: var(--ov-e-3) var(--ov-e-4);
+  background: var(--ov-claro);
+  border: 1px dashed var(--ov-linea-fuerte);
+  border-radius: var(--ov-radio);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ov-tinta);
+  font-weight: 600;
+}
+
+.ov-app .ov-aviso--urgente {
+  background: var(--ov-navy);
+  color: var(--ov-claro);
+  border: 0;
+  border-left: 6px solid var(--ov-falso);
+}
+
+.ov-app .ov-sello {
+  display: inline-block;
+  font-family: var(--ov-f-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border: 1px dashed currentColor;
+  border-radius: 2px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-navy .ov-sello {
+  color: var(--ov-muted);
+}
+
+/* ---------- Tablas accesibles ---------- */
+
+.ov-app .ov-tabla-marco {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ov-app .ov-tabla {
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.ov-app .ov-tabla caption {
+  text-align: left;
+  font-weight: 600;
+  color: var(--ov-tinta);
+  padding-bottom: var(--ov-e-2);
+}
+
+.ov-app .ov-tabla th,
+.ov-app .ov-tabla td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px 10px 0;
+  border-bottom: 1px solid var(--ov-linea);
+}
+
+.ov-app .ov-tabla th {
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-tabla thead th {
+  font-family: var(--ov-f-mono);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--ov-muted-texto);
+  border-bottom-color: var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-tabla .ov-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.ov-app .ov-navy .ov-tabla th,
+.ov-app .ov-navy .ov-tabla td,
+.ov-app .ov-navy .ov-tabla caption {
+  color: var(--ov-claro);
+  border-bottom-color: var(--ov-linea-navy);
+}
+
+.ov-app .ov-navy .ov-tabla thead th {
+  color: var(--ov-muted);
+}
+
+/* Fichas de datos (campo y valor), para los modelos de los anexos del Código. */
+.ov-app .ov-datos {
+  display: grid;
+  border-top: 1px solid var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-datos > div {
+  display: grid;
+  gap: 2px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--ov-linea);
+}
+
+.ov-app .ov-datos dt {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-datos dd {
+  color: var(--ov-tinta);
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-datos > div {
+    grid-template-columns: 220px 1fr;
+    gap: 24px;
+  }
+}
+
+/* ---------- Plegables ---------- */
+
+.ov-app .ov-plegable {
+  border-top: 1px solid var(--ov-linea-fuerte);
+  border-bottom: 1px solid var(--ov-linea-fuerte);
+}
+
+.ov-app .ov-plegable > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 52px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+  cursor: pointer;
+  list-style: none;
+}
+
+.ov-app .ov-plegable > summary::-webkit-details-marker {
+  display: none;
+}
+
+.ov-app .ov-plegable > summary::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-3px);
+  transition: transform var(--ov-rapido) ease;
+  flex-shrink: 0;
+}
+
+.ov-app .ov-plegable[open] > summary::after {
+  transform: rotate(225deg) translateY(-3px);
+}
+
+.ov-app .ov-plegable__cuerpo {
+  padding-bottom: var(--ov-e-4);
+}
+
+.ov-app .ov-codigo {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  line-height: 1.55;
+  background: var(--ov-navy);
+  color: var(--ov-claro);
+  padding: var(--ov-e-4);
+  border-radius: var(--ov-radio);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* ---------- Cargando y errores de datos ---------- */
+
+.ov-app .ov-cargando {
+  font-family: var(--ov-f-mono);
+  font-size: 13px;
+  color: var(--ov-muted-texto);
+  padding-block: var(--ov-e-6);
+}
+
+/* Mientras carga una página entera, el hueco ocupa la pantalla para que el
+   pie no suba y luego salte (desplazamiento acumulado de diseño). */
+.ov-app .ov-cargando--pagina {
+  min-height: 100vh;
+}
+
+/* ---------- Glifos ---------- */
+
+.ov-app .ov-glifo,
+.ov-app .ov-glifo-seccion,
+.ov-app .ov-mira {
+  flex-shrink: 0;
+  overflow: visible;
+}
