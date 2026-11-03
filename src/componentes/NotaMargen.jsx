@@ -15,10 +15,10 @@ export function NotaMargen({ children }) {
 
   if (escritorio) {
     return (
-      <aside className="ov-nota">
+      <div className="ov-nota" role="note">
         <Mira tamano={12} grosorTrazo={9} className="ov-nota__marca" />
         <div className="ov-nota__texto">{children}</div>
-      </aside>
+      </div>
     );
   }
   return (

@@ -679,6 +679,12 @@
   padding-block: var(--ov-e-6);
 }
 
+/* Mientras carga una página entera, el hueco ocupa la pantalla para que el
+   pie no suba y luego salte (desplazamiento acumulado de diseño). */
+.ov-app .ov-cargando--pagina {
+  min-height: 100vh;
+}
+
 /* ---------- Glifos ---------- */
 
 .ov-app .ov-glifo,

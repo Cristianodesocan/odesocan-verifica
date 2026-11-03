@@ -47,7 +47,7 @@ export default function Ficha() {
     return () => s.remove();
   }, [marcado]);
 
-  if (estado === 'cargando') return <p className="ov-contenedor ov-cargando">Cargando la ficha…</p>;
+  if (estado === 'cargando') return <p className="ov-contenedor ov-cargando ov-cargando--pagina">Cargando la ficha…</p>;
   if (!v) {
     return (
       <div className="ov-contenedor ov-cabeza ov-prosa">

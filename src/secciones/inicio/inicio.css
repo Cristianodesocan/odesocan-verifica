@@ -276,6 +276,10 @@
   gap: 0 var(--ov-e-5);
 }
 
+.ov-app .ov-inicio__reserva {
+  min-height: 320px;
+}
+
 .ov-app .ov-inicio__ejemplo {
   font-size: 14px;
   color: var(--ov-muted-texto);

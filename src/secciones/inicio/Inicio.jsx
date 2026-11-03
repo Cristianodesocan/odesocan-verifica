@@ -54,7 +54,7 @@ export default function Inicio() {
             Verificaciones de ejemplo: el servicio aún no ha publicado ninguna.
           </p>
         )}
-        {estado === 'cargando' && <p className="ov-cargando">Cargando las últimas verificaciones…</p>}
+        {estado === 'cargando' && <p className="ov-cargando ov-inicio__reserva">Cargando las últimas verificaciones…</p>}
         {estado === 'error' && (
           <p className="ov-aviso">No se han podido cargar las verificaciones. Vuelve a cargar la página.</p>
         )}

@@ -19,16 +19,7 @@ const { chromium } = require('playwright');
 const BASE = process.env.OV_URL ?? 'http://localhost:4173/odesocan-verifica/';
 const SALIDA = new URL('./resultados/capturas/', import.meta.url).pathname;
 
-export const RUTAS = {
-  inicio: '#/',
-  'que-es': '#/que-es-verificar',
-  metodologia: '#/metodologia',
-  envia: '#/envia',
-  portal: '#/portal',
-  ficha: '#/portal/OV-2026-0012',
-  correcciones: '#/portal/correcciones',
-  transparencia: '#/transparencia',
-};
+import { RUTAS } from './capturas.config.mjs';
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {

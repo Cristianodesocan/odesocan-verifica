@@ -69,7 +69,10 @@ export default function Portal() {
 
   return (
     <>
-      {meta.ejemplo && (
+      {/* El aviso se muestra también mientras cargan los datos, para que no
+          desplace el contenido al aparecer; solo se retira si los datos
+          cargados son reales. */}
+      {(estado !== 'listo' || meta.ejemplo) && (
         <div className="ov-portal__aviso" role="note">
           <p className="ov-contenedor">Datos de ejemplo. El servicio aún no ha publicado verificaciones.</p>
         </div>
@@ -82,7 +85,7 @@ export default function Portal() {
         </p>
       </div>
 
-      {estado === 'cargando' && <p className="ov-contenedor ov-cargando">Cargando las verificaciones…</p>}
+      {estado === 'cargando' && <p className="ov-contenedor ov-cargando ov-cargando--pagina">Cargando las verificaciones…</p>}
       {estado === 'error' && (
         <p className="ov-contenedor">
           <span className="ov-aviso">No se han podido cargar las verificaciones. Vuelve a cargar la página.</span>
@@ -99,7 +102,7 @@ export default function Portal() {
             </h2>
             <div className="ov-explorador__rejilla">
               {escritorio && (
-                <aside className="ov-explorador__filtros" aria-label="Filtros">
+                <div className="ov-explorador__filtros">
                   <div className="ov-explorador__mira">
                     <MiraControl mostradas={n} activas={activas} />
                     <p className="ov-explorador__estado">
@@ -107,7 +110,7 @@ export default function Portal() {
                     </p>
                   </div>
                   <Filtros filtros={filtros} alCambiar={cambiar} alLimpiar={limpiar} />
-                </aside>
+                </div>
               )}
 
               <div className="ov-explorador__resultados">

@@ -148,18 +148,24 @@
 }
 
 .ov-app .ov-fase {
+  position: relative;
   min-height: 72vh;
-  padding: 18vh 0 6vh;
-  opacity: 0.45;
-  transition: opacity var(--ov-medio) ease;
+  padding: 18vh 0 6vh var(--ov-e-5);
+  border-left: 3px solid transparent;
+  transition: border-color var(--ov-medio) ease;
 }
 
 .ov-app .ov-fase:first-child {
   padding-top: 4vh;
 }
 
-.ov-app .ov-fase--activa {
-  opacity: 1;
+.ov-app .ov-recorrido .ov-fase--activa {
+  border-left-color: var(--ov-teal);
+}
+
+.ov-app .ov-historia.ov-fase,
+.ov-app .ov-historia {
+  border-left: 0;
 }
 
 .ov-app .ov-fase__titulo {

@@ -1,0 +1,34 @@
+name: Comprobar
+
+# En cada pull request y en cada push a la rama de propuesta: valida los
+# datos de ejemplo contra el contrato y comprueba que el modelo se construye.
+
+on:
+  pull_request:
+  push:
+    branches: [propuesta/odesocan-verifica]
+
+permissions:
+  contents: read
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run validar:datos
+      - run: npm run build
+
+      - name: Sin raya como puntuación en la interfaz
+        run: |
+          if grep -rn "—" src public/data --include=*.jsx --include=*.js --include=*.json; then
+            echo "::error::Hay rayas (—) en textos de la interfaz o en los datos"
+            exit 1
+          fi

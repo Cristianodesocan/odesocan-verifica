@@ -1,0 +1,63 @@
+name: Publicar en GitHub Pages
+
+# Construye el modelo con Vite y lo publica en GitHub Pages.
+#
+# Antes del primer despliegue hay que activar Pages en el repositorio:
+# Settings > Pages > Build and deployment > Source: GitHub Actions.
+#
+# Por defecto, el entorno github-pages solo admite despliegues desde la rama
+# por defecto (main). Para publicar la rama de propuesta antes de fusionarla,
+# añádela en Settings > Environments > github-pages > Deployment branches y
+# lanza este flujo a mano (Actions > Publicar en GitHub Pages > Run workflow).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un despliegue cada vez; el que está en curso no se cancela, para no dejar
+# Pages sirviendo una versión incompleta.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Validar los datos de ejemplo contra el contrato
+        run: npm run validar:datos
+
+      - name: Construir
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  desplegar:
+    needs: construir
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4

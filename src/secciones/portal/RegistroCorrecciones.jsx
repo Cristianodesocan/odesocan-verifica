@@ -131,7 +131,7 @@ export default function RegistroCorrecciones() {
               : `Se muestran ${filas.length} correcciones.`)}
       </p>
 
-      {estado.estado === 'cargando' && <p className="ov-cargando">Cargando el registro…</p>}
+      {estado.estado === 'cargando' && <p className="ov-cargando ov-cargando--pagina">Cargando el registro…</p>}
       {estado.estado === 'error' && <p className="ov-aviso">No se ha podido leer el registro de correcciones.</p>}
 
       {estado.estado === 'listo' && filas.length > 0 && tabla && (
