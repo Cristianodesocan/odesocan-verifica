@@ -14,7 +14,7 @@ export const FASES = [
     titulo: 'Monitorización y escucha activa',
     corto: 'Monitorización',
     hace: [
-      'El servicio vigila de forma continua lo que se afirma en público sobre derechos sociales en Canarias. Combina canales automatizados (la información de transparencia del Gobierno y del Parlamento de Canarias, un observatorio de medios y las redes sociales de Meta), los canales por los que la ciudadanía envía contenidos (formulario, correo, WhatsApp, Telegram y teléfono) y la vigilancia manual de medios y redes.',
+      'El servicio vigila de forma continua lo que se afirma en público sobre derechos sociales en Canarias. Combina canales automatizados (la información de transparencia del Gobierno y del Parlamento de Canarias y, en desarrollo, un observatorio de medios y una herramienta para las redes sociales de Meta), los canales por los que la ciudadanía envía contenidos (formulario, correo, WhatsApp, Telegram y teléfono) y la vigilancia manual de redes, prensa, radio y televisión.',
       'Ninguna detección avanza sola: una persona revisa cada una antes de que pase a la fase siguiente.',
     ],
     garantia: 'Artículo 2.D: un canal público para que cualquier persona envíe afirmaciones.',
@@ -26,7 +26,7 @@ export const FASES = [
     corto: 'Selección',
     hace: [
       'Un contenido entra por una de tres vías. La influenciabilidad mide el poder o el alcance de quien afirma; la viralidad, su difusión, con umbrales orientativos de 1.000 «me gusta», 500 comentarios o compartidos o 10.000 reproducciones, pensados para una población de 2,2 millones de personas; y la peligrosidad, el riesgo de que cause daño, que prevalece sobre las otras dos.',
-      'Después se aplica el filtro de verificabilidad: se verifican datos, fuentes, normas y hechos, y no principios, valores, promesas ni predicciones, porque otra persona que repita el proceso tiene que poder llegar a un resultado muy parecido. Una segunda persona revisa cada decisión, y todo descarte queda registrado con su motivo.',
+      'Después se aplica el filtro de verificabilidad: se verifican datos, fuentes, normas y hechos, y no principios, valores, promesas ni predicciones, porque otra persona que repita el proceso tiene que poder llegar a un resultado muy parecido. Una segunda persona revisa cada decisión: si no coincide sobre la verificabilidad, el contenido se descarta, y todo descarte queda registrado con su motivo.',
     ],
     garantia: 'Artículos 2.B y 3.1.D: el mismo estándar para cualquier emisora y ninguna concentración indebida en un partido o en un lado del espectro político.',
     registro: 'Vía de entrada: viralidad. Verificable: sí. Segunda persona: conforme.',
@@ -38,6 +38,7 @@ export const FASES = [
     hace: [
       'La regla de oro es contar con al menos dos fuentes para la afirmación central, primarias siempre que sea posible, y reunir la evidencia a favor y en contra antes de calificar.',
       'El equipo consulta a las partes, que disponen de un plazo de réplica de 48 horas; recurre a personas expertas con credenciales acreditadas y conflictos de interés declarados; aplica técnicas audiovisuales (búsqueda inversa, geolocalización, análisis de metadatos y detección de manipulación) y hace el análisis cuantitativo con código, para que cualquier persona pueda repetir el cálculo.',
+      'La persona que investiga y redacta la pieza no puede ser la misma que después hace su revisión editorial o su calificación.',
     ],
     garantia: 'Artículos 2.B y 2.E: la evidencia se valora con el mismo estándar y se ofrece completa para poder replicar la verificación. Artículo 3.2: protección de las personas implicadas y derecho de réplica.',
     registro: 'Dos fuentes primarias. Réplica solicitada con 48 horas de plazo. Código del análisis guardado.',
@@ -92,7 +93,7 @@ export const FASES = [
     corto: 'Corrección',
     hace: [
       'Si se detecta un error, la pieza lleva una nota visible que explica qué ha cambiado, y nunca se borra nada en silencio. La versión original se conserva en PDF en la misma página.',
-      'Cualquier persona puede pedir una corrección por un canal público, y todas quedan en el registro de correcciones del portal.',
+      'Cualquier persona puede pedir una corrección por el teléfono de ODESOCAN o por sus redes sociales. Las solicitudes se valoran con el mismo sistema que la revisión editorial, y todas las correcciones quedan en el registro del portal.',
     ],
     garantia: 'Artículos 3.3.E a 3.3.G: política de correcciones, registro público y canal directo para pedirlas.',
     registro: 'Sin correcciones. Canal de solicitudes abierto.',

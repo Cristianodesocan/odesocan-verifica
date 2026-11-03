@@ -29,6 +29,11 @@ export const router = createHashRouter([
         handle: { titulo: 'Qué es verificar' },
       },
       {
+        path: 'metodologia/completa/:apartado?',
+        lazy: diferida(() => import('./secciones/metodologia/MetodologiaCompleta.jsx')),
+        handle: { titulo: 'Metodología completa' },
+      },
+      {
         path: 'metodologia/:apartado?',
         lazy: diferida(() => import('./secciones/metodologia/Metodologia.jsx')),
         handle: { titulo: 'Metodología' },

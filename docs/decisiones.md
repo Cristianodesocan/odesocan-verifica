@@ -85,6 +85,27 @@ Los colores del encargo se mantienen. Se añadieron estos tokens por contraste o
 - ClaimReview se genera desde el contrato (`src/data/claimreview.js`). Como las emisoras se describen por su tipo y no por su nombre, se omite `itemReviewed.author`; con datos reales lo decidirá el equipo. El marcado solo se inserta en la página con `VITE_CLAIMREVIEW=on`.
 - «Pedir una corrección» abre un correo a info@odesocan.org con el identificador en el asunto. Es una solución provisional mientras no exista el canal definitivo de correcciones.
 
+### Metodología completa
+
+La ruta `#/metodologia/completa` publica una versión pública del documento interno «Metodología de verificación» (versión 1.0 revisada, octubre de 2026), que el equipo facilitó después de la entrega inicial. El texto está en `src/contenido/metodologia-completa.js` y la página en `src/secciones/metodologia/MetodologiaCompleta.jsx`. El documento interno no se ha subido al repositorio.
+
+- **Nombres del equipo.** Se sustituyen por funciones («Investigación», «Comunicación», «Dirección, jurista»), y el equipo se describe por perfiles. Las responsabilidades de cada fase se resumen por función, sin la asignación nominal del documento interno.
+- **Ejemplos de la escala que no se reproducen.** El ejemplo de Falso repite un bulo estigmatizante sobre las personas extranjeras, y los de Engañoso y Contexto citan a personas e instituciones reales (la presidencia del Gobierno de Canarias, el Banco de España, la ULPGC, Visocan y el Colegio de Economistas). La página remite a «Pon a prueba la escala», cuyos casos son genéricos. **Conviene revisar también esos ejemplos en el documento interno** antes de publicar su versión oficial en PDF.
+- **Lo que se omite**: los anexos y plantillas internas (guion de revisión, plantilla de expediente, registro de decisiones), las fechas del permiso de acceso a Meta y la afirmación de que el Código exige un equipo mínimo de tres a cinco personas, que no se ha podido contrastar en el texto del Código.
+- **Guardar como PDF.** El botón usa la impresión del navegador con una hoja de estilos propia (`metodologia-completa.css`, bloque `@media print`). La versión oficial en PDF sigue pendiente (`URLS.METODOLOGIA_PDF_URL`).
+- **Cambios en el resto de la web a partir del documento**: el recorrido de las nueve fases recoge que el observatorio de medios y la herramienta de Meta están en desarrollo, la regla de descarte cuando las dos personas no coinciden sobre la verificabilidad y la separación entre quien investiga y quien revisa. Las correcciones se piden por el teléfono de ODESOCAN y por sus redes sociales, como dice el documento, y se mantiene el correo como vía adicional.
+
+**Diferencias entre el documento interno y el encargo que el equipo tiene que resolver:**
+
+| Punto | Documento interno | Encargo y web | Qué se ha hecho |
+|---|---|---|---|
+| Definición de Falso | «… y buscan hacerse pasar por información verosímil» | Sin atribuir intención | Se mantiene la del encargo, porque los criterios de lenguaje prohíben atribuir intenciones |
+| Definición de Engañoso | Datos correctos con elementos falsos, «sin que se cuente con fuentes suficientes para afirmar que el conjunto es falso» | Datos correctos con elementos falsos «que cambian su sentido» | Se mantiene la del encargo |
+| Definición de Contexto | Debate público sin hechos probados, datos ni sentencias firmes | Datos correctos a los que les falta información, o asunto abierto | Se mantiene la del encargo y se añade la distinción del documento entre engañoso y contexto |
+| Revisión urgente | 4 horas laborables, marcada como opcional | El protocolo de emergencia fija 12 horas | Sigue como plazo pendiente de validar |
+| Canal de correcciones | Teléfono y redes sociales de ODESOCAN | Correo | Se recogen los tres |
+| Revisión editorial | Una persona revisora habitual, con suplencias | Persona revisora no vinculada | Compatible: la web lo describe por función |
+
 ### Qué es verificar
 
 - **El título «Qué es verificar» es una decisión revisable.** Sigue la preferencia de los criterios de lenguaje por «verificación»; *fact-checking* aparece en cursiva en el primer párrafo.
@@ -137,7 +158,8 @@ Los colores del encargo se mantienen. Se añadieron estos tokens por contraste o
 | Naturaleza del trabajo financiado por plataformas o fuentes públicas | Mismo archivo, apartado «Financiación» | Transparencia |
 | Declaración de misión y valores | Mismo archivo, apartado «Independencia» | Transparencia |
 | Directrices de independencia completas | `src/config/sitio.js`, `URLS.DIRECTRICES_INDEPENDENCIA_URL` | Transparencia |
-| Versión pública de la metodología en PDF | `src/config/sitio.js`, `URLS.METODOLOGIA_PDF_URL` | Metodología |
+| Versión oficial de la metodología en PDF (la versión web ya está en `#/metodologia/completa`) | `src/config/sitio.js`, `URLS.METODOLOGIA_PDF_URL` | Metodología y Metodología completa |
+| Diferencias entre las definiciones de la escala del documento interno y las del encargo | `src/config/escala.js` | Metodología, ficha y Metodología completa |
 | Criterios de lenguaje publicados | `src/config/sitio.js`, `URLS.CRITERIOS_LENGUAJE_URL` y `src/contenido/que-es.js` | Mapa del Código |
 | Política de correcciones: canal definitivo, procedimiento de valoración y plazo de respuesta | `src/secciones/transparencia/Transparencia.jsx`, apartado «Correcciones», y `URLS.POLITICA_CORRECCIONES_URL` | Transparencia, ficha y Envía |
 | Política de protección de datos completa | `src/config/sitio.js`, `URLS.POLITICA_DATOS_URL` | Formulario y Transparencia |

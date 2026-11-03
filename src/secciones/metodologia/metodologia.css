@@ -656,3 +656,10 @@
     transition: none;
   }
 }
+
+.ov-app .ov-metodologia__completa {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ov-e-3) var(--ov-e-5);
+}

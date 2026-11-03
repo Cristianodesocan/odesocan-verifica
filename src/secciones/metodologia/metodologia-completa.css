@@ -1,0 +1,263 @@
+/* Metodología completa: documento de lectura larga, preparado para imprimir. */
+
+.ov-app .ov-documento__cabeza > * + * {
+  margin-top: var(--ov-e-4);
+}
+
+.ov-app .ov-documento__cabeza .ov-titulo {
+  margin-bottom: 0;
+}
+
+.ov-app .ov-documento__cifras {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--ov-e-3) var(--ov-e-5);
+  max-width: 720px;
+  padding-block: var(--ov-e-3);
+  border-top: 1px solid var(--ov-linea-fuerte);
+  border-bottom: 1px solid var(--ov-linea-fuerte);
+}
+
+@media (min-width: 768px) {
+  .ov-app .ov-documento__cifras {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.ov-app .ov-documento__cifras > div {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.ov-app .ov-documento__cifras dt {
+  font-family: var(--ov-f-mono);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-documento__cifras dd {
+  font-size: 14.5px;
+  line-height: 1.35;
+}
+
+.ov-app .ov-documento__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ov-e-3) var(--ov-e-5);
+}
+
+.ov-app .ov-documento__oficial {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-documento__aviso {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ov-muted-texto);
+  max-width: var(--ov-ancho-texto);
+}
+
+.ov-app .ov-documento__titulo-fase {
+  display: grid;
+  gap: 2px;
+}
+
+.ov-app .ov-documento__numero {
+  font-family: var(--ov-f-mono);
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--ov-muted-texto);
+}
+
+.ov-app .ov-documento__sub {
+  display: grid;
+  gap: var(--ov-e-2);
+}
+
+.ov-app .ov-documento__sub + .ov-documento__sub,
+.ov-app .ov-prosa > .ov-documento__sub {
+  margin-top: var(--ov-e-5);
+}
+
+.ov-app .ov-documento__roles {
+  display: grid;
+  gap: 4px;
+}
+
+.ov-app .ov-documento .ov-bloque + .ov-bloque {
+  margin-top: var(--ov-e-5);
+}
+
+/* Procedimiento de revisión editorial */
+.ov-app .ov-pasos-revision {
+  counter-reset: ov-r;
+  display: grid;
+  gap: var(--ov-e-4);
+}
+
+.ov-app .ov-pasos-revision > li {
+  counter-increment: ov-r;
+  position: relative;
+  padding-left: 44px;
+}
+
+.ov-app .ov-pasos-revision > li::before {
+  content: counter(ov-r);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ov-tinta);
+  border-radius: 50%;
+  font-family: var(--ov-f-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-pasos-revision__titulo {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ov-tinta);
+  margin-bottom: 4px;
+}
+
+/* Tablas del documento */
+.ov-app .ov-tabla-figura {
+  margin: 0;
+}
+
+.ov-app .ov-tabla-figura__pie {
+  margin-top: var(--ov-e-2);
+  font-family: var(--ov-f-mono);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ov-muted-texto);
+  max-width: 80ch;
+}
+
+.ov-app .ov-tabla--secciones th[scope='row'] {
+  min-width: 160px;
+}
+
+.ov-app .ov-tabla--secciones td:nth-child(3) {
+  white-space: nowrap;
+}
+
+/* Escala con definiciones */
+.ov-app .ov-escala-completa {
+  display: grid;
+  border-top: 2px solid var(--ov-tinta);
+}
+
+.ov-app .ov-escala-completa__item {
+  display: grid;
+  gap: 4px;
+  padding: var(--ov-e-3) 0 var(--ov-e-3) var(--ov-e-4);
+  border-bottom: 1px solid var(--ov-linea);
+  border-left: 6px solid;
+}
+
+.ov-app .ov-escala-completa__item--falso { border-left-color: var(--ov-falso); }
+.ov-app .ov-escala-completa__item--enganoso { border-left-color: var(--ov-enganoso); }
+.ov-app .ov-escala-completa__item--contexto { border-left-color: var(--ov-contexto); }
+.ov-app .ov-escala-completa__item--verdadero { border-left-color: var(--ov-verdadero); }
+
+.ov-app .ov-escala-completa dt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--ov-tinta);
+}
+
+.ov-app .ov-escala-completa dd {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Recorrido resumido */
+.ov-app .ov-flujo {
+  counter-reset: ov-f;
+  display: grid;
+  border-left: 2px solid var(--ov-linea-fuerte);
+  margin-left: 6px;
+}
+
+.ov-app .ov-flujo__paso {
+  counter-increment: ov-f;
+  position: relative;
+  padding: 0 0 var(--ov-e-4) var(--ov-e-5);
+}
+
+.ov-app .ov-flujo__paso::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--ov-tinta);
+  background: var(--ov-blanco);
+}
+
+.ov-app .ov-flujo__paso p {
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+/* Impresión: el documento sin la interfaz alrededor, para guardarlo en PDF. */
+@media print {
+  .ov-app .ov-banda,
+  .ov-app .ov-cabecera,
+  .ov-app .ov-pestanas,
+  .ov-app .ov-pie,
+  .ov-app .ov-saltar,
+  .ov-app .ov-lectura__indice,
+  .ov-app .ov-documento__acciones,
+  .ov-app .ov-ficha__miga,
+  .ov-app .ov-nota-movil__boton {
+    display: none !important;
+  }
+
+  .ov-app,
+  .ov-app .ov-documento {
+    font-size: 11pt;
+    line-height: 1.55;
+    color: #000;
+    background: #fff;
+  }
+
+  .ov-app .ov-lectura {
+    display: block;
+    padding: 0;
+  }
+
+  .ov-app .ov-nota-movil__texto[hidden] {
+    display: block !important;
+  }
+
+  .ov-app .ov-tabla-figura,
+  .ov-app .ov-escala-completa__item,
+  .ov-app .ov-pasos-revision > li {
+    break-inside: avoid;
+  }
+
+  .ov-app .ov-h2 {
+    break-after: avoid;
+  }
+
+  .ov-app a {
+    text-decoration: none;
+  }
+}

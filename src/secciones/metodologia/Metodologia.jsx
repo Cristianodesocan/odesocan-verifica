@@ -225,19 +225,22 @@ export default function Metodologia() {
               Metodología completa
             </h2>
             <Bloque>
-              <p>La versión pública de la metodología, con todos los procedimientos, se podrá descargar en PDF.</p>
               <p>
+                La versión completa de la metodología recoge el detalle de cada fase, las secciones mínimas de cada pieza, el procedimiento de
+                revisión editorial y quién interviene en cada paso. Se puede leer en la web y guardar en PDF desde el navegador.
+              </p>
+              <p className="ov-metodologia__completa">
+                <Enlace to="/metodologia/completa" className="ov-boton">
+                  Leer la metodología completa
+                </Enlace>
                 {URLS.METODOLOGIA_PDF_URL ? (
-                  <a className="ov-boton" href={URLS.METODOLOGIA_PDF_URL} target="_blank" rel="noopener">
-                    Descargar la metodología (PDF)
+                  <a href={URLS.METODOLOGIA_PDF_URL} target="_blank" rel="noopener">
+                    Descargar la versión oficial (PDF)
                   </a>
                 ) : (
-                  <>
-                    <span className="ov-boton" aria-disabled="true">
-                      Descargar la metodología (PDF)
-                    </span>{' '}
-                    <Pendiente>documento pendiente</Pendiente>
-                  </>
+                  <span>
+                    Versión oficial en PDF <Pendiente>pendiente de publicar</Pendiente>
+                  </span>
                 )}
               </p>
             </Bloque>

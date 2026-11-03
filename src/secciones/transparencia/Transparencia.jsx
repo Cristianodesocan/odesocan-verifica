@@ -214,15 +214,21 @@ export default function Transparencia() {
           <Bloque nota="Código EFCSN, artículo 3.3.G: canales directos para pedir una corrección.">
             <h3 className="ov-h3">Cómo se pide una corrección</h3>
             <p>
-              Escribe a <a href={`mailto:${ENTIDAD.correo}?subject=${encodeURIComponent('Solicitud de corrección')}`}>{ENTIDAD.correo}</a>{' '}
-              indicando el identificador de la pieza, que tiene la forma <span className="ov-id">OV-AAAA-NNNN</span>, y el error que has
-              detectado, o usa el botón «Pedir una corrección» de cada ficha. <Pendiente>canal definitivo de correcciones</Pendiente>
+              Por el teléfono de ODESOCAN (<Pendiente>número pendiente</Pendiente>) o por sus redes sociales, indicando el identificador de la
+              pieza, que tiene la forma <span className="ov-id">OV-AAAA-NNNN</span>, y el error que has detectado. También puedes escribir a{' '}
+              <a href={`mailto:${ENTIDAD.correo}?subject=${encodeURIComponent('Solicitud de corrección')}`}>{ENTIDAD.correo}</a> o usar el botón
+              «Pedir una corrección» de cada ficha.
             </p>
           </Bloque>
           <Bloque nota="Código EFCSN, artículo 3.3.F: explicación detallada de cómo se valoran las solicitudes.">
             <h3 className="ov-h3">Cómo se valora</h3>
             <p>
-              Procedimiento de valoración de las solicitudes y plazo de respuesta: <Pendiente>pendiente de la política de correcciones</Pendiente>.
+              Las solicitudes se valoran con el mismo sistema que la revisión editorial: una persona de comunicación recibe la solicitud, una
+              persona revisora no vinculada a la pieza la valora y, si procede, una persona de investigación aplica la corrección en la web.
+            </p>
+            <p>
+              Plazo de respuesta y detalle del procedimiento: <Pendiente>pendiente de la política de correcciones</Pendiente>.{' '}
+              <Enlace to="/metodologia/completa/fase-8">Ver la fase de corrección de errores en la metodología</Enlace>
             </p>
           </Bloque>
           <Bloque nota="Código EFCSN, artículo 3.3.E: política de correcciones y registro de las correcciones del último año.">

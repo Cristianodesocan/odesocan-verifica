@@ -100,9 +100,9 @@ export default function Envia() {
         </h2>
         <Bloque nota="Código EFCSN, artículo 3.3.G: canales directos para pedir una corrección.">
           <p>
-            Si crees que una verificación publicada tiene un error, escríbenos indicando su identificador, que empieza por OV, y qué crees
-            que está mal. Cada solicitud se valora y, si procede, la corrección se explica en la propia ficha y en el registro de
-            correcciones.
+            Si crees que una verificación publicada tiene un error, avísanos por el teléfono de ODESOCAN, por sus redes sociales o por
+            correo, indicando su identificador, que empieza por OV, y qué crees que está mal. Cada solicitud se valora con el mismo sistema que
+            la revisión editorial y, si procede, la corrección se explica en la propia ficha y en el registro de correcciones.
           </p>
           <p className="ov-envia__acciones">
             <a className="ov-boton-sec" href={`mailto:${ENTIDAD.correo}?subject=${encodeURIComponent('Solicitud de corrección')}`}>
