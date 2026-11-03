@@ -64,7 +64,7 @@
   --ov-ancho-texto: 66ch;
   --ov-ancho-max: 1240px;
   --ov-margen: 16px;
-  --ov-alto-banda: 36px;
+  --ov-alto-banda: 44px; /* dos líneas de texto en móvil */
   --ov-alto-cabecera: 60px;
   --ov-alto-pestanas: 64px;
   --ov-tactil: 44px;

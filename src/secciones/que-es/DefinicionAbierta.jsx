@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import * as m from 'motion/react-m';
+import useMovimientoReducido from '../../hooks/useMovimientoReducido.js';
 
 const LADO = 120;
 const curva = [0.2, 0.7, 0.1, 1];
@@ -16,6 +17,7 @@ const curva = [0.2, 0.7, 0.1, 1];
 export default function DefinicionAbierta({ children }) {
   const bloque = useRef(null);
   const [medida, setMedida] = useState(null);
+  const reducido = useMovimientoReducido();
 
   useLayoutEffect(() => {
     const el = bloque.current;
@@ -50,12 +52,14 @@ export default function DefinicionAbierta({ children }) {
         >
           <path d="M 2 6 A 54 54 0 0 1 2 114" vectorEffect="non-scaling-stroke" />
         </m.svg>
+        {!reducido && (
         <m.span
           className="ov-definicion__punto"
           initial={{ opacity: 1, scale: 1 }}
           animate={medida ? { opacity: 0, scale: 0.4 } : undefined}
           transition={{ delay: 0.5, duration: 0.4 }}
         />
+        )}
       </div>
       <p className="ov-definicion__texto">{children}</p>
     </div>

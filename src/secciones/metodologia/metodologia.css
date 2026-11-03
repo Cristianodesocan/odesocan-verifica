@@ -225,8 +225,10 @@
   border-top: 1px solid var(--ov-linea);
   border-bottom: 1px solid var(--ov-linea);
   /* A pantalla completa: del borde de la banda a la barra de pestañas. */
-  height: calc(100svh - var(--ov-alto-banda) - var(--ov-alto-pestanas) - env(safe-area-inset-bottom, 0px));
-  min-height: 520px;
+  /* Se descuenta también el título del apartado, para que al llegar a
+     #/metodologia/recorrido se vean el título y los controles a la vez. */
+  height: calc(100svh - var(--ov-alto-banda) - var(--ov-alto-pestanas) - env(safe-area-inset-bottom, 0px) - 64px);
+  min-height: 480px;
   display: flex;
   flex-direction: column;
   scroll-margin-top: var(--ov-alto-banda);
