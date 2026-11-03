@@ -1,0 +1,97 @@
+/*
+ * Tokens de Odesocan Verifica.
+ *
+ * Se declaran sobre .ov-app (la raíz de la aplicación) y no sobre :root,
+ * para que la sección pueda incrustarse en el tema de WordPress sin
+ * pisar sus variables. Todos llevan el prefijo --ov-.
+ */
+.ov-app {
+  /* Tinta y texto (sistema .np) */
+  --ov-tinta: #1a1a24;
+  --ov-cuerpo: #2b2b38;
+  --ov-muted: #7a8898;        /* líneas e iconos; texto solo sobre navy (4,81:1) */
+  --ov-muted-texto: #64707f;  /* metadatos sobre fondo claro (5,04:1 sobre blanco) */
+
+  /* Marca */
+  --ov-teal: #00c8b4;         /* acento; como texto, solo sobre navy (8,22:1) */
+  --ov-teal-hover: #00b0a0;
+  --ov-navy: #0d1b2a;
+  --ov-navy-2: #14273b;       /* superficies dentro de un bloque navy */
+  --ov-claro: #f8f9fb;
+  --ov-blanco: #ffffff;
+  --ov-linea: rgba(0, 0, 0, 0.08);
+  --ov-linea-fuerte: rgba(26, 26, 36, 0.22);
+  --ov-linea-navy: rgba(248, 249, 251, 0.14);
+
+  /* Escala de calificación: solo en insignias, gráficos y filtros */
+  --ov-falso: #ff4757;
+  --ov-enganoso: #f97316;
+  --ov-contexto: #d4940a;
+  --ov-verdadero: #00c8b4;
+
+  /* Neutro para temáticas e islas sobre navy (6,75:1) */
+  --ov-neutro: #94a3b3;
+
+  /* Foco: tinta sobre claro; se redefine en los bloques navy */
+  --ov-foco: var(--ov-tinta);
+
+  /* Tipografía */
+  --ov-f-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ov-f-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --ov-f-serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+
+  --ov-t-sumario: clamp(26px, 4.5vw, 38px);
+  --ov-t-titulo: clamp(24px, 4vw, 34px);
+  --ov-t-h2: clamp(21px, 2.6vw, 26px);
+  --ov-t-h3: 18px;
+  --ov-t-cuerpo: clamp(16px, 2vw, 17px);
+  --ov-t-pequeno: 14px;
+  --ov-t-mono: 12.5px;
+
+  /* Espaciado (escala de 4 px) */
+  --ov-e-1: 4px;
+  --ov-e-2: 8px;
+  --ov-e-3: 12px;
+  --ov-e-4: 16px;
+  --ov-e-5: 24px;
+  --ov-e-6: 32px;
+  --ov-e-7: 48px;
+  --ov-e-8: 72px;
+  --ov-e-9: 112px;
+
+  /* Composición */
+  --ov-radio: 4px;
+  --ov-ancho-texto: 66ch;
+  --ov-ancho-max: 1240px;
+  --ov-margen: 16px;
+  --ov-alto-banda: 36px;
+  --ov-alto-cabecera: 60px;
+  --ov-alto-pestanas: 64px;
+  --ov-tactil: 44px;
+
+  /* Movimiento */
+  --ov-curva: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --ov-rapido: 160ms;
+  --ov-medio: 320ms;
+}
+
+@media (min-width: 768px) {
+  .ov-app {
+    --ov-margen: 32px;
+    --ov-alto-banda: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ov-app {
+    --ov-margen: 48px;
+    --ov-alto-cabecera: 68px;
+  }
+}
+
+/* Bloques oscuros: el foco y las líneas cambian de color */
+.ov-app .ov-navy {
+  --ov-foco: var(--ov-teal);
+  background: var(--ov-navy);
+  color: var(--ov-claro);
+}
